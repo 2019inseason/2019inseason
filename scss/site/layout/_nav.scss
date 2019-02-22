@@ -1,0 +1,25 @@
+._nav{
+    background-color: #ffffff;
+    // /* 設定Header置頂 */
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 5px 20px #55555565;
+    padding: 13px 0;
+
+}
+._nav__container{
+    border-bottom: 5px solid $standard;
+    padding: 30px 0 55px;
+    position: relative;
+}
+._nav__logo{
+    width: auto;
+    max-height: 25px;
+}
+._nav__menu{
+    width: auto;
+    max-height: 15px;
+}

@@ -1,0 +1,24 @@
+@mixin font-fs-xs{
+    font-size: 0.75rem;
+}
+@mixin font-fs-s{
+    font-size: 0.875rem;
+}
+@mixin font-fs-m{
+    font-size: 1rem;
+}
+@mixin font-fs-l{
+    font-size: 1.125rem;
+}
+@mixin font-fs-x{
+    font-size: 1.25rem;
+}
+@mixin font-fs-xl{
+    font-size: 1.375rem;
+}
+@mixin font-fs-xxl{
+    font-size: 1.5rem;
+}
+@mixin font-fs-xxxl{
+    font-size: 3.0rem;
+}

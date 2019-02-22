@@ -1,0 +1,17 @@
+._img__logo{
+    //position: absolute;
+    background-color: #ffffff;
+}
+._img__logo-footer{
+    position: absolute;
+    background-color: #000000;
+    margin-right: -50px;
+}
+@media screen and (max-width:768px){
+    ._img__logo-footer{
+        right: 50%;
+    }
+}
+// @media screen and (max-width:480px){
+//     width: 35%;
+// }
