@@ -22,7 +22,8 @@
     <script src="js/lib/scrollmagic/animation.gsap.min.js"></script>
     <script src="js/lib/scrollmagic/debug.addIndicators.min.js"></script> -->
     <script src="js/lib/smooth-scroll-1.4.6/smooth-scroll.js"></script>
-    <script src="js/lib/swiper/swiper.js"></script>
+    
+    <script src="js/site/layout.js"></script>
 
 </head>
 <body>
@@ -47,9 +48,25 @@
 
             <!-- backgroundImg -->
             <div class="_island-intro__bgImg">
-                <img src="./img/environment.svg" alt="environment">
+                <!-- <img src="./img/environment.svg" alt="environment"> -->
+                <div class="swiper-container swiper-container--bg">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide _island-intro__bg--1"></div>
+                        <div class="swiper-slide _island-intro__bg--2"></div>
+                        <div class="swiper-slide _island-intro__bg--3"></div>
+                        <div class="swiper-slide _island-intro__bg--4"></div>
+                        <div class="swiper-slide _island-intro__bg--5"></div>
+                        <div class="swiper-slide _island-intro__bg--6"></div>
+                        <div class="swiper-slide _island-intro__bg--7"></div>
+                        <div class="swiper-slide _island-intro__bg--8"></div>
+                        <div class="swiper-slide _island-intro__bg--9"></div>
+                    </div>
+                <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="js/lib/swiper/swiper.js"></script>
 </body>
 </html>
