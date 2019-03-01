@@ -2,34 +2,88 @@
     // position: relative;
     height: 100vh;
     overflow: hidden;
-    ._island-intro__mainBg{
+    ._island-intro__circle{
         position: relative;
         background-color: #4B8D32;
-        width: 128vw;
-        height: 150vh;
+        width: 200vh;
+        height: 200vh;
         border-radius: 999rem;
-        left: -85%;
-        top: 125vh;
-        margin-top: -150vh;
+        left: -115vh;
+        top: 50%;
+        margin-top: -100vh;
         z-index: 99;
         box-shadow: 5px 5px 20px #444444;
     }
+    ._island-intro__row{
+        &--x{
+            position: absolute;
+            top: 51px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 100%;
+            max-height: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+        &--y{
+            position: absolute;
+            top: 51px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 100%;
+            max-height: 40%;
+            display: flex;
+            justify-content: space-between;
+            transform: rotate(-90deg);
+        }
+    }
     ._island-intro__main{
-    //    max-height: 50%;
-        max-width: 335px;
+        position: relative;
+        height: 100%;
+        // height: 80%;
+        display: flex;
+        // margin: 0 10%;
+        margin: auto 10%;
+        width: 30%;
+    }
+    ._island-intro__main--reverse{
+        position: relative;
+        height: 100%;
+        // height: 80%;
+        display: flex;
+        // margin: 0 10%;
+        margin: auto 10%;
+        width: 30%;
+        transform: rotate(-180deg);
+    }
+    ._island-intro__island{
         position: absolute;
         top: 0;
+        left: 0;
+        height: 100%;
+        right: 0;
         bottom: 0;
-        right: 10%;
         margin: auto;
-        padding-top: 51px;
-    //    padding: 100px 50px 30px 0;
-        
     }
+    ._island-intro__month{
+        position: absolute;
+        bottom: 0;
+        // left: 70%;
+        right: 5%;
+        font-size: 35px;
+        color: #fff;
+        font-weight: bold;    
+    }
+    
+    
+    
     ._island-intro__bgImg{
         width: 100vw;
         height: 100%;
-        // overflow: hidden;
         position: absolute;
         top: 0;
 

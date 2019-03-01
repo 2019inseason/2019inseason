@@ -4330,7 +4330,19 @@ em, address {
 
 .swiper-container {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: unset !important; }
+
+.swiper-pagination {
+  bottom: 50% !important;
+  z-index: 99 !important;
+  left: 75vh !important;
+  -webkit-transform: rotate(90deg) !important;
+  -ms-transform: rotate(90deg) !important;
+  transform: rotate(90deg) !important; }
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff; }
 
 ._line__container {
   position: absolute;
@@ -4405,26 +4417,85 @@ em, address {
 ._island-intro {
   height: 100vh;
   overflow: hidden; }
-  ._island-intro ._island-intro__mainBg {
+  ._island-intro ._island-intro__circle {
     position: relative;
     background-color: #4B8D32;
-    width: 128vw;
-    height: 150vh;
+    width: 200vh;
+    height: 200vh;
     border-radius: 999rem;
-    left: -85%;
-    top: 125vh;
-    margin-top: -150vh;
+    left: -115vh;
+    top: 50%;
+    margin-top: -100vh;
     z-index: 99;
     -webkit-box-shadow: 5px 5px 20px #444444;
     box-shadow: 5px 5px 20px #444444; }
+  ._island-intro ._island-intro__row--x {
+    position: absolute;
+    top: 51px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    max-height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  ._island-intro ._island-intro__row--y {
+    position: absolute;
+    top: 51px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    max-height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
   ._island-intro ._island-intro__main {
-    max-width: 335px;
+    position: relative;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 10%;
+    width: 30%; }
+  ._island-intro ._island-intro__main--reverse {
+    position: relative;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 10%;
+    width: 30%;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+  ._island-intro ._island-intro__island {
     position: absolute;
     top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
     bottom: 0;
-    right: 10%;
-    margin: auto;
-    padding-top: 51px; }
+    margin: auto; }
+  ._island-intro ._island-intro__month {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold; }
   ._island-intro ._island-intro__bgImg {
     width: 100vw;
     height: 100%;
