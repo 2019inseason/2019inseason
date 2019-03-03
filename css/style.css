@@ -4443,7 +4443,10 @@ em, address {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
   ._island-intro ._island-intro__row--y {
     position: absolute;
     top: 51px;
@@ -4459,6 +4462,9 @@ em, address {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg); }
@@ -4545,6 +4551,21 @@ em, address {
     background-size: cover; }
   ._island-intro ._island-intro__bg--9 {
     background-image: url(../img/env9.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  ._island-intro ._island-intro__bg--10 {
+    background-image: url(../img/env10.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  ._island-intro ._island-intro__bg--11 {
+    background-image: url(../img/env11.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  ._island-intro ._island-intro__bg--12 {
+    background-image: url(../img/env12.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }

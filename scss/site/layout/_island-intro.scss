@@ -26,6 +26,7 @@
             max-height: 40%;
             display: flex;
             justify-content: space-between;
+            transition: all 1s ease-in-out;
         }
         &--y{
             position: absolute;
@@ -38,6 +39,7 @@
             max-height: 40%;
             display: flex;
             justify-content: space-between;
+            transition: all 1s ease-in-out;
             transform: rotate(-90deg);
         }
     }
@@ -142,6 +144,24 @@
         }
         &--9{
             background-image: url(../img/env9.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &--10{
+            background-image: url(../img/env10.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &--11{
+            background-image: url(../img/env11.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &--12{
+            background-image: url(../img/env12.svg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
