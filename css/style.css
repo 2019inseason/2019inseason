@@ -4419,7 +4419,7 @@ em, address {
   overflow: hidden; }
   ._island-intro ._island-intro__circle {
     position: relative;
-    background-color: #4B8D32;
+    background-color: #006781;
     width: 200vh;
     height: 200vh;
     border-radius: 999rem;
@@ -4428,7 +4428,22 @@ em, address {
     margin-top: -100vh;
     z-index: 99;
     -webkit-box-shadow: 5px 5px 20px #444444;
-    box-shadow: 5px 5px 20px #444444; }
+    box-shadow: 5px 5px 20px #444444;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+  ._island-intro ._island-intro__seasonSection {
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+    ._island-intro ._island-intro__seasonSection--1 {
+      opacity: 0; }
+    ._island-intro ._island-intro__seasonSection--2 {
+      opacity: 0; }
+    ._island-intro ._island-intro__seasonSection--3 {
+      opacity: 0; }
+    ._island-intro ._island-intro__seasonSection.active {
+      opacity: 1; }
   ._island-intro ._island-intro__row--x {
     position: absolute;
     top: 51px;
@@ -4446,7 +4461,10 @@ em, address {
     justify-content: space-between;
     -webkit-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out; }
+    transition: all 1s ease-in-out;
+    opacity: 0; }
+    ._island-intro ._island-intro__row--x.active {
+      opacity: 1; }
   ._island-intro ._island-intro__row--y {
     position: absolute;
     top: 51px;
@@ -4467,7 +4485,10 @@ em, address {
     transition: all 1s ease-in-out;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    opacity: 0; }
+    ._island-intro ._island-intro__row--y.active {
+      opacity: 1; }
   ._island-intro ._island-intro__main {
     position: relative;
     height: 100%;

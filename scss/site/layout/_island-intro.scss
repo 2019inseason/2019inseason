@@ -4,7 +4,7 @@
     overflow: hidden;
     ._island-intro__circle{
         position: relative;
-        background-color: #4B8D32;
+        background-color: #006781;
         width: 200vh;
         height: 200vh;
         border-radius: 999rem;
@@ -13,6 +13,34 @@
         margin-top: -100vh;
         z-index: 99;
         box-shadow: 5px 5px 20px #444444;
+        transition: all 1s ease-in-out;
+        // &--1{
+        //     display: none;
+        // }
+        // &--2{
+        //     display: none;
+        // }
+        // &--3{
+        //     display: none;
+        // }
+        // &.active{
+        //     display: block;
+        // }
+    }
+    ._island-intro__seasonSection{
+        transition: all 1s ease-in-out;
+        &--1{
+            opacity: 0;
+        }
+        &--2{
+            opacity: 0;
+        }
+        &--3{
+            opacity: 0;
+        }
+        &.active{
+            opacity: 1;
+        }
     }
     ._island-intro__row{
         &--x{
@@ -27,6 +55,10 @@
             display: flex;
             justify-content: space-between;
             transition: all 1s ease-in-out;
+            opacity: 0;
+            &.active{
+                opacity: 1;
+            }
         }
         &--y{
             position: absolute;
@@ -41,6 +73,10 @@
             justify-content: space-between;
             transition: all 1s ease-in-out;
             transform: rotate(-90deg);
+            opacity: 0;
+            &.active{
+                opacity: 1;
+            }
         }
     }
     ._island-intro__main{
