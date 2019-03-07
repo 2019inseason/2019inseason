@@ -40,12 +40,18 @@ $(function(){
         console.log(this.activeIndex);
         index = this.activeIndex;
 
+        if(index == 13){
+            index = 1;
+        }else if(index == 0){
+            index = 12;
+        }
         // circle背景色切換
         var i = index - 1;
         $('._island-intro__circle').css("background-color",bgColor[i]);
+        $('._island-intro__view').css("background-color",bgColor[i]);
 
         // 1-4月顯示
-        if(index == 1 || index == 4 || index == 13){
+        if(index == 1 || index == 4){
             console.log('circle1');
             $('._island-intro__seasonSection').removeClass('active');
             $('._island-intro__seasonSection--1').addClass('active');
@@ -58,7 +64,7 @@ $(function(){
         }
 
         // 9-12月顯示
-        if(index == 9 || index == 0 || index == 12){
+        if(index == 9 || index == 12){
             console.log('circle3');
             $('._island-intro__seasonSection').removeClass('active');
             $('._island-intro__seasonSection--3').addClass('active');
@@ -74,5 +80,10 @@ $(function(){
             $('._island-intro__row--y').addClass('active');
             $('._island-intro__row--x').removeClass('active');
         }
+    });
+
+    //點了島嶼瀏覽的view
+    $('._island-intro__btn').click(function(){
+        $('._island-intro').addClass('active');
     });
 });

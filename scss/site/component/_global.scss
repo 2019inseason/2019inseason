@@ -5,7 +5,7 @@
 }
 html{
     font-size: 100%;
-    font-family: "Big John", "Noto Sans TC", "PingFang TC", "微軟正黑體", Arial, sans-serif;
+    font-family: "Didot", "Noto Sans TC", "PingFang TC", "微軟正黑體", Arial, sans-serif;
     font-size: 16px;
     font-weight: 300;
 }
@@ -23,11 +23,10 @@ em, address{
     height: 100%;
     position: unset !important;
 }
-// .swiper-slide 
-// {
-//     text-align: center;
-//     font-size: 18px;
-// }
+.swiper-slide 
+{
+    opacity: 0.7;
+}
 .swiper-pagination{
     bottom: 50% !important;
     z-index: 99 !important;
