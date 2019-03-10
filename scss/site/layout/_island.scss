@@ -1,9 +1,10 @@
-._island-intro{
+// intro
+._island_intro{
     // position: relative;
     height: 100vh;
     overflow: hidden;
 }
-._island-intro__circle{
+._island_intro__circle{
     position: relative;
     background-color: #006781;
     width: 200vh;
@@ -16,14 +17,14 @@
     box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
     transition: all 1s ease-in-out;
 
-    ._island-intro.active &{
+    ._island_intro.active &{
         left: -200vh;
     }
     // &.hide{
     //     display: none;
     // }
 }
-._island-intro__seasonSection{
+._island_intro__seasonSection{
     transition: all 1s ease-in-out;
     &--1{
         opacity: 0;
@@ -38,7 +39,7 @@
         opacity: 1;
     }
 }
-._island-intro__row{
+._island_intro__row{
     &--x{
         position: absolute;
         top: 51px;
@@ -75,7 +76,7 @@
         }
     }
 }
-._island-intro__main{
+._island_intro__main{
     position: relative;
     height: 100%;
     // height: 80%;
@@ -84,7 +85,7 @@
     margin: auto 10%;
     width: 30%;
 }
-._island-intro__main--reverse{
+._island_intro__main--reverse{
     position: relative;
     height: 100%;
     // height: 80%;
@@ -94,7 +95,7 @@
     width: 30%;
     transform: rotate(-180deg);
 }
-._island-intro__island{
+._island_intro__island{
     position: absolute;
     top: 0;
     left: 0;
@@ -103,7 +104,7 @@
     bottom: 0;
     margin: auto;
 }
-._island-intro__month{
+._island_intro__month{
     position: absolute;
     bottom: 0;
     // left: 70%;
@@ -115,17 +116,26 @@
 
 
 
-._island-intro__bgImg{
+._island_intro__bgImg{
     width: 100vw;
     height: 100%;
     position: absolute;
     top: 0;
     overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease-in-out;
     img{
         height: 100%;
     }
+    
+    &.active{
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+    }
 }
-._island-intro__btn{
+._island_intro__btn{
     position: absolute;
     height: 25px;
     top: 0;
@@ -139,11 +149,11 @@
     &:hover{
         transform: scale(1.1);
     }
-    ._island-intro.active &{
+    ._island_intro.active &{
         opacity: 0;
     }
 }
-._island-intro__view{
+._island_intro__view{
     display: block;
     background-color: #006781;
     border-radius: 30px;
@@ -153,7 +163,7 @@
     box-shadow: 3.4px 3.4px 3px rgba($color: #000000, $alpha: 0.4);
     transition: all 1s ease-in-out;
 }
-._island-intro__bg{
+._island_intro__bg{
     &--1{
         background-image: url(../img/env1.svg);
         background-repeat: no-repeat;
@@ -163,7 +173,8 @@
     &--2{
         background-image: url(../img/env2.svg);
         background-repeat: no-repeat;
-        background-position: center;
+        // background-position: center;
+        background-position: left;
         background-size: cover;
     }
     &--3{
@@ -225,5 +236,33 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+    }
+}
+
+//detail
+._island_detail__bg{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow-y: hidden;
+    transition: all 1.5s ease-in-out;
+    // z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    
+    svg{
+        width: auto !important;
+        height: 100vh !important;
+        // transform: translate3d(-380px, 0px, 0px)!important; 
+        transform-origin: 50% 50% !important;
+        // transform: translateX(-50%) !important;
+        // transform: scale(1.06) !important;
+    }
+    &.active{
+        background-color:#f2f2f2;
+        // z-index: 99;
+        opacity: 1;
+        visibility: visible;
     }
 }
