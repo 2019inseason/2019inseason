@@ -240,12 +240,19 @@
 }
 
 //detail
+#scene{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
 ._island_detail__bg{
     width: 100vw;
     height: 100%;
     position: absolute;
     top: 0;
-    overflow-y: hidden;
+    overflow: hidden;
     transition: all 1.5s ease-in-out;
     // z-index: 0;
     opacity: 0;

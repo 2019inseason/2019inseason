@@ -3,6 +3,8 @@ $(function(){
     var y = -90;
     var bgColor = ['#006781', '#4B8D32', '#D6CD25', '#006857', '#ED7235', '#FF947B', '#AF485C', '#F7B42F', '#AE7516', '#C99A6B', '#2E8E89', '#325984']
     var index = 0;
+    var animArray = ['feb.json'];
+    var animIndex = 0;
 
     $('._island_intro__seasonSection--1').addClass('active');
     $('._island_intro__row--x').addClass('active');
@@ -49,7 +51,7 @@ $(function(){
         var i = index - 1;
         $('._island_intro__circle').css("background-color",bgColor[i]);
         $('._island_intro__view').css("background-color",bgColor[i]);
-
+        animate(i);
         // 1-4月顯示
         if(index == 1 || index == 4){
             console.log('circle1');
@@ -82,8 +84,21 @@ $(function(){
         }
     });
 
+    function animate(i){
+        animIndex = i;
+    }
+
     //點了島嶼瀏覽的view
     $('._island_intro__btn').click(function(){
+
+        console.log(animIndex);
+        var animData = {
+            container: document.getElementById('bodymovin'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '/inseason/img/json/'+animArray[0]
+        };
 
         // 先執行bodymovin才不會卡卡
         bodymovin.loadAnimation(animData);
@@ -93,19 +108,23 @@ $(function(){
             $('._island_intro__bgImg').addClass('active');
             $('._island_detail__bg').addClass('active');
         }, 300);
+        setTimeout(function(){
+            $('._island_intro').css("display","none");
+        },2000);
         
-        
-        
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene, {
+            relativeInput: true,
+            calibrateX: true
+        });
     });
 
-   // bodymovin
-    var animData = {
-        wrapper: document.getElementById('bodymovin'),
-        animType: 'svg',
-        loop: true,
-        prerender: true,
-        autoplay: true,
-        path: '/inseason/img/json/feb.json'
-    };
-        
+    
+    
+    
+    // parallaxInstance = new Parallax( document.getElementById( "bodymovin" ) , { 
+    //       // 參數設定
+    //       clipRelativeInput: true,
+    //       hoverOnly	: true
+  	// });    
 });
