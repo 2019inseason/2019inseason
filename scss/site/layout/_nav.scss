@@ -1,13 +1,22 @@
 ._nav{
-    background-color: #fff6eb;
+    // background-color: #fff6eb;
     // /* 設定Header置頂 */
     position: fixed;
     z-index: 100;
     right: 0;
     left: 0;
     top: 0;
-    box-shadow: 0px 3.4px 6px rgba(0, 0, 0, 0.4);
-    padding: 13px 0;
+    padding: 50px 0 13px;
+    &--white{
+        background-color: transparent;
+    }
+    .container{
+        padding: 0;
+    }
+    span{
+        font-size: 20px;
+        font-weight: bold;
+    }
 
 }
 ._nav__container{
@@ -17,9 +26,21 @@
 }
 ._nav__logo{
     width: auto;
-    max-height: 25px;
+    max-height: 100%;
 }
 ._nav__menu{
     width: auto;
     max-height: 15px;
+    &--white{
+        line{
+            stroke: #ffffff;
+        }
+    }
+}
+._nav__sns{
+    &--white{
+        path{
+            fill: #ffffff;
+        }
+    }
 }

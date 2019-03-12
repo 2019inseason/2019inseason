@@ -5,7 +5,7 @@
 }
 html{
     font-size: 100%;
-    font-family: "Didot", "Noto Sans TC", "PingFang TC", "微軟正黑體", Arial, sans-serif;
+    font-family: "Didot", "Noto Sans TC", "PingFang TC", "微軟正黑體", Arial, sans-serif !important;
     font-size: 16px;
     font-weight: 300;
 }
@@ -30,10 +30,20 @@ em, address{
 .swiper-pagination{
     bottom: 50% !important;
     z-index: 99 !important;
-    left: 75vh !important;
+    left: 70vh !important;
     transform: rotate(90deg) !important;
 }
 .swiper-pagination-bullet-active{
     background-color: #ffffff;
+}
+footer{
+    position: absolute;
+    bottom: 25px;
+    z-index: 999;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 12px;
+    width: 170px;
 }
 
