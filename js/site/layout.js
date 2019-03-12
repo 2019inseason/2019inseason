@@ -106,7 +106,7 @@ $(function(){
         setTimeout(function(){
             $('._island_intro').addClass('active');
             $('._island_intro__bgImg').addClass('active');
-            $('._island_detail__bg').addClass('active');
+            $('._island_detail__anim').addClass('active');
         }, 300);
         setTimeout(function(){
             $('._island_intro').css("display","none");
@@ -115,7 +115,12 @@ $(function(){
         var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene, {
             relativeInput: true,
-            calibrateX: true
+            // calibrateX: true,
+            // invertX: true
+            // hoverOnly: true,
+            // originX: 1,
+            // originY: 1,
+            // selector: '._island_detail__anim'
         });
     });
 

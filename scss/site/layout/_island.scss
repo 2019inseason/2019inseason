@@ -271,9 +271,12 @@
 ._island_detail__bg{
     width: 100vw;
     height: 100%;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
+    // position: absolute;
+    // top: 0;
+}
+._island_detail__anim{
+    
+    // overflow: hidden;
     transition: all 1.5s ease-in-out;
     // z-index: 0;
     opacity: 0;
@@ -286,6 +289,7 @@
         transform-origin: 50% 50% !important;
         // transform: translateX(-50%) !important;
         // transform: scale(1.06) !important;
+        overflow: unset;
     }
     &.active{
         background-color:#f2f2f2;

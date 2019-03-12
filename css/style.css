@@ -8016,22 +8016,22 @@ footer {
 
 ._island_detail__bg {
   width: 100vw;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  overflow: hidden;
+  height: 100%; }
+
+._island_detail__anim {
   -webkit-transition: all 1.5s ease-in-out;
   -o-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
   opacity: 0;
   visibility: hidden; }
-  ._island_detail__bg svg {
+  ._island_detail__anim svg {
     width: auto !important;
     height: 100vh !important;
     -webkit-transform-origin: 50% 50% !important;
     -ms-transform-origin: 50% 50% !important;
-    transform-origin: 50% 50% !important; }
-  ._island_detail__bg.active {
+    transform-origin: 50% 50% !important;
+    overflow: unset; }
+  ._island_detail__anim.active {
     background-color: #f2f2f2;
     opacity: 1;
     visibility: visible; }
