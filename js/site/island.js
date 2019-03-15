@@ -90,7 +90,7 @@ $(function(){
 
     //點了島嶼瀏覽的view
     $('._island_intro__btn').click(function(){
-
+        var anim;
         console.log(animIndex);
         var animData = {
             container: document.getElementById('bodymovin'),
@@ -101,7 +101,7 @@ $(function(){
         };
 
         // 先執行bodymovin才不會卡卡
-        bodymovin.loadAnimation(animData);
+        anim = bodymovin.loadAnimation(animData);
         
         setTimeout(function(){
             $('._island_intro').addClass('active');
@@ -111,17 +111,25 @@ $(function(){
         setTimeout(function(){
             $('._island_intro').css("display","none");
         },2000);
-        
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene, {
-            relativeInput: true,
-            // calibrateX: true,
-            // invertX: true
-            // hoverOnly: true,
-            // originX: 1,
-            // originY: 1,
-            // selector: '._island_detail__anim'
+
+        anim.addEventListener('DOMLoaded', function(){
+        //     console.log('ok');
+            // setTimeout(function(){
+                $("#bodymovin svg").attr("data-depth",1);
+                var scene = document.getElementById('bodymovin');
+                var parallaxInstance = new Parallax(scene, {
+                    // relativeInput: true,
+                    hoverOnly: true,
+                     originX:0,
+                     limitY:0,
+                     limitX: $("#bodymovin svg").width()-$(window).width(),
+                    // originY: 1,
+                    // clipRelativeInput: true
+                });
+            // }, 1000);
+            
         });
+        
     });
 
     
