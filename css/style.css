@@ -7665,46 +7665,6 @@ footer {
   font-size: 12px;
   width: 170px; }
 
-._line__container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  display: none; }
-
-._line {
-  height: 100%;
-  border-right: 1.5px solid rgba(180, 180, 180, 0.2); }
-  ._line--white {
-    border-color: rgba(255, 255, 255, 0.2); }
-  ._line--bg_w {
-    background-color: #EFEFEF; }
-  ._line--bg_r {
-    background-color: #A50034; }
-
-._list-inline {
-  display: inline; }
-
-._btn a {
-  text-decoration: none;
-  background-color: #F2A900;
-  padding: 20px 30px;
-  color: #ffffff;
-  border-radius: 5px;
-  text-align: center; }
-
-._img__logo {
-  background-color: #ffffff; }
-
-._img__logo-footer {
-  position: absolute;
-  background-color: #000000;
-  margin-right: -50px; }
-
-@media screen and (max-width: 768px) {
-  ._img__logo-footer {
-    right: 50%; } }
-
 ._MenuOpen {
   overflow: hidden; }
   ._MenuOpen ._nav__app {
@@ -7726,11 +7686,6 @@ footer {
     font-size: 20px;
     font-weight: bold; }
 
-._nav__container {
-  border-bottom: 5px solid #F2A900;
-  padding: 30px 0 55px;
-  position: relative; }
-
 ._nav__logo {
   width: auto;
   max-height: 100%; }
@@ -7743,6 +7698,98 @@ footer {
 
 ._nav__sns--white path {
   fill: #ffffff; }
+
+._home {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF6EB; }
+
+._home_island {
+  height: 100vh; }
+
+._home_island__main {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+._home_island__img {
+  text-align: center;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  margin-top: 135px; }
+  ._home_island__img--island {
+    margin: auto;
+    max-width: 1200px; }
+    .actvie ._home_island__img--island {
+      opacity: 0.5; }
+  ._home_island__img--cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1230px;
+    margin: auto;
+    z-index: 5; }
+  ._home_island__img--island1 {
+    position: absolute;
+    max-width: 564px;
+    left: 4.5%;
+    bottom: 12%;
+    z-index: 1; }
+  ._home_island__img--island2 {
+    position: absolute;
+    left: 6%;
+    top: -6.5%;
+    max-width: 536px; }
+  ._home_island__img--island3 {
+    position: absolute;
+    right: 11.5%;
+    max-width: 464px;
+    top: -8%; }
+  ._home_island__img--island4 {
+    position: absolute;
+    max-width: 497px;
+    right: 8%;
+    bottom: 14%;
+    z-index: 2; }
+  ._home_island__img--middle {
+    position: absolute;
+    max-width: 175px;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99; }
+
+._home_island__text {
+  display: block;
+  text-align: center;
+  width: 28%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 9%; }
+  ._home_island__text::before {
+    left: 0; }
+  ._home_island__text::after {
+    right: 0; }
+  ._home_island__text::before, ._home_island__text::after {
+    content: "";
+    width: 19px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 50%; }
 
 ._island_intro {
   height: 100vh;
@@ -8015,23 +8062,24 @@ footer {
   overflow: hidden; }
 
 ._island_detail__bg {
+  position: absolute;
+  top: 0;
   width: 100vw;
-  height: 100%; }
-
-._island_detail__anim {
+  height: 100%;
+  overflow: hidden;
   -webkit-transition: all 1.5s ease-in-out;
   -o-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
   opacity: 0;
   visibility: hidden; }
-  ._island_detail__anim svg {
-    width: auto !important;
-    height: 100vh !important;
-    -webkit-transform-origin: 50% 50% !important;
-    -ms-transform-origin: 50% 50% !important;
-    transform-origin: 50% 50% !important;
-    overflow: unset; }
-  ._island_detail__anim.active {
-    background-color: #f2f2f2;
+  ._island_detail__bg.active {
     opacity: 1;
     visibility: visible; }
+
+._island_detail__anim svg {
+  width: auto !important;
+  height: 100vh !important;
+  -webkit-transform-origin: 50% 50% !important;
+  -ms-transform-origin: 50% 50% !important;
+  transform-origin: 50% 50% !important;
+  overflow: unset; }

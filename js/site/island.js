@@ -103,41 +103,27 @@ $(function(){
         // 先執行bodymovin才不會卡卡
         anim = bodymovin.loadAnimation(animData);
         
-        setTimeout(function(){
-            $('._island_intro').addClass('active');
-            $('._island_intro__bgImg').addClass('active');
-            $('._island_detail__anim').addClass('active');
-        }, 300);
-        setTimeout(function(){
-            $('._island_intro').css("display","none");
-        },2000);
-
+        //等bodymovin生出svg時再執行parallax.js
         anim.addEventListener('DOMLoaded', function(){
-        //     console.log('ok');
-            // setTimeout(function(){
+
                 $("#bodymovin svg").attr("data-depth",1);
                 var scene = document.getElementById('bodymovin');
                 var parallaxInstance = new Parallax(scene, {
-                    // relativeInput: true,
-                    hoverOnly: true,
-                     originX:0,
-                     limitY:0,
-                     limitX: $("#bodymovin svg").width()-$(window).width(),
-                    // originY: 1,
-                    // clipRelativeInput: true
-                });
-            // }, 1000);
-            
+                    relativeInput: true,
+                    // hoverOnly: true,
+                    originX:0,
+                    limitY:0,
+                    limitX: $("#bodymovin svg").width()-$(window).width(),
+                    
+                });  
         });
-        
+        setTimeout(function(){
+            $('._island_intro').addClass('active');
+            $('._island_intro__bgImg').addClass('active');
+            $('._island_detail__bg').addClass('active');
+        }, 1000);
+        setTimeout(function(){
+            $('._island_intro').css("display","none");
+        },2000);
     });
-
-    
-    
-    
-    // parallaxInstance = new Parallax( document.getElementById( "bodymovin" ) , { 
-    //       // 參數設定
-    //       clipRelativeInput: true,
-    //       hoverOnly	: true
-  	// });    
 });

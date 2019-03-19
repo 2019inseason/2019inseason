@@ -269,18 +269,22 @@
     overflow: hidden;
 }
 ._island_detail__bg{
+    position: absolute;
+    top: 0;
     width: 100vw;
     height: 100%;
-    // position: absolute;
-    // top: 0;
+    overflow: hidden;
+    transition: all 1.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
 }
 ._island_detail__anim{
     
-    // overflow: hidden;
-    transition: all 1.5s ease-in-out;
-    // z-index: 0;
-    opacity: 0;
-    visibility: hidden;
+   
     
     svg{
         width: auto !important;
@@ -291,10 +295,5 @@
         // transform: scale(1.06) !important;
         overflow: unset;
     }
-    &.active{
-        background-color:#f2f2f2;
-        // z-index: 99;
-        opacity: 1;
-        visibility: visible;
-    }
+    
 }
