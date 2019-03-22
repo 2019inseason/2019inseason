@@ -1,3 +1,19 @@
+._island{
+    .swiper-container {
+        position: unset !important;
+    }
+    .swiper-slide 
+    {
+        opacity: 0.7;
+    }
+    .swiper-pagination{
+        bottom: 50% !important;
+        z-index: 99 !important;
+        left: 70vh !important;
+        transform: rotate(90deg) !important;
+    }
+
+}
 // intro
 ._island_intro{
     // position: relative;
