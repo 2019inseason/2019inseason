@@ -97,7 +97,7 @@ $(function(){
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: '/img/json/'+animArray[0]
+            path: '../../img/json/'+animArray[0]
         };
 
         // 先執行bodymovin才不會卡卡
