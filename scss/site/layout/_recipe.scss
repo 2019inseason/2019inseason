@@ -53,3 +53,34 @@
         opacity: 1;
     }
 }
+._recipe__main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    width: 80%;
+}
+._recipe__title{
+    font-size: 7em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+._recipe__btn{
+    padding: 15px 40px;
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+    border-radius: 50px;
+
+    img{
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+    }
+    span{
+        font-size: 15px;
+        color: #000000;
+        vertical-align: middle;
+        font-weight: 600;
+    }
+}
