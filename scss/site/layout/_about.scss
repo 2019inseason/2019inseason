@@ -1,0 +1,118 @@
+._about_section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    &--1{
+        background-image: url(../img/about/bg1.svg);
+        // background-image: url(../img/about/bg1@2x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &--2{
+        background-image: url(../img/about/bg2.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &--3{
+        background-color: #FFF6EB;
+    }
+    &--4{
+        background-image: url(../img/about/bg4.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+._about_section1__main{
+    position: absolute;
+    width: 45%;
+    height: 35%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    a{
+        display: block;
+        width: 30%;
+        margin: 10% auto 0 auto;
+        padding: 17px 20px;
+        background-color: #D6CD25;
+        border-radius: 50px;
+        box-shadow: 2px 3px 5px rgba($color: #000000, $alpha: 0.3);
+    }
+    img{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10%;
+        bottom: 0;
+        width: 80%;
+        margin: auto;
+    }
+}
+._about_section1__title{
+    font-size: 50px;
+    font-weight: bold;
+}
+._about_section1__subtitle{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+._about_section2__main{
+    position: absolute;
+    width: 65%;
+    height: 40%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+._about_section2__img{
+    position: relative;
+    img{
+        display: block;
+        height: 100%;
+        padding: 0px 30px;
+    }
+    span{
+        position: absolute;
+        right: 8%;
+        font-size: 80px;
+        top: 60%;
+        font-style: italic;
+    }
+}
+._about_section2__text{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    p{
+        line-height: 37px;
+        letter-spacing: 1px;
+        font-size: 15px;
+        padding: 0 20px;
+    }
+}
+._about_section2__title{
+    position: relative;
+    &::before{
+        left: 18%;
+    }
+    &::after{
+        right: 18%;
+    }
+    &::before, &::after{
+        content: "";
+        width: 19px;
+        height: 1px;
+        background-color: #000000;
+        position: absolute;
+        top: 50%;
+    }
+}
