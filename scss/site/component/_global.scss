@@ -26,7 +26,8 @@ em, address{
     background-color: #ffffff !important;
 }
 footer{
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     bottom: 25px;
     z-index: 999;
     right: 0;

@@ -60,7 +60,7 @@
         </nav>
 
         <!-- section1 -->
-        <section class="_about_section _about_section--1">
+        <section id="about_1" class="_about_section _about_section--1">
             <div class="_about_section1__main">
                 <h1 class="_about_section1__title">WHAT’S INSEASON ?</h1>
                 <h2 class="_about_section1__subtitle mt-4">“什麼是旬食？”</h2>
@@ -70,7 +70,7 @@
         </section>
 
         <!-- section2 -->
-        <section class="_about_section _about_section--2">
+        <section id="about_2" class="_about_section _about_section--2">
             <div class="_about_section2__main">
                 <div class="_about_section2__img">
                     <img src="img/about/p2_flower.svg" alt="">
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="_about__scroll">
-                <span>Scroll it!</span>
+                <span class="mb-3">Scroll it!</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27.284" height="46.694" viewBox="0 0 27.284 46.694">
                     <g transform="translate(0.4 0.4)">
                       <g transform="translate(0 32.57)">
@@ -100,19 +100,19 @@
             </div>
         </section>
         <!-- section3 -->
-        <section class="_about_section _about_section--3">
+        <section id="about_3" class="_about_section _about_section--3">
             <div class="_about_section3__main">
                     <div class="_about_section3__text">
-                            <h2>ABOUT INSEASON</h2>
-                            <p>「「時島」提供一種新的飲食選擇方式。我們依循自然時令，以12個月區分配置適宜的食材與料理。讓觀者理解四季的宜與忌，不侷限於健康飲食，而是回歸自然的節奏，在對的時間選擇對的食物。</p>
-                        </div>
+                        <h2 class="_about_section3__title mb-4">ABOUT INSEASON</h2>
+                        <p>「「時島」提供一種新的飲食選擇方式。我們依循自然時令，以12個月區分配置適宜的食材與料理。讓觀者理解四季的宜與忌，不侷限於健康飲食，而是回歸自然的節奏，在對的時間選擇對的食物。</p>
+                    </div>
                     <div class="_about_section3__img">
                         <img src="img/about/p3_people" alt="">
                         <span>02</span>
                     </div>
             </div>
             <div class="_about__scroll">
-                <span>Scroll it!</span>
+                <span class="mb-3">Scroll it!</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27.284" height="46.694" viewBox="0 0 27.284 46.694">
                     <g transform="translate(0.4 0.4)">
                         <g transform="translate(0 32.57)">
@@ -129,35 +129,58 @@
             </div>
         </section>
         <!-- section4 -->
-        <section class="_about_section _about_section--4">
-            <div>
-                <span>03</span>
-                <h2>CONTENT</h2>
-                <p>我們循著自然中的規則—24節氣、陰陽五行，建構出12座時島，呈現四季更迭的模樣。</p>
-            </div>
-            <div>
-                <div>
-                    <img src="img/about/p4_weather.svg" alt="">
-                    <span>WEATHER</span>
-                    <span>氣候</span>
-                </div>
-                <div>
-                    <img src="img/about/p4_land.svg" alt="">
-                    <span>LANDSCAPE</span>
-                    <span>地形</span>
-                </div>
-                <div>
-                    <img src="img/about/p4_crop.svg" alt="">
-                    <span>CROP</span>
-                    <span>作物</span>
-                </div>
-                <div>
-                    <img src="img/about/p4_char.svg" alt="">
-                    <span>CHARACTOR</span>
-                    <span>角色</span>
+        <section id="about_4" class="_about_section _about_section--4">
+            <div class="row">
+                <div class="_about_section4__main col-8 offset-2">
+                    <div class="row">
+                        <span class="col-1 offset-3">03</span>
+                        <div class="_about_section4__text col-5">
+                            <h2 class="_about_section4__title mb-2">CONTENT</h2>
+                            <p>我們循著自然中的規則—24節氣、陰陽五行，建構出12座時島，呈現四季更迭的模樣。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="">BACK TO TOP</a>
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <div class="row pb-4">
+                        <div class="_about_section4__info col-3">
+                            <div class="_about_section4__imgBlock mb-4">
+                                <img class="_about_section4__img" src="img/about/p4_weather.svg" alt="">
+                            </div>
+                            <span class="_about_section4__infoTitle mb-2">WEATHER</span>
+                            <span class="_about_section4__infoSub">氣候</span>
+                        </div>
+                        <div class="_about_section4__info col-3">
+                            <div class="_about_section4__imgBlock mb-4">
+                                <img class="_about_section4__img" src="img/about/p4_land.svg" alt="">
+                            </div>
+                            <span class="_about_section4__infoTitle mb-2">LANDSCAPE</span>
+                            <span class="_about_section4__infoSub">地形</span>
+                        </div>
+                        <div class="_about_section4__info col-3">
+                            <div class="_about_section4__imgBlock mb-4">
+                                <img class="_about_section4__img" src="img/about/p4_crop.svg" alt="">
+                            </div>
+                            <span class="_about_section4__infoTitle mb-2">CROP</span>
+                            <span class="_about_section4__infoSub">作物</span>
+                        </div>
+                        <div class="_about_section4__info col-3">
+                            <div class="_about_section4__imgBlock mb-4">
+                                <img class="_about_section4__img" src="img/about/p4_char.svg" alt="">
+                            </div>
+                            <span class="_about_section4__infoTitle mb-2">CHARACTOR</span>
+                            <span class="_about_section4__infoSub">角色</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-2 offset-5 text-center">
+                    <a class="_about__btn--back" href="">BACK TO TOP</a>
+                </div>
+            </div>
+            
         </section>
 
         <!-- Footer -->
