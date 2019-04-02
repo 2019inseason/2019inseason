@@ -1,0 +1,108 @@
+._recipeAll{
+    .swiper-container{
+        height: 100vh;
+    }
+    .swiper-slide{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        &--1{
+            background-image: url(../img/recipe-detail/bg1.png);
+        }
+        &--2{
+            background-image: url(../img/recipe-detail/bg2.png);
+        }
+        &--3{
+            background-image: url(../img/recipe-detail/bg3.png);
+        }
+        &--4{
+            background-image: url(../img/recipe-detail/bg4.png);
+        }
+        &--5{
+            background-image: url(../img/recipe-detail/bg5.png);
+        }
+        &--6{
+            background-image: url(../img/recipe-detail/bg6.png);
+        }
+        &--7{
+            background-image: url(../img/recipe-detail/bg7.png);
+        }
+        &--8{
+            background-image: url(../img/recipe-detail/bg8.png);
+        }
+        &--9{
+            background-image: url(../img/recipe-detail/bg9.png);
+        }
+        &--10{
+            background-image: url(../img/recipe-detail/bg10.png);
+        }
+        &--11{
+            background-image: url(../img/recipe-detail/bg11.png);
+        }
+        &--12{
+            background-image: url(../img/recipe-detail/bg12.png);
+        }
+
+    }
+    .swiper-button-next{
+        background-image: url(../img/icon/circle_arrow_right.svg);
+        right: 6%;
+    }
+    .swiper-button-prev{
+        background-image: url(../img/icon/circle_arrow_left.svg);
+        left: 6%;
+    }
+    .swiper-button-next,.swiper-button-prev{
+        width: 65px;
+        height: 80px;
+        background-size: contain;
+    }
+}
+._recipeAll__main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: right;
+    width: 65%;
+    color: #ffffff;
+    &--left{
+        text-align: left;
+    }
+}
+._recipeAll__name{
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 300;
+    &--en{
+        font-size: 18px;
+    }
+}
+._recipeAll__month{
+    display: block;
+    font-size: 5em;
+    margin-top: -15px;
+    &--inline{
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+._recipeAll__btn{
+    padding: 10px 35px;
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+    border-radius: 50px;
+
+    img{
+        width: 7px;
+        height: 10px;
+        vertical-align: middle;
+    }
+    span{
+        font-size: 12px;
+        color: #000000;
+        vertical-align: middle;
+        font-weight: 600;
+    }
+}

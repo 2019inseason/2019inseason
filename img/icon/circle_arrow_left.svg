@@ -1,0 +1,19 @@
+<svg id="Group_2726" data-name="Group 2726" xmlns="http://www.w3.org/2000/svg" width="123.02" height="123.02" viewBox="0 0 123.02 123.02">
+  <g id="Group_2451" data-name="Group 2451" transform="translate(39.376 73.661) rotate(-90)">
+    <g id="Group_2450" data-name="Group 2450" transform="translate(0)">
+      <g id="Group_2449" data-name="Group 2449" transform="translate(0 0)">
+        <g id="Group_2447" data-name="Group 2447">
+          <path id="Path_7360" data-name="Path 7360" d="M12.7,0,0,12.7,12.7,0l12.7,12.7" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8"/>
+        </g>
+        <g id="Group_2448" data-name="Group 2448" transform="translate(12.696 0)">
+          <line id="Line_346" data-name="Line 346" x1="12.696" y1="12.696" stroke-width="0.8" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </g>
+      </g>
+      <line id="Line_347" data-name="Line 347" y1="44.12" transform="translate(12.696 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8"/>
+    </g>
+  </g>
+  <g id="Ellipse_1392" data-name="Ellipse 1392" fill="none" stroke="#fff" stroke-width="0.8">
+    <circle cx="61.51" cy="61.51" r="61.51" stroke="none"/>
+    <circle cx="61.51" cy="61.51" r="61.11" fill="none"/>
+  </g>
+</svg>

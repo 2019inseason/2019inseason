@@ -11,5 +11,12 @@ $(function(){
             clickable: true
         },
     });
+    var swiper_recipeAll = new Swiper('.swiper-container--recipeAll', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 
 });
