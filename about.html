@@ -11,6 +11,9 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <script src="js/lib/jquery-3.2.1/jquery.min.js"></script>
     <script src="js/lib/jquery-3.2.1/jquery-migrate.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/headroom/0.9.4/jQuery.headroom.min.js"></script>
+    <script src="https://cdn.bootcss.com/headroom/0.9.4/headroom.min.js"></script> -->
+    <script src="js/site/nav.js"></script>
 
 </head>
 <body>
@@ -21,7 +24,7 @@
                 <div class="row align-items-center">
                     <div class="col-2 text-center">
                         <span class="align-middle mr-1">Menu</span>
-                        <svg class="_nav__menu align-middle" xmlns="http://www.w3.org/2000/svg" width="22"
+                        <svg id="nav-bar" class="_nav__menu_icon align-middle" xmlns="http://www.w3.org/2000/svg" width="22"
                             height="9" viewBox="0 0 22 9">
                             <g data-name="Group 138" transform="translate(-188.5 -78)">
                                 <line data-name="Line 1" x2="22" transform="translate(188.5 78.5)" fill="none" stroke="rgba(21,21,21,0.9)"
@@ -30,6 +33,26 @@
                                     stroke-width="1" />
                             </g>
                         </svg>
+                    </div>
+                    <div class="_nav_menu">
+                        <ul class="_nav_menu__block">
+                            <li>
+                                <a class="_nav_menu__title _nav_menu__title--home" href="index.html">inseason</a>
+                            </li>
+                            <li>
+                                <a class="_nav_menu__title _nav_menu__title--about" href="about.html">about</a>
+                            </li>
+                            <li>
+                                <a class="_nav_menu__title _nav_menu__title--explore" href="island.html">explore</a>
+                            </li>
+                            <li>
+                                <a class="_nav_menu__title _nav_menu__title--gallery" href="">gallery</a>
+                            </li>
+                            <li>
+                                <a class="_nav_menu__title _nav_menu__title--recipe" href="recipe.html">recipe</a>
+                            </li>
+                        </ul>
+                        <span class="_nav_menu__close"></span>
                     </div>
                     <img class="col-8 _nav__logo" src="./img/icon/logo.svg" alt="logo">
                     <div class="col-2 text-center">
