@@ -1,5 +1,4 @@
 ._nav{
-    // background-color: #fff6eb;
     // /* 設定Header置頂 */
     position: fixed;
     z-index: 100;
@@ -19,13 +18,132 @@
     }
 
 }
+._nav_menu{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF6EB;
+    // text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    li{
+        margin: 20px 0;
+    }
+
+    .MenuOpen &{
+        opacity: 1;
+        visibility: visible;
+        transition: all .3s;
+    }
+}
+._nav_menu__block{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 75%;
+    height: 66%;
+    text-align: center;
+    ul{
+        display: block;
+    }
+}
+._nav_menu__title {
+    color: #000000;
+    font-size: 50px;
+    &--project{
+        display: block;
+        &:hover > ._nav_menu__project{
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            transition: all .3s;
+        }
+    }
+    &--home{
+        &:hover{
+            color: #DDD658;
+        }
+    }
+    &--about{
+        &:hover{
+            color: #FFAA85;
+        }
+    }
+    &--explore{
+        &:hover{
+            color: #1789A0;
+        }
+    }
+    &--gallery{
+        &:hover{
+            color: #58AD5D;
+        }
+    }
+    &--recipe{
+        &:hover{
+            color: #F99128;
+        }
+    }
+
+}
+._nav_menu__close {
+    z-index: 99;
+    width: 55px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: calc(100% / 24);
+    cursor: pointer;
+    &:hover{
+        &::before,
+        &::after{
+            background-color: #AE7A39;
+        }
+        
+    }
+    
+    &::before,
+    &::after {
+        content: '';
+        width: 16px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background-color: #000000;
+        // transition: all .3s;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
 ._nav__logo{
     width: auto;
     max-height: 100%;
 }
-._nav__menu{
+._nav__menu_icon{
     width: auto;
     max-height: 15px;
+    cursor: pointer;
     &--white{
         line{
             stroke: #ffffff;
