@@ -7,17 +7,16 @@
     <meta name="description" content="Providing MIL-SPEC cable harnesses and integrated solutions to make the connections you can rely on.">
     <title>INSEASON</title>
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="img/favicon.png">
-    <script src="js/lib/jquery-3.2.1/jquery.min.js"></script>
-    <script src="js/lib/jquery-3.2.1/jquery-migrate.js"></script>
-    <script src="js/lib/swiper/swiper.js"></script>
-    <script src="js/site/recipe.js"></script>
-    <script src="js/site/nav.js"></script>
+    <script src="../js/lib/jquery-3.2.1/jquery.min.js"></script>
+    <script src="../js/lib/jquery-3.2.1/jquery-migrate.js"></script>
+    <script src="../js/site/dish.js"></script>
+    <script src="../js/site/nav.js"></script>
 
 </head>
 <body>
-    <div class="_recipe container-fluid">
+    <div class="_dish _dish--1 container-fluid js_ingredient">
         <!-- nav -->
         <nav id="nav" class="_nav _nav--white">
             <div class="container">
@@ -37,24 +36,24 @@
                     <div class="_nav_menu">
                         <ul class="_nav_menu__block">
                             <li>
-                                <a class="_nav_menu__title _nav_menu__title--home" href="index.html">inseason</a>
+                                <a class="_nav_menu__title _nav_menu__title--home" href="../index.html">inseason</a>
                             </li>
                             <li>
-                                <a class="_nav_menu__title _nav_menu__title--about" href="about.html">about</a>
+                                <a class="_nav_menu__title _nav_menu__title--about" href="../about.html">about</a>
                             </li>
                             <li>
-                                <a class="_nav_menu__title _nav_menu__title--explore" href="island.html">explore</a>
+                                <a class="_nav_menu__title _nav_menu__title--explore" href="../island.html">explore</a>
                             </li>
                             <li>
                                 <a class="_nav_menu__title _nav_menu__title--gallery" href="">gallery</a>
                             </li>
                             <li>
-                                <a class="_nav_menu__title _nav_menu__title--recipe" href="recipe.html">recipe</a>
+                                <a class="_nav_menu__title _nav_menu__title--recipe" href="../recipe.html">recipe</a>
                             </li>
                         </ul>
                         <span class="_nav_menu__close"></span>
                     </div>
-                    <img class="col-8 _nav__logo" src="./img/icon/logo-white.svg" alt="logo">
+                    <img class="col-8 _nav__logo" src="../img/icon/logo-white.svg" alt="logo">
                     <div class="col-2 text-center">
                         <svg class="_nav__sns _nav__sns--white align-middle mx-1" xmlns="http://www.w3.org/2000/svg"
                             width="16.691" height="16.691" viewBox="0 0 16.691 16.691">
@@ -81,31 +80,71 @@
                 </div>
             </div>
         </nav>
-        <div class="_recipe__main">
-            <h1 class="_recipe__title">INSEASON RECIPE</h1>
-            <a class="_recipe__btn" href="recipeAll/index.html">
-                <img src="img/icon/add.svg" alt="add">
-                <span>MORE</span>
-            </a>
+        <div class="_dish_ingredient__title _dish_ingredient__title--ingredient">
+            <h1>WHAT<br/>YOU<br/>NEED</h1>
+            <h2 class="mt-3">所需食材</h2>
         </div>
-
-        <div class="swiper-container swiper-container--recipe">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide--1"></div>
-                <div class="swiper-slide swiper-slide--2"></div>
-                <div class="swiper-slide swiper-slide--3"></div>
-                <div class="swiper-slide swiper-slide--4"></div>
-                <div class="swiper-slide swiper-slide--5"></div>
-                <div class="swiper-slide swiper-slide--6"></div>
-                <div class="swiper-slide swiper-slide--7"></div>
-                <div class="swiper-slide swiper-slide--8"></div>
-                <div class="swiper-slide swiper-slide--9"></div>
-                <div class="swiper-slide swiper-slide--10"></div>
-                <div class="swiper-slide swiper-slide--11"></div>
-                <div class="swiper-slide swiper-slide--12"></div>
+        <div class="_dish_ingredient__title _dish_ingredient__title--recipe">
+                <h1>HOW<br/>TO<br/>COOK</h1>
+                <h2 class="mt-3">烹調方法</h2>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+
+        <a class="_dish__back" href="index.html">
+            <img src="../img/icon/arrow_left.svg" alt="arrow_left">
+            <span>Back to menu</span>
+        </a>
+        <div class="_dish__tab">
+            <div class="_dish__tabBtn _dish__tabBtn--ingredient mr-3">
+                <span class="mr-2">Ingredient</span>
+                <span>食材</span>
+            </div>
+            <div class="_dish__tabBtn _dish__tabBtn--recipe">
+                <span class="mr-2">Recipe</span>
+                <span>食譜</span>
+            </div>
+        </div>
+        <div class="_dish_ingredient__content _dish_ingredient__content--ingredient">
+            <h3 class="mb-2">蔬菜/水果</h3>
+            <p class="mb-5">⾼麗菜、大白菜、菠菜、大蒜、蕃茄糊</p>
+            <h3 class="mb-2">肉類/海鮮</h3>
+            <p class="mb-5">蝦仁、蛋</p>
+            <h3 class="mb-2">調味料</h3>
+            <p>紅蔥頭、豬油、白胡椒粉、米酒<br/>鹽巴、柴⿂粉、⽩酒、麵粉、奶油</p>
+        </div>
+        <div class="_dish_ingredient__content _dish_ingredient__content--recipe">
+            <h3 class="mb-2">Step 1</h3>
+            <p class="mb-3">
+                取⾼麗菜與⼤白菜川燙後放涼，將梗劃除切小丁備⽤。
+            </p>
+            <h3 class="mb-2">Step 2</h3>
+            <p class="mb-3">菠菜取葉⼦川燙泡冰水冷卻，擠乾⽔分鋪平備用。<br/>
+                    葉梗不川燙，直接切小丁與⾼麗菜梗及⼤白菜梗混合。
+            </p>
+            <h3 class="mb-2">Step 3</h3>
+            <p class="mb-3">新鮮蝦仁去殼去腸泥，放入食物調理機中，<br/>
+                    加入蛋白、豬油白、⽩胡椒粉、米酒、鹽巴及柴魚粉調味。<br/>
+                    打成均勻泥狀，取出拌入葉梗蔬菜丁。<br/>
+                    葉梗不川燙，直接切小丁與⾼麗菜梗及⼤白菜梗混合。
+            </p>
+            <h3 class="mb-2">Step 4</h3>
+            <p class="mb-3">
+                    拉⼀層保鮮膜鋪平在桌面上，依序鋪上高麗菜、<br/>
+                    ⼤⽩菜、菠菜及蝦泥，再重複同樣的順序。<br/>
+                    捲起後用保鮮膜卷緊塑形。放入電鍋中外鍋3/4⽔蒸熟。
+            </p>
+            <h3 class="mb-2">Step 5</h3>
+            <p class="mb-3">
+                    熱油鍋，加入蝦殼、大蒜與紅蔥頭炒香。加入⽩酒鍋邊，<br/>
+                    注入熱開水，⼩火燉煮⼀⼩時。取出蝦高湯，<br/>
+                    放涼後放入調理機中打碎過濾。取另一鍋⼦⼩火熱油，<br/>
+                    放入一⼩匙番茄糊及一⼩匙麵粉，沖入蝦高湯，<br/>
+                    打蛋器攪拌均勻煮滾再過濾一次，濃縮。<br/>
+                    最後起鍋前丟入一小塊奶油增添味道光澤。
+            </p>
+            <h3 class="mb-2">Step 6</h3>
+            <p>
+                將蒸好的蝦卷取出，拆開保鮮膜，切塊。淋上蝦醬汁即可。
+            </p>
         </div>
         
         <!-- Footer -->

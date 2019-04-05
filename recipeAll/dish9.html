@@ -7,17 +7,16 @@
     <meta name="description" content="Providing MIL-SPEC cable harnesses and integrated solutions to make the connections you can rely on.">
     <title>INSEASON</title>
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="img/favicon.png">
-    <script src="js/lib/jquery-3.2.1/jquery.min.js"></script>
-    <script src="js/lib/jquery-3.2.1/jquery-migrate.js"></script>
-    <script src="js/lib/swiper/swiper.js"></script>
-    <script src="js/site/recipe.js"></script>
-    <script src="js/site/nav.js"></script>
+    <script src="../js/lib/jquery-3.2.1/jquery.min.js"></script>
+    <script src="../js/lib/jquery-3.2.1/jquery-migrate.js"></script>
+    <script src="../js/site/dish.js"></script>
+    <script src="../js/site/nav.js"></script>
 
 </head>
 <body>
-    <div class="_recipe container-fluid">
+    <div class="_dish _dish--9 container-fluid js_ingredient">
         <!-- nav -->
         <nav id="nav" class="_nav _nav--white">
             <div class="container">
@@ -37,24 +36,24 @@
                     <div class="_nav_menu">
                         <ul class="_nav_menu__block">
                             <li>
-                                <a class="_nav_menu__title _nav_menu__title--home" href="index.html">inseason</a>
+                                <a class="_nav_menu__title _nav_menu__title--home" href="../index.html">inseason</a>
                             </li>
                             <li>
-                                <a class="_nav_menu__title _nav_menu__title--about" href="about.html">about</a>
+                                <a class="_nav_menu__title _nav_menu__title--about" href="../about.html">about</a>
                             </li>
                             <li>
-                                <a class="_nav_menu__title _nav_menu__title--explore" href="island.html">explore</a>
+                                <a class="_nav_menu__title _nav_menu__title--explore" href="../island.html">explore</a>
                             </li>
                             <li>
                                 <a class="_nav_menu__title _nav_menu__title--gallery" href="">gallery</a>
                             </li>
                             <li>
-                                <a class="_nav_menu__title _nav_menu__title--recipe" href="recipe.html">recipe</a>
+                                <a class="_nav_menu__title _nav_menu__title--recipe" href="../recipe.html">recipe</a>
                             </li>
                         </ul>
                         <span class="_nav_menu__close"></span>
                     </div>
-                    <img class="col-8 _nav__logo" src="./img/icon/logo-white.svg" alt="logo">
+                    <img class="col-8 _nav__logo" src="../img/icon/logo-white.svg" alt="logo">
                     <div class="col-2 text-center">
                         <svg class="_nav__sns _nav__sns--white align-middle mx-1" xmlns="http://www.w3.org/2000/svg"
                             width="16.691" height="16.691" viewBox="0 0 16.691 16.691">
@@ -81,31 +80,55 @@
                 </div>
             </div>
         </nav>
-        <div class="_recipe__main">
-            <h1 class="_recipe__title">INSEASON RECIPE</h1>
-            <a class="_recipe__btn" href="recipeAll/index.html">
-                <img src="img/icon/add.svg" alt="add">
-                <span>MORE</span>
-            </a>
+        <div class="_dish_ingredient__title _dish_ingredient__title--ingredient">
+            <h1>WHAT<br/>YOU<br/>NEED</h1>
+            <h2 class="mt-3">所需食材</h2>
         </div>
-
-        <div class="swiper-container swiper-container--recipe">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide--1"></div>
-                <div class="swiper-slide swiper-slide--2"></div>
-                <div class="swiper-slide swiper-slide--3"></div>
-                <div class="swiper-slide swiper-slide--4"></div>
-                <div class="swiper-slide swiper-slide--5"></div>
-                <div class="swiper-slide swiper-slide--6"></div>
-                <div class="swiper-slide swiper-slide--7"></div>
-                <div class="swiper-slide swiper-slide--8"></div>
-                <div class="swiper-slide swiper-slide--9"></div>
-                <div class="swiper-slide swiper-slide--10"></div>
-                <div class="swiper-slide swiper-slide--11"></div>
-                <div class="swiper-slide swiper-slide--12"></div>
+        <div class="_dish_ingredient__title _dish_ingredient__title--recipe">
+                <h1>HOW<br/>TO<br/>COOK</h1>
+                <h2 class="mt-3">烹調方法</h2>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+
+        <a class="_dish__back" href="index.html">
+            <img src="../img/icon/arrow_left.svg" alt="arrow_left">
+            <span>Back to menu</span>
+        </a>
+        <div class="_dish__tab">
+            <div class="_dish__tabBtn _dish__tabBtn--ingredient mr-3">
+                <span class="mr-2">Ingredient</span>
+                <span>食材</span>
+            </div>
+            <div class="_dish__tabBtn _dish__tabBtn--recipe">
+                <span class="mr-2">Recipe</span>
+                <span>食譜</span>
+            </div>
+        </div>
+        <div class="_dish_ingredient__content _dish_ingredient__content--ingredient">
+            <h3 class="mb-2">蔬菜/水果</h3>
+            <p class="mb-5">花椰菜、小番茄、南瓜</p>
+            <h3 class="mb-2">肉類/海鮮</h3>
+            <p class="mb-5">雞肉</p>
+            <h3 class="mb-2">調味料</h3>
+            <p>無糖優格、鹽巴、薑黃粉、<br/>
+                    白胡椒、煙燻紅椒粉
+        </div>
+        <div class="_dish_ingredient__content _dish_ingredient__content--recipe">
+            <h3 class="mb-2">Step 1</h3>
+            <p class="mb-3">
+                雞肉用餐巾紙吸乾，放入深盤中，加入無糖優格，<br/>
+                薑黃粉，煙薰紅椒粉，白胡椒粉，鹽巴，<br/>
+                抓揉均勻，放入冰箱中醃一個小時。
+            </p>
+            <h3 class="mb-2">Step 2</h3>
+            <p class="mb-3">
+                花椰菜，小番茄，南瓜放入盆中，<br/>
+                淋橄欖油，撒鹽巴以及胡椒粉。
+            </p>
+            <h3 class="mb-2">Step 3</h3>
+            <p>
+                將蔬菜鋪平在烤盤底，鋪上雞肉，<br/>
+                用180度烤25-30分鐘即可。
+            </p>
         </div>
         
         <!-- Footer -->
