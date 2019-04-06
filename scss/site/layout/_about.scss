@@ -32,7 +32,8 @@
     left: 0;
     margin: auto;
     text-align: center;
-    a{
+    span{
+        cursor: pointer;
         display: block;
         width: 30%;
         margin: 10% auto 0 auto;
@@ -49,6 +50,7 @@
         bottom: 0;
         width: 80%;
         margin: auto;
+        pointer-events: none;
     }
 }
 ._about_section1__title{
@@ -255,4 +257,5 @@
     padding: 18px 30px;
     border: 1px solid #707070;
     border-radius: 50px;
+    cursor: pointer;
 }
