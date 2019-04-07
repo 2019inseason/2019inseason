@@ -45,7 +45,7 @@
 
     }
     .swiper-pagination-bullets{
-        bottom: 85px;
+        bottom: 10%;
     }
     .swiper-pagination-bullet{
         background: transparent;
@@ -63,18 +63,20 @@
     width: 80%;
 }
 ._recipe__title{
-    font-size: 7em;
+    font-size: 9em;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
+    font-weight: bold;
+    letter-spacing: 4px;
 }
 ._recipe__btn{
-    padding: 15px 40px;
+    padding: 13px 38px;
     background-color: rgba($color: #ffffff, $alpha: 0.9);
     border-radius: 50px;
 
     img{
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         vertical-align: middle;
     }
     span{
@@ -82,5 +84,7 @@
         color: #000000;
         vertical-align: middle;
         font-weight: 600;
+        letter-spacing: 2px;
+        margin-left: 5px;
     }
 }

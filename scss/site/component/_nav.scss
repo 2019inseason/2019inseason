@@ -5,18 +5,24 @@
     right: 0;
     left: 0;
     top: 0;
-    padding: 50px 0 0 0;
-    &--white{
+    padding: 4% 0 0 0;
+    // &--white{
         background-color: transparent;
-    }
+    // }
     .container{
         padding: 0;
     }
     span{
         font-size: 20px;
         font-weight: bold;
+        letter-spacing: 1px;
     }
 
+}
+._nav__menu{
+    ._nav--white &{
+        color: #ffffff;
+    }
 }
 ._nav_menu{
     position: fixed;
@@ -32,7 +38,7 @@
     transition: all .3s;
 
     li{
-        margin: 35px 0;
+        margin: 50px 0;
     }
 
     .MenuOpen &{
@@ -60,7 +66,7 @@
 }
 ._nav_menu__title {
     color: #000000;
-    font-size: 55px;
+    font-size: 60px;
     &--project{
         display: block;
         &:hover > ._nav_menu__project{
@@ -147,14 +153,15 @@
     width: auto;
     max-height: 15px;
     cursor: pointer;
-    &--white{
+    margin-bottom: 2px;
+    ._nav--white &{
         line{
             stroke: #ffffff;
         }
     }
 }
 ._nav__sns{
-    &--white{
+    ._nav--white &{
         path{
             fill: #ffffff;
         }

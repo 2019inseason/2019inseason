@@ -6,7 +6,7 @@ $(function(){
         $('html,body').animate({scrollTop:$('#about_1').offset().top}, 500);
     });
     $(document).on("scroll", function(e){ 
-        console.log(e);
+        // console.log(e);
             
     });
 

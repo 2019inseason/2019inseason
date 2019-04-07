@@ -44,18 +44,22 @@
 }
 ._dish_ingredient__title{
     position: absolute;
-    left: 10%;
+    left: 12%;
     top: 0;
     bottom: 0;
     margin: auto;
     width: 30%;
     height: 30%;
     h1{
-        font-size: 3em;
+        font-size: 5em;
+        font-weight: bold;
+        line-height: 100px;
     }
     h2{
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 300;
+        font-family: 'Kozuka Mincho Pr6N R';
+        letter-spacing: 9px;
     }
     &--ingredient{
         opacity: 0;
@@ -72,8 +76,8 @@
 }
 ._dish__back{
     position: absolute;
-    left: 10%;
-    bottom: 15%;
+    left: 12%;
+    bottom: 12%;
     margin: auto;
     width: 30%;
     color: #ffffff;
@@ -85,20 +89,24 @@
     }
     span{
         vertical-align: middle;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-left: 5px;
     }
 }
 ._dish__tab{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 15%;
+    bottom: 12%;
     margin: auto;
     width: 30%;
     text-align: center;
 }
 ._dish__tabBtn{
     display: inline-block;
-    padding: 5px 0;
+    padding: 0 0 7px 0;
+    font-family: 'Kozuka Mincho Pr6N R';
     cursor: pointer;
     &--ingredient{
         .js_ingredient &{
@@ -110,23 +118,39 @@
             border-bottom: 1px solid #ffffff;
         }
     }
+    span{
+        letter-spacing: 1px;
+    }
     
 }
 ._dish_ingredient__content{
+    // position: absolute;
+    // right: 6%;
+    // top: 50%;
+    // transform: translate(-6%, -50%);
+    // font-weight: 300;
     position: absolute;
-    right: 6%;
     top: 50%;
-    transform: translate(-6%, -50%);
+    transform: translate(0%, -50%);
     font-weight: 300;
+    width: 30%;
+    right: -4%;
+    font-family: 'Kozuka Mincho Pr6N R';
+
     h3{
-        font-size: 16px;
+        font-size: 19px;
         display: block;
-        // position: absolute;
+        letter-spacing: 4px;
     }
     p{
-        font-size: 12px;
+        font-size: 14px;
         display: block;
-        // position: absolute;
+        letter-spacing: 2px;
+        // font-weight: 100;
+        margin-bottom: 9%;  
+        &:last-child{
+            margin-bottom: 0;
+        }  
     }
     &--ingredient{
         // padding-right: 5%;

@@ -53,7 +53,8 @@
         left: 6%;
     }
     .swiper-button-next,.swiper-button-prev{
-        width: 65px;
+        // width: 65px;
+        width: 12%;
         height: 80px;
         background-size: contain;
     }
@@ -65,24 +66,29 @@
     transform: translate(-50%, -50%);
     z-index: 10;
     text-align: right;
-    width: 65%;
+    width: 50%;
     color: #ffffff;
     &--left{
         text-align: left;
     }
 }
 ._recipeAll__name{
+    font-family: 'Kozuka Mincho Pr6N R';
     margin-bottom: 10px;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 100;
+    letter-spacing: 6px;
     &--en{
-        font-size: 18px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 27px;
     }
 }
 ._recipeAll__month{
     display: block;
-    font-size: 5em;
+    font-size: 6em;
     margin-top: -15px;
+    font-weight: bold;
     &--inline{
         display: inline-block;
         vertical-align: middle;
@@ -90,8 +96,8 @@
 }
 
 ._recipeAll__btn{
-    padding: 10px 35px;
-    background-color: rgba($color: #ffffff, $alpha: 0.9);
+    padding: 8px 31px 10px;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50px;
 
     img{
@@ -103,6 +109,7 @@
         font-size: 12px;
         color: #000000;
         vertical-align: middle;
-        font-weight: 600;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
 }
