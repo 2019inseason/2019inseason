@@ -322,15 +322,98 @@
     opacity: 0.5;
 }
 ._island_crop{
-    z-index: 100;
+    z-index: 1000;
     position: absolute;
     width: 60vw;
     height: 100%;
     background-color: #FFEDD5;
 }
+._island_crop__close{
+    z-index: 99;
+    width: 55px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: calc(100% / 24);
+    cursor: pointer;
+    &:hover{
+        &::before,
+        &::after{
+            background-color: #AE7A39;
+        }
+        
+    }
+    &::before,
+    &::after {
+        content: '';
+        width: 20px;
+        height: 1px;
+        display: block;
+        position: absolute;
+        top: -60px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background-color: #000000;
+        // transition: all .3s;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
 ._island_crop__window{
     display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
 }
 ._island_crop__main{
-    max-width: 70%;
+    align-self: center;
+    img{
+        display: block;
+        max-width: 80%;
+    }
+}
+._island_crop__title{
+    h1{
+        font-size: 32px;
+        display: inline-block;
+    }
+    h2{
+        font-size: 16px;
+        font-weight: bold;
+        display: inline-block;
+    }
+    span{
+        font-size: 14px;
+        display: block;
+    }
+}
+._island_crop__info{
+    display: flex;
+}
+._island_crop__text{
+    em{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+._island_crop__info{
+    span{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 12px;
+    }
 }
