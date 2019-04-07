@@ -7672,7 +7672,7 @@ footer {
   right: 0;
   left: 0;
   top: 0;
-  padding: 50px 0 13px; }
+  padding: 50px 0 0 0; }
   ._nav--white {
     background-color: transparent; }
   ._nav .container {
@@ -7695,7 +7695,7 @@ footer {
   -o-transition: all .3s;
   transition: all .3s; }
   ._nav_menu li {
-    margin: 20px 0; }
+    margin: 35px 0; }
   .MenuOpen ._nav_menu {
     opacity: 1;
     visibility: visible;
@@ -7705,20 +7705,18 @@ footer {
 
 ._nav_menu__block {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 75%;
-  height: 66%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center; }
   ._nav_menu__block ul {
     display: block; }
 
 ._nav_menu__title {
   color: #000000;
-  font-size: 50px; }
+  font-size: 55px; }
   ._nav_menu__title--project {
     display: block; }
     ._nav_menu__title--project:hover > ._nav_menu__project {
@@ -8279,6 +8277,11 @@ footer {
 
 ._island_crop__info p {
   font-size: 12px; }
+
+#cabbage {
+  z-index: 99; }
+  #cabbage:hover {
+    opacity: 0; }
 
 ._recipe .swiper-container {
   height: 100vh; }

@@ -3,7 +3,7 @@ $(function(){
     var y = -90;
     var bgColor = ['#006781', '#4B8D32', '#D6CD25', '#006857', '#ED7235', '#FF947B', '#AF485C', '#F7B42F', '#AE7516', '#C99A6B', '#2E8E89', '#325984']
     var index = 0;
-    var animArray = ['feb.json'];
+    var animArray = ['feb02.json'];
     var animIndex = 0;
 
     $('._island_intro__seasonSection--1').addClass('active');
@@ -104,19 +104,19 @@ $(function(){
         anim = bodymovin.loadAnimation(animData);
         
         //等bodymovin生出svg時再執行parallax.js
-        anim.addEventListener('DOMLoaded', function(){
+        // anim.addEventListener('DOMLoaded', function(){
 
-                $("#bodymovin svg").attr("data-depth",1);
-                var scene = document.getElementById('bodymovin');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    // hoverOnly: true,
-                    originX:0,
-                    limitY:0,
-                    limitX: $("#bodymovin svg").width()-$(window).width(),
+        //         $("#bodymovin svg").attr("data-depth",1);
+        //         var scene = document.getElementById('bodymovin');
+        //         var parallaxInstance = new Parallax(scene, {
+        //             relativeInput: true,
+        //             // hoverOnly: true,
+        //             originX:0,
+        //             limitY:0,
+        //             limitX: $("#bodymovin svg").width()-$(window).width(),
                     
-                });  
-        });
+        //         });  
+        // });
         setTimeout(function(){
             $('._island_intro').addClass('active');
             $('._island_intro__bgImg').addClass('active');
