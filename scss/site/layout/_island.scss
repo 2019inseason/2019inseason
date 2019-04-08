@@ -303,12 +303,9 @@
    
     
     svg{
-        width: auto !important;
+        // width: auto !important;
         height: 100vh !important;
-        // transform: translate3d(-380px, 0px, 0px)!important; 
         transform-origin: 50% 50% !important;
-        // transform: translateX(-50%) !important;
-        // transform: scale(1.06) !important;
         overflow: unset;
     }
     
@@ -320,6 +317,10 @@
     height: 100%;
     background-color: #000;
     opacity: 0.5;
+    display: none;
+    .popup &{
+        display: block;
+    }
 }
 ._island_crop{
     z-index: 1000;
@@ -327,23 +328,35 @@
     width: 60vw;
     height: 100%;
     background-color: #FFEDD5;
+    display: none;
+    &.active{
+        display: block;
+    }
 }
 ._island_crop__close{
     z-index: 99;
-    width: 55px;
-    height: 25px;
+    width: 60px;
+    height: 50px;
     display: block;
     position: absolute;
     top: 70px;
     right: calc(100% / 24);
     cursor: pointer;
     &:hover{
-        &::before,
-        &::after{
-            background-color: #AE7A39;
+        ._island_crop__close-icon{
+            &::before,
+            &::after{
+                background-color: #AE7A39;
+            }
         }
-        
     }
+}
+._island_crop__close-icon{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    margin: auto;
     &::before,
     &::after {
         content: '';
@@ -351,12 +364,13 @@
         height: 1px;
         display: block;
         position: absolute;
-        top: -60px;
+        top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         margin: auto;
         background-color: #000000;
+        pointer-events: none;
         // transition: all .3s;
     }
 
@@ -367,6 +381,10 @@
     &::after {
         transform: rotate(-45deg);
     }
+}
+._island_crop__close-text{
+    position: absolute;
+    bottom: 0;
 }
 ._island_crop__window{
     display: flex;
@@ -385,7 +403,9 @@
     }
 }
 ._island_crop__title{
+    margin-top: 25px;
     h1{
+        font-family: 'Kozuka Mincho Pr6N';
         font-size: 32px;
         display: inline-block;
     }
@@ -395,8 +415,10 @@
         display: inline-block;
     }
     span{
+        margin-top: 10px;
         font-size: 14px;
         display: block;
+        font-family: 'Kozuka Mincho Pr6N';
     }
 }
 ._island_crop__info{
@@ -406,20 +428,48 @@
     em{
         font-size: 18px;
         font-weight: 600;
+        border-bottom: 1px solid;
     }
 }
 ._island_crop__info{
-    span{
-        font-size: 14px;
-        font-weight: 500;
+    div{
+        margin-bottom: 1rem;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
     }
     p{
         font-size: 12px;
+        font-family: 'Kozuka Mincho Pr6N';
+    }
+}
+._island_crop__infoTitle{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    &--tw{
+        font-family: 'Kozuka Mincho Pr6N';
     }
 }
 #cabbage{
     z-index: 99;
+    cursor: pointer;
+    position: relative;
     &:hover{
-        opacity: 0;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        top: 0;
+        // g{
+        //     path{
+        //         opacity: 0.5;
+        //     }
+        // }
+        // opacity: 0.5;
+        // background-color:rgba(255,255,255,0.3);
     }
 }
