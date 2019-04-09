@@ -8211,11 +8211,15 @@ footer {
     visibility: visible; }
 
 ._island_detail__anim svg {
+  width: auto !important;
   height: 100vh !important;
   -webkit-transform-origin: 50% 50% !important;
   -ms-transform-origin: 50% 50% !important;
   transform-origin: 50% 50% !important;
-  overflow: unset; }
+  overflow: unset;
+  -webkit-transition: translate 0.3s ease-in-out;
+  -o-transition: translate 0.3s ease-in-out;
+  transition: translate 0.3s ease-in-out; }
 
 ._island_crop__shadow {
   z-index: 100;
