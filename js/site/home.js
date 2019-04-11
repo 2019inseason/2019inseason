@@ -37,4 +37,6 @@ $(function(){
         $("._home__title").removeClass('active');
         $("._home_island__img--island1,._home_island__img--island2,._home_island__img--island3,._home_island__img--island4").addClass('active');
     });
+
+    
 });
