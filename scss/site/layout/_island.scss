@@ -142,13 +142,13 @@
 }
 ._island_intro__text{
     position: absolute;
-    bottom: -30px;
-    left: 0;
-    right: 0;
+    bottom: 6%;
+    left: 11%;
     margin: auto;
     color: #fff;
     font-size: 17px;
     text-align: center;
+    z-index: 999;
 }
 
 
@@ -454,14 +454,13 @@
     }
 }
 #cabbage{
-    z-index: 99;
     cursor: pointer;
     position: relative;
     &:hover{
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background-color: red;
-        top: 0;
+        g{
+            path{
+                fill: hsl(100%, 100%, 95%);
+            }
+        }
     }
 }

@@ -7911,6 +7911,26 @@ footer {
     position: absolute;
     top: 50%; }
 
+._home__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  font-size: 4em;
+  font-weight: bold;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in; }
+  ._home__title.active {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out; }
+
 ._island .swiper-container {
   position: unset !important; }
 
@@ -8053,13 +8073,13 @@ footer {
 
 ._island_intro__text {
   position: absolute;
-  bottom: -30px;
-  left: 0;
-  right: 0;
+  bottom: 6%;
+  left: 11%;
   margin: auto;
   color: #fff;
   font-size: 17px;
-  text-align: center; }
+  text-align: center;
+  z-index: 999; }
 
 ._island_intro__bgImg {
   width: 100vw;
@@ -8353,15 +8373,10 @@ footer {
     font-family: 'Kozuka Mincho Pr6N'; }
 
 #cabbage {
-  z-index: 99;
   cursor: pointer;
   position: relative; }
-  #cabbage:hover {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    top: 0; }
+  #cabbage:hover g path {
+    fill: #eeffe6; }
 
 ._recipe .swiper-container {
   height: 100vh; }
