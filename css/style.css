@@ -8925,3 +8925,47 @@ footer {
     opacity: 0; }
     .js_recipe ._dish_ingredient__content--recipe {
       opacity: 1; }
+
+._gallery {
+  background-image: url(../img/gallery/char_bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  ._gallery .container {
+    max-width: 1200px; }
+
+._gallery__content {
+  padding: 155px 0 170px; }
+
+._gallery__tab {
+  text-align: center;
+  padding-top: 8%; }
+
+._gallery__tabBtn {
+  display: inline-block;
+  margin: 0px 20px; }
+
+._gallery__tabName {
+  display: inline-block; }
+
+._gallery_char__row {
+  margin-top: 10%; }
+
+._gallery_char__block {
+  width: 70%;
+  margin: auto; }
+
+._gallery_char__no {
+  display: block;
+  text-align: left;
+  font-style: italic;
+  font-size: 18px; }
+
+._gallery_char__img {
+  max-height: 280px;
+  margin: 30px 0px; }
+
+._gallery_char__name {
+  display: block;
+  font-weight: bold;
+  font-size: 24px; }
