@@ -17,11 +17,13 @@
     <script src="js/lib/smooth-scroll-1.4.6/smooth-scroll.js"></script>
     <script src="js/lib/animsition-master/animsition.min.js"></script>
     <script src="js/site/global.js"></script>
+    <script src="js/site/gallery.js"></script>
 
 </head>
 
 <body>
-    <div class="_gallery container-fluid animsition">
+    <div class="_gallery container-fluid animsition char">
+        <!-- <div class="_gallery__bg"> -->
         <!-- nav -->
         <nav id="nav" class="_nav">
             <div class="row align-items-center">
@@ -92,112 +94,116 @@
             </div>
         </nav>
 
-        <div class="_gallery__content">
+        <!-- 角色 -->
+        <div class="_gallery__content _gallery__content--char">
             <div class="container">
                 <div class="_gallery__tab">
-                    <div class="_gallery__tabBtn">
+                    <div class="_gallery__tabBtn js-btn--char active">
                         <span class="_gallery__tabName _gallery__tabName--en mr-2">Character</span>
                         <span class="_gallery__tabName _gallery__tabName--tw">角色</span>
                     </div>
-                    <div class="_gallery__tabBtn">
+                    <div class="_gallery__tabBtn js-btn--crop">
                         <span class="_gallery__tabName _gallery__tabName--en mr-2">Crop</span>
                         <span class="_gallery__tabName _gallery__tabName--tw">產物</span>
                     </div>
                 </div>
-                <div class="_gallery_char__row row">
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.001</span>
-                            <img class="_gallery_char__img" src="img/gallery/char1.svg" alt="char1">
-                            <span class="_gallery_char__name">MARO</span>
+                <div class="_gallery_char__content">
+                    <div class="_gallery_char__row row">
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.001</span>
+                                <img class="_gallery_char__img" src="img/gallery/char1.svg" alt="char1">
+                                <span class="_gallery_char__name">MARO</span>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.002</span>
+                                <img class="_gallery_char__img" src="img/gallery/char2.svg" alt="char2">
+                                <span class="_gallery_char__name">YONI</span>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.003</span>
+                                <img class="_gallery_char__img" src="img/gallery/char3.svg" alt="char3">
+                                <span class="_gallery_char__name">FORA</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.002</span>
-                            <img class="_gallery_char__img" src="img/gallery/char2.svg" alt="char2">
-                            <span class="_gallery_char__name">YONI</span>
+                    <div class="_gallery_char__row row">
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.004</span>
+                                <img class="_gallery_char__img" src="img/gallery/char4.svg" alt="char4">
+                                <span class="_gallery_char__name">PERIS</span>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.005</span>
+                                <img class="_gallery_char__img" src="img/gallery/char5.svg" alt="char5">
+                                <span class="_gallery_char__name">YUNA</span>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.006</span>
+                                <img class="_gallery_char__img" src="img/gallery/char6.svg" alt="char6">
+                                <span class="_gallery_char__name">TIKO</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.003</span>
-                            <img class="_gallery_char__img" src="img/gallery/char3.svg" alt="char3">
-                            <span class="_gallery_char__name">FORA</span>
+                    <div class="_gallery_char__row row">
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.007</span>
+                                <img class="_gallery_char__img" src="img/gallery/char7.svg" alt="char7">
+                                <span class="_gallery_char__name">ANTE</span>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.008</span>
+                                <img class="_gallery_char__img" src="img/gallery/char8.svg" alt="char8">
+                                <span class="_gallery_char__name">EILI</span>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.009</span>
+                                <img class="_gallery_char__img" src="img/gallery/char9.svg" alt="char9">
+                                <span class="_gallery_char__name">PEKO</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="_gallery_char__row row">
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.004</span>
-                            <img class="_gallery_char__img" src="img/gallery/char4.svg" alt="char4">
-                            <span class="_gallery_char__name">PERIS</span>
+                    <div class="_gallery_char__row row">
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.010</span>
+                                <img class="_gallery_char__img" src="img/gallery/char10.svg" alt="char10">
+                                <span class="_gallery_char__name">KANTA</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.005</span>
-                            <img class="_gallery_char__img" src="img/gallery/char5.svg" alt="char5">
-                            <span class="_gallery_char__name">YUNA</span>
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.011</span>
+                                <img class="_gallery_char__img" src="img/gallery/char11.svg" alt="char11">
+                                <span class="_gallery_char__name">CHIE</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.006</span>
-                            <img class="_gallery_char__img" src="img/gallery/char6.svg" alt="char6">
-                            <span class="_gallery_char__name">TIKO</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="_gallery_char__row row">
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.007</span>
-                            <img class="_gallery_char__img" src="img/gallery/char7.svg" alt="char7">
-                            <span class="_gallery_char__name">ANTE</span>
-                        </div>
-                    </div>
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.008</span>
-                            <img class="_gallery_char__img" src="img/gallery/char8.svg" alt="char8">
-                            <span class="_gallery_char__name">EILI</span>
-                        </div>
-                    </div>
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.009</span>
-                            <img class="_gallery_char__img" src="img/gallery/char9.svg" alt="char9">
-                            <span class="_gallery_char__name">PEKO</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="_gallery_char__row row">
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.010</span>
-                            <img class="_gallery_char__img" src="img/gallery/char10.svg" alt="char10">
-                            <span class="_gallery_char__name">KANTA</span>
-                        </div>
-                    </div>
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.011</span>
-                            <img class="_gallery_char__img" src="img/gallery/char11.svg" alt="char11">
-                            <span class="_gallery_char__name">CHIE</span>
-                        </div>
-                    </div>
-                    <div class="col text-center">
-                        <div class="_gallery_char__block">
-                            <span class="_gallery_char__no">No.012</span>
-                            <img class="_gallery_char__img" src="img/gallery/char12.svg" alt="char12">
-                            <span class="_gallery_char__name">SYNA</span>
+                        <div class="col text-center">
+                            <div class="_gallery_char__block">
+                                <span class="_gallery_char__no">No.012</span>
+                                <img class="_gallery_char__img" src="img/gallery/char12.svg" alt="char12">
+                                <span class="_gallery_char__name">SYNA</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- </div> -->
 
 
 
@@ -206,6 +212,7 @@
             <span>Copyright © 2019 INSEASON</span>
         </footer>
     </div>
+
 </body>
 
 </html>
