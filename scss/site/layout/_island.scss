@@ -31,7 +31,7 @@
     margin-top: -100vh;
     z-index: 99;
     box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
-    transition: all 1s ease-in-out;
+    transition: background-color 1s ease-in-out;
 
     ._island_intro.active &{
         left: -200vh;
@@ -98,7 +98,7 @@
     // height: 80%;
     display: flex;
     // margin: 0 10%;
-    margin: auto 10%;
+    margin: auto 8%;
     width: 30%;
 }
 ._island_intro__main--reverse{
@@ -107,7 +107,7 @@
     // height: 80%;
     display: flex;
     // margin: 0 10%;
-    margin: auto 10%;
+    margin: auto 8%;
     width: 30%;
     transform: rotate(-180deg);
 }
@@ -115,25 +115,23 @@
     position: absolute;
     top: 0;
     left: 0;
-    // height: 100%;
-    height: 95%;
+    height: 100%;
     right: 0;
     bottom: 0;
     margin: auto;
 }
 ._island_intro__month{
     position: absolute;
-    bottom: 0;
-    // left: 70%;
-    // right: 5%;
-    right: 0;
+    bottom: 28px;
+    right: 55px;
     
     color: #fff;
     font-weight: bold;    
     p{
         display: inline-block;
-        margin: 0;
-        font-size: 16px;
+        margin: 0 8px;
+        font-size: 20px;
+        letter-spacing: 2px;
     }
     span{
         display: inline-block;
@@ -142,8 +140,8 @@
 }
 ._island_intro__text{
     position: absolute;
-    bottom: 6%;
-    left: 11%;
+    bottom: 8%;
+    left: 16%;
     margin: auto;
     color: #fff;
     font-size: 17px;
@@ -314,8 +312,8 @@
     position: absolute;
     width: 100vw;
     height: 100%;
-    background-color: #000;
-    opacity: 0.5;
+    background-color: #484848;
+    opacity: 0.4;
     display: none;
     .popup &{
         display: block;
@@ -324,13 +322,17 @@
 ._island_crop{
     z-index: 1000;
     position: absolute;
-    width: 60vw;
+    width: 48vw;
     height: 100%;
     background-color: #FFEDD5;
     display: none;
+    box-shadow: 4px 0 5px rgba($color: #000000, $alpha: 0.4);
     &.active{
         display: block;
     }
+}
+._island_crop__content{
+    width: 42%;
 }
 ._island_crop__close{
     z-index: 99;
@@ -396,9 +398,10 @@
 }
 ._island_crop__main{
     align-self: center;
+    width: 50%;
     img{
         display: block;
-        max-width: 80%;
+        max-width: 335px;
     }
 }
 ._island_crop__title{
@@ -407,17 +410,22 @@
         font-family: 'Kozuka Mincho Pr6N';
         font-size: 32px;
         display: inline-block;
+        letter-spacing: 5px;
     }
     h2{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: bold;
         display: inline-block;
+        vertical-align: bottom;
+        margin-left: 8px;
+        letter-spacing: 1px;
     }
     span{
         margin-top: 10px;
         font-size: 14px;
         display: block;
         font-family: 'Kozuka Mincho Pr6N';
+        letter-spacing: 2px;
     }
 }
 ._island_crop__info{
@@ -425,14 +433,15 @@
 }
 ._island_crop__text{
     em{
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 600;
+        margin-left: 7px;
         border-bottom: 1px solid;
     }
 }
 ._island_crop__info{
     div{
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     img{
         width: 30px;
@@ -440,27 +449,41 @@
         margin-right: 15px;
     }
     p{
-        font-size: 12px;
+        font-size: 13px;
         font-family: 'Kozuka Mincho Pr6N';
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 20px;
     }
 }
 ._island_crop__infoTitle{
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     margin-bottom: 8px;
     &--tw{
+        font-size: 14px;
         font-family: 'Kozuka Mincho Pr6N';
+        letter-spacing: 2px;
+        margin-right: 4px;
     }
 }
 #cabbage{
     cursor: pointer;
     position: relative;
-    &:hover{
-        g{
-            path{
-                fill: hsl(100%, 100%, 95%);
-            }
-        }
-    }
+    filter: opacity(0.5);
+    // &:hover{
+        // g{
+        //     path{
+        //         // fill: hsl(100%, 100%, 50%);
+        //         // filter:opacity(.8);
+        //         // stroke-width="7";
+        //         // stroke: red;
+                
+                
+        //     }
+        // }
+        
+        
+    // }
 }

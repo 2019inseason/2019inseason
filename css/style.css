@@ -7838,7 +7838,10 @@ footer {
     background-image: url(../img/home/island1_opacity.svg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.3s ease-in;
+    -o-transition: background-image 0.3s ease-in;
+    transition: background-image 0.3s ease-in; }
     ._home_island__img--island1.active {
       background-image: url(../img/home/island1.svg); }
   ._home_island__img--island2 {
@@ -7850,7 +7853,10 @@ footer {
     background-image: url(../img/home/island2_opacity.svg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.3s ease-in;
+    -o-transition: background-image 0.3s ease-in;
+    transition: background-image 0.3s ease-in; }
     ._home_island__img--island2.active {
       background-image: url(../img/home/island2.svg); }
   ._home_island__img--island3 {
@@ -7913,7 +7919,7 @@ footer {
 
 ._home__title {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -7961,9 +7967,9 @@ footer {
   z-index: 99;
   -webkit-box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  -webkit-transition: background-color 1s ease-in-out;
+  -o-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out; }
   ._island_intro.active ._island_intro__circle {
     left: -200vh; }
 
@@ -8033,7 +8039,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto 10%;
+  margin: auto 8%;
   width: 30%; }
 
 ._island_intro__main--reverse {
@@ -8042,7 +8048,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto 10%;
+  margin: auto 8%;
   width: 30%;
   -webkit-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
@@ -8052,29 +8058,30 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  height: 95%;
+  height: 100%;
   right: 0;
   bottom: 0;
   margin: auto; }
 
 ._island_intro__month {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 28px;
+  right: 55px;
   color: #fff;
   font-weight: bold; }
   ._island_intro__month p {
     display: inline-block;
-    margin: 0;
-    font-size: 16px; }
+    margin: 0 8px;
+    font-size: 20px;
+    letter-spacing: 2px; }
   ._island_intro__month span {
     display: inline-block;
     font-size: 78px; }
 
 ._island_intro__text {
   position: absolute;
-  bottom: 6%;
-  left: 11%;
+  bottom: 8%;
+  left: 16%;
   margin: auto;
   color: #fff;
   font-size: 17px;
@@ -8246,8 +8253,8 @@ footer {
   position: absolute;
   width: 100vw;
   height: 100%;
-  background-color: #000;
-  opacity: 0.5;
+  background-color: #484848;
+  opacity: 0.4;
   display: none; }
   .popup ._island_crop__shadow {
     display: block; }
@@ -8255,12 +8262,17 @@ footer {
 ._island_crop {
   z-index: 1000;
   position: absolute;
-  width: 60vw;
+  width: 48vw;
   height: 100%;
   background-color: #FFEDD5;
-  display: none; }
+  display: none;
+  -webkit-box-shadow: 4px 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 0 5px rgba(0, 0, 0, 0.4); }
   ._island_crop.active {
     display: block; }
+
+._island_crop__content {
+  width: 42%; }
 
 ._island_crop__close {
   z-index: 99;
@@ -8321,26 +8333,32 @@ footer {
 ._island_crop__main {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
-  align-self: center; }
+  align-self: center;
+  width: 50%; }
   ._island_crop__main img {
     display: block;
-    max-width: 80%; }
+    max-width: 335px; }
 
 ._island_crop__title {
   margin-top: 25px; }
   ._island_crop__title h1 {
     font-family: 'Kozuka Mincho Pr6N';
     font-size: 32px;
-    display: inline-block; }
+    display: inline-block;
+    letter-spacing: 5px; }
   ._island_crop__title h2 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 8px;
+    letter-spacing: 1px; }
   ._island_crop__title span {
     margin-top: 10px;
     font-size: 14px;
     display: block;
-    font-family: 'Kozuka Mincho Pr6N'; }
+    font-family: 'Kozuka Mincho Pr6N';
+    letter-spacing: 2px; }
 
 ._island_crop__info {
   display: -webkit-box;
@@ -8348,12 +8366,13 @@ footer {
   display: flex; }
 
 ._island_crop__text em {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
+  margin-left: 7px;
   border-bottom: 1px solid; }
 
 ._island_crop__info div {
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem; }
 
 ._island_crop__info img {
   width: 30px;
@@ -8361,22 +8380,28 @@ footer {
   margin-right: 15px; }
 
 ._island_crop__info p {
-  font-size: 12px;
-  font-family: 'Kozuka Mincho Pr6N'; }
+  font-size: 13px;
+  font-family: 'Kozuka Mincho Pr6N';
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 20px; }
 
 ._island_crop__infoTitle {
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   margin-bottom: 8px; }
   ._island_crop__infoTitle--tw {
-    font-family: 'Kozuka Mincho Pr6N'; }
+    font-size: 14px;
+    font-family: 'Kozuka Mincho Pr6N';
+    letter-spacing: 2px;
+    margin-right: 4px; }
 
 #cabbage {
   cursor: pointer;
-  position: relative; }
-  #cabbage:hover g path {
-    fill: #eeffe6; }
+  position: relative;
+  -webkit-filter: opacity(0.5);
+  filter: opacity(0.5); }
 
 ._recipe .swiper-container {
   height: 100vh; }
@@ -8760,21 +8785,21 @@ footer {
   transform: translate(-50%, -50%);
   z-index: 10;
   text-align: right;
-  width: 50%;
+  width: 53%;
   color: #ffffff; }
   ._recipeAll__main--left {
     text-align: left; }
 
 ._recipeAll__name {
   font-family: 'Kozuka Mincho Pr6N R';
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-size: 22px;
   font-weight: 100;
   letter-spacing: 6px; }
   ._recipeAll__name--en {
     font-size: 15px;
     letter-spacing: 1px;
-    line-height: 27px; }
+    line-height: 23px; }
 
 ._recipeAll__month {
   display: block;
@@ -8903,17 +8928,18 @@ footer {
   -ms-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   font-weight: 300;
-  width: 30%;
-  right: -4%;
+  width: 20%;
+  right: 7%;
   font-family: 'Kozuka Mincho Pr6N R'; }
   ._dish_ingredient__content h3 {
     font-size: 19px;
     display: block;
-    letter-spacing: 4px; }
+    letter-spacing: 2px; }
   ._dish_ingredient__content p {
-    font-size: 14px;
+    font-size: 13px;
     display: block;
     letter-spacing: 2px;
+    text-align: justify;
     margin-bottom: 9%; }
     ._dish_ingredient__content p:last-child {
       margin-bottom: 0; }
@@ -8928,16 +8954,16 @@ footer {
 
 ._gallery {
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat; }
   ._gallery.char {
     background-image: url(../img/gallery/char_bg.svg);
-    height: 270vh; }
+    height: 190vh; }
   ._gallery.crop {
     background-image: url(../img/gallery/crop_bg.svg);
     height: 300vh; }
   ._gallery .container {
-    max-width: 1200px; }
+    max-width: 1400px; }
 
 ._gallery__content {
   padding: 155px 0 170px; }
@@ -8959,7 +8985,7 @@ footer {
     bottom: -5px;
     background: #000;
     width: 0;
-    height: 1px;
+    height: .5px;
     -webkit-transition: width 0.2s ease-in-out;
     -o-transition: width 0.2s ease-in-out;
     transition: width 0.2s ease-in-out; }
@@ -8971,14 +8997,15 @@ footer {
     bottom: -5px;
     background: #000;
     width: 100%;
-    height: 1px;
+    height: .5px;
     -webkit-transition: width 0.2s ease-in-out;
     -o-transition: width 0.2s ease-in-out;
     transition: width 0.2s ease-in-out; }
 
 ._gallery__tabName {
   display: inline-block;
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: 1px; }
   ._gallery__tabName--tw {
     font-family: 'Kozuka Mincho Pr6N'; }
 
@@ -9047,7 +9074,8 @@ footer {
 ._gallery_char__name {
   display: block;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
+  letter-spacing: 2px;
   font-family: 'Kozuka Mincho Pr6N';
   position: absolute;
   bottom: 0;
@@ -9057,19 +9085,21 @@ footer {
 ._gallery_char__info {
   display: block;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Kozuka Mincho Pr6N';
   position: absolute;
-  bottom: -15px;
+  bottom: -23px;
   left: 0;
   right: 0; }
   ._gallery_char__info span {
-    display: block; }
+    display: block;
+    letter-spacing: 2px;
+    margin-bottom: 0.25rem; }
 
 ._gallery_crop__content {
   display: block;
   position: absolute;
-  width: 1200px;
+  width: 1400px;
   margin: auto;
   left: 0;
   right: 0;
@@ -9099,16 +9129,19 @@ footer {
   font-size: 18px; }
 
 ._gallery_crop__img {
-  max-height: 220px;
+  max-height: 250px;
   margin: 30px 0px; }
 
 ._gallery_crop__name {
   display: block;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 19px;
+  letter-spacing: 3px;
   font-family: 'Kozuka Mincho Pr6N'; }
 
 ._gallery_crop__nameEN {
   display: block;
   font-weight: bold;
-  font-size: 14px; }
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 3px; }

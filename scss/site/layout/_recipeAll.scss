@@ -66,7 +66,7 @@
     transform: translate(-50%, -50%);
     z-index: 10;
     text-align: right;
-    width: 50%;
+    width: 53%;
     color: #ffffff;
     &--left{
         text-align: left;
@@ -74,14 +74,14 @@
 }
 ._recipeAll__name{
     font-family: 'Kozuka Mincho Pr6N R';
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     font-size: 22px;
     font-weight: 100;
     letter-spacing: 6px;
     &--en{
         font-size: 15px;
         letter-spacing: 1px;
-        line-height: 27px;
+        line-height: 23px;
     }
 }
 ._recipeAll__month{

@@ -123,12 +123,19 @@ $(function () {
             var container_wd = $('#anim-container').innerWidth();
             var mover_wd = $('#bodymovin svg').innerWidth();
             var result = 0;
+            var mouseX=0
             container.addEventListener("mousemove", function (e) {
                 // console.log(e.pageX + ", " + e.pageY);
                 // console.log(e.offsetX + ", " + e.offsetY);
                 // console.log(-(e.pageX / container_wd) * (mover_wd - container_wd));
-                result = (e.pageX / container_wd) * (container_wd - mover_wd);
-                mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
+
+
+
+                // result = (e.pageX / container_wd) * (container_wd - mover_wd);
+                // mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
+               
+
+
                 // console.log(Math.round(result));
                
 
@@ -154,6 +161,13 @@ $(function () {
                 //     console.log(moveX);
                 // }
             });
+            setInterval(function(){
+                // var speed=mouseX*0.1;
+                var speed = 0.1;
+                result += ((container_wd-mover_wd)-result)*speed
+                mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
+            },100);
+
         
             // container.addEventListener("mouseenter", function () {
         
@@ -188,6 +202,11 @@ $(function () {
     $('.js-crop_close').click(function () {
         $('html').removeClass('popup');
         $(this).parent('._island_crop').removeClass('active');
+    });
+
+    $('#cabbage').hover(function(){
+        $(this).attr("scale","1.2");
+        console.log('hover');
     });
 
     
