@@ -4,9 +4,13 @@
     background-repeat: no-repeat;
     &.char{
         background-image: url(../img/gallery/char_bg.svg);
+        height: 270vh;
+        // transition: background-image 0.5s ease-in-out;
     }
     &.crop{
         background-image: url(../img/gallery/crop_bg.svg);
+        height: 300vh;
+        // transition: background-image 0.5s ease-in-out;
     }
     .container{
         max-width: 1200px;
@@ -20,13 +24,6 @@
 // }
 ._gallery__content{
     padding: 155px 0 170px;
-    // &--char{
-    //     position: absolute;
-    //     opacity: 0;
-    //     .char &{
-    //         opacity: 1;
-    //     }
-    // }
 }
 ._gallery__tab{
     text-align: center;
@@ -64,13 +61,61 @@
 }
 ._gallery__tabName{
     display: inline-block;
+    font-weight: bold;
+    &--tw{
+        font-family: 'Kozuka Mincho Pr6N';
+    }
+}
+._gallery_char__content{
+    display: block;
+    position: absolute;
+    width: 1200px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+    .char &{
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s ease-in-out;
+    }
 }
 ._gallery_char__row{
     margin-top: 10%;
 }
+._gallery_char__col{
+    position: relative;
+    height: 390px;
+}
 ._gallery_char__block{
     width: 70%;
     margin: auto;
+    opacity: 1;
+    // visibility: visible;
+    position: absolute;
+    height: 390px;
+    left: 0;
+    right: 0;
+    .hover &{
+        opacity: 0;
+        // visibility: hidden;
+    }
+}
+._gallery_char__block--hover{
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    height: 390px;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    // visibility: hidden;
+    .hover &{
+        opacity: 1;
+        // visibility: visible;
+    }
 }
 ._gallery_char__no{
     display: block;
@@ -79,11 +124,96 @@
     font-size: 18px;
 }
 ._gallery_char__img{
-    max-height: 280px;
-    margin: 30px 0px;
+    height: 280px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    // height: 280px;
+    // margin: 30px 0px;
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // &--1{
+    //     background-image: url(../img/gallery/char1.svg);
+    //     .hover &{
+    //         background-image: url(../img/gallery/char1-2.svg);
+    //     } 
+    // }
+    // &--2{
+    //     background-image: url(../img/gallery/char2.svg);
+    //     .hover &{
+    //         background-image: url(../img/gallery/char2-2.svg);
+    //     } 
+    // }
+    
 }
 ._gallery_char__name{
     display: block;
     font-weight: bold;
     font-size: 24px;
+    font-family: 'Kozuka Mincho Pr6N';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+._gallery_char__info{
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Kozuka Mincho Pr6N';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    span{
+        display: block;
+    }
+}
+._gallery_crop__content{
+    display: block;
+    position: absolute;
+    width: 1200px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+    .crop &{
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s ease-in-out;
+    }
+}
+._gallery_crop__row{
+    margin-top: 10%;
+}
+._gallery_crop__block{
+    width: 70%;
+    margin: auto;
+}
+._gallery_crop__no{
+    display: block;
+    text-align: left;
+    font-style: italic;
+    font-size: 18px;
+}
+._gallery_crop__img{
+    max-height: 220px;
+    margin: 30px 0px;
+}
+._gallery_crop__name{
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Kozuka Mincho Pr6N';
+}
+._gallery_crop__nameEN{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
 }

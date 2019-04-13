@@ -13,4 +13,12 @@ $(function(){
         $('._gallery').addClass('crop');
         console.log('crop click');
     });
+    $('._gallery_char__col').hover(function(){
+        console.log('hover');
+        $(this).addClass('hover');
+    });
+    $('._gallery_char__col').mouseleave(function(){
+        console.log('leave');
+        $(this).removeClass('hover');
+    });
 });
