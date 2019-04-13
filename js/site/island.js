@@ -3,7 +3,7 @@ $(function () {
     var y = -90;
     var bgColor = ['#006781', '#4B8D32', '#D6CD25', '#006857', '#ED7235', '#FF947B', '#AF485C', '#F7B42F', '#AE7516', '#C99A6B', '#2E8E89', '#325984']
     var index = 0;
-    var animArray = ['feb.json'];
+    var animArray = ['apr.json'];
     var animIndex = 0;
 
     $('._island_intro__seasonSection--1').addClass('active');
@@ -131,8 +131,8 @@ $(function () {
 
 
 
-                // result = (e.pageX / container_wd) * (container_wd - mover_wd);
-                // mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
+                result = (e.pageX / container_wd) * (container_wd - mover_wd);
+                mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
                
 
 
@@ -161,12 +161,12 @@ $(function () {
                 //     console.log(moveX);
                 // }
             });
-            setInterval(function(){
-                // var speed=mouseX*0.1;
-                var speed = 0.1;
-                result += ((container_wd-mover_wd)-result)*speed
-                mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
-            },100);
+            // setInterval(function(){
+            //     // var speed=mouseX*0.1;
+            //     var speed = 0.1;
+            //     result += ((container_wd-mover_wd)-result)*speed
+            //     mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
+            // },100);
 
         
             // container.addEventListener("mouseenter", function () {

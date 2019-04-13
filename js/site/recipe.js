@@ -21,6 +21,7 @@ $(function(){
     var swiper_recipeAll = new Swiper('.swiper-container--recipeAll', {
         initialSlide: result,
         loop: true,
+        speed: 1000,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

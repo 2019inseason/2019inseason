@@ -179,10 +179,14 @@
     margin: auto;
     z-index: 99;
     cursor: pointer;
-    transition: transform .3s;
+    // transition: transform .3s;
     transition: opacity 1s;
     &:hover{
-        transform: scale(1.1);
+        // transform: scale(1.1);
+        ._island_intro__view{
+            background-color: rgba($color: #ffffff, $alpha: 0.9) !important;
+            color: #000000;
+        }
     }
     ._island_intro.active &{
         opacity: 0;
@@ -196,7 +200,7 @@
     color: #fff;
     font-size: 14px;
     box-shadow: 3.4px 3.4px 3px rgba($color: #000000, $alpha: 0.4);
-    transition: all 1s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 ._island_intro__bg{
     &--1{
