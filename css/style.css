@@ -7842,10 +7842,7 @@ footer {
     background-image: url(../img/home/n_island1-op.svg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
+    background-repeat: no-repeat; }
     ._home_island__img--island1.active {
       background-image: url(../img/home/n_island1.svg); }
   ._home_island__img--island2 {
@@ -7857,10 +7854,7 @@ footer {
     background-image: url(../img/home/n_island2-op.svg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-    -webkit-transition: background-image 0.2s ease-in-out;
-    -o-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out; }
+    background-repeat: no-repeat; }
     ._home_island__img--island2.active {
       background-image: url(../img/home/n_island2.svg); }
   ._home_island__img--island3 {
@@ -7872,10 +7866,7 @@ footer {
     background-image: url(../img/home/n_island3-op.svg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-    -webkit-transition: background-image 0.2s ease-in-out;
-    -o-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out; }
+    background-repeat: no-repeat; }
     ._home_island__img--island3.active {
       background-image: url(../img/home/n_island3.svg); }
   ._home_island__img--island4 {
@@ -7888,10 +7879,7 @@ footer {
     background-image: url(../img/home/n_island4-op.svg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
-    -webkit-transition: background-image 0.2s ease-in-out;
-    -o-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out; }
+    background-repeat: no-repeat; }
     ._home_island__img--island4.active {
       background-image: url(../img/home/n_island4.svg); }
   ._home_island__img--middle {

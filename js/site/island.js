@@ -128,13 +128,13 @@ $(function () {
                 // console.log(e.pageX + ", " + e.pageY);
                 // console.log(e.offsetX + ", " + e.offsetY);
                 // console.log(-(e.pageX / container_wd) * (mover_wd - container_wd));
+                
+                mouseX = (e.pageX - (container_wd / 2)) / 100;
+                // console.log(mouseX);
 
-
-
-                result = (e.pageX / container_wd) * (container_wd - mover_wd);
-                mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
-               
-
+                // result = (e.pageX / container_wd) * (container_wd - mover_wd);
+                // mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
+             
 
                 // console.log(Math.round(result));
                
@@ -161,12 +161,14 @@ $(function () {
                 //     console.log(moveX);
                 // }
             });
-            // setInterval(function(){
-            //     // var speed=mouseX*0.1;
-            //     var speed = 0.1;
-            //     result += ((container_wd-mover_wd)-result)*speed
-            //     mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
-            // },100);
+            setInterval(function(){
+                var speed= mouseX * 0.1;
+                // console.log(mouseX);
+                // var speed = 0.1;
+                result += ((container_wd-mover_wd)-result)*speed
+                console.log(Math.round(result));
+                mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
+            },100);
 
         
             // container.addEventListener("mouseenter", function () {
