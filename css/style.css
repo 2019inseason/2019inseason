@@ -7681,6 +7681,11 @@ footer {
     font-weight: bold;
     letter-spacing: 1px; }
 
+._nav__menuBlock {
+  width: 35%;
+  margin: auto;
+  cursor: pointer; }
+
 ._nav--white ._nav__menu {
   color: #ffffff; }
 
@@ -7779,7 +7784,6 @@ footer {
 ._nav__menu_icon {
   width: auto;
   max-height: 15px;
-  cursor: pointer;
   margin-bottom: 2px; }
   ._nav--white ._nav__menu_icon line {
     stroke: #ffffff; }
@@ -7830,47 +7834,50 @@ footer {
     pointer-events: none; }
   ._home_island__img--island1 {
     position: absolute;
-    width: 564px;
+    width: 566px;
     height: 215px;
     left: 4.5%;
     bottom: 12%;
     z-index: 1;
-    background-image: url(../img/home/island1_opacity.svg);
+    background-image: url(../img/home/_island1-op.svg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    -webkit-transition: background-image 0.3s ease-in;
-    -o-transition: background-image 0.3s ease-in;
-    transition: background-image 0.3s ease-in; }
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
     ._home_island__img--island1.active {
-      background-image: url(../img/home/island1.svg); }
+      background-image: url(../img/home/_island1.svg); }
   ._home_island__img--island2 {
     position: absolute;
     left: 6%;
     top: -6.5%;
     width: 536px;
     height: 300px;
-    background-image: url(../img/home/island2_opacity.svg);
+    background-image: url(../img/home/_island2-op.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    -webkit-transition: background-image 0.3s ease-in;
-    -o-transition: background-image 0.3s ease-in;
-    transition: background-image 0.3s ease-in; }
+    -webkit-transition: background-image 0.2s ease-in-out;
+    -o-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out; }
     ._home_island__img--island2.active {
-      background-image: url(../img/home/island2.svg); }
+      background-image: url(../img/home/_island2.svg); }
   ._home_island__img--island3 {
     position: absolute;
     right: 11.5%;
     width: 464px;
     height: 300px;
     top: -8%;
-    background-image: url(../img/home/island3_opacity.svg);
+    background-image: url(../img/home/_island3-op.svg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    -o-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out; }
     ._home_island__img--island3.active {
-      background-image: url(../img/home/island3.svg); }
+      background-image: url(../img/home/_island3.svg); }
   ._home_island__img--island4 {
     position: absolute;
     width: 497px;
@@ -7878,12 +7885,15 @@ footer {
     right: 8%;
     bottom: 14%;
     z-index: 2;
-    background-image: url(../img/home/island4_opacity.svg);
+    background-image: url(../img/home/_island4-op.svg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    -o-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out; }
     ._home_island__img--island4.active {
-      background-image: url(../img/home/island4.svg); }
+      background-image: url(../img/home/_island4.svg); }
   ._home_island__img--middle {
     position: absolute;
     max-width: 175px;

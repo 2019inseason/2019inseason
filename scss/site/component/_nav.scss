@@ -19,6 +19,11 @@
     }
 
 }
+._nav__menuBlock{
+    width: 35%;
+    margin: auto;
+    cursor: pointer;
+}
 ._nav__menu{
     ._nav--white &{
         color: #ffffff;
@@ -145,7 +150,6 @@
 ._nav__menu_icon{
     width: auto;
     max-height: 15px;
-    cursor: pointer;
     margin-bottom: 2px;
     ._nav--white &{
         line{
