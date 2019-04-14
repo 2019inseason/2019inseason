@@ -7839,7 +7839,7 @@ footer {
     left: 4.5%;
     bottom: 12%;
     z-index: 1;
-    background-image: url(../img/home/_island1-op.svg);
+    background-image: url(../img/home/n_island1-op.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7847,14 +7847,14 @@ footer {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
     ._home_island__img--island1.active {
-      background-image: url(../img/home/_island1.svg); }
+      background-image: url(../img/home/n_island1.svg); }
   ._home_island__img--island2 {
     position: absolute;
     left: 6%;
     top: -6.5%;
     width: 536px;
     height: 300px;
-    background-image: url(../img/home/_island2-op.svg);
+    background-image: url(../img/home/n_island2-op.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -7862,14 +7862,14 @@ footer {
     -o-transition: background-image 0.2s ease-in-out;
     transition: background-image 0.2s ease-in-out; }
     ._home_island__img--island2.active {
-      background-image: url(../img/home/_island2.svg); }
+      background-image: url(../img/home/n_island2.svg); }
   ._home_island__img--island3 {
     position: absolute;
     right: 11.5%;
     width: 464px;
     height: 300px;
     top: -8%;
-    background-image: url(../img/home/_island3-op.svg);
+    background-image: url(../img/home/n_island3-op.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -7877,7 +7877,7 @@ footer {
     -o-transition: background-image 0.2s ease-in-out;
     transition: background-image 0.2s ease-in-out; }
     ._home_island__img--island3.active {
-      background-image: url(../img/home/_island3.svg); }
+      background-image: url(../img/home/n_island3.svg); }
   ._home_island__img--island4 {
     position: absolute;
     width: 497px;
@@ -7885,7 +7885,7 @@ footer {
     right: 8%;
     bottom: 14%;
     z-index: 2;
-    background-image: url(../img/home/_island4-op.svg);
+    background-image: url(../img/home/n_island4-op.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -7893,7 +7893,7 @@ footer {
     -o-transition: background-image 0.2s ease-in-out;
     transition: background-image 0.2s ease-in-out; }
     ._home_island__img--island4.active {
-      background-image: url(../img/home/_island4.svg); }
+      background-image: url(../img/home/n_island4.svg); }
   ._home_island__img--middle {
     position: absolute;
     max-width: 175px;

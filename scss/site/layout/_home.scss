@@ -47,13 +47,13 @@
         left: 4.5%;
         bottom: 12%;
         z-index: 1;
-        background-image: url(../img/home/_island1-op.svg);
+        background-image: url(../img/home/n_island1-op.svg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         transition: all 0.2s ease-in-out;
         &.active{
-            background-image: url(../img/home/_island1.svg)
+            background-image: url(../img/home/n_island1.svg)
         }
     }
     &--island2{
@@ -62,13 +62,13 @@
         top: -6.5%;
         width: 536px;
         height: 300px;
-        background-image: url(../img/home/_island2-op.svg);
+        background-image: url(../img/home/n_island2-op.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         transition: background-image 0.2s ease-in-out;
         &.active{
-            background-image: url(../img/home/_island2.svg)
+            background-image: url(../img/home/n_island2.svg)
         }
     }
     &--island3{
@@ -77,13 +77,13 @@
         width: 464px;
         height: 300px;
         top: -8%;
-        background-image: url(../img/home/_island3-op.svg);
+        background-image: url(../img/home/n_island3-op.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         transition: background-image 0.2s ease-in-out;
         &.active{
-            background-image: url(../img/home/_island3.svg)
+            background-image: url(../img/home/n_island3.svg)
         }
     }
     &--island4{
@@ -93,13 +93,13 @@
         right: 8%;
         bottom: 14%;
         z-index: 2;
-        background-image: url(../img/home/_island4-op.svg);
+        background-image: url(../img/home/n_island4-op.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         transition: background-image 0.2s ease-in-out;
         &.active{
-            background-image: url(../img/home/_island4.svg)
+            background-image: url(../img/home/n_island4.svg)
         }
     }
     &--middle{
