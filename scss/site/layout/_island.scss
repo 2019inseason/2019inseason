@@ -4,6 +4,7 @@
 ._island_intro{
     .swiper-container {
         position: unset !important;
+        // pointer-events: none;
     }
     .swiper-slide 
     {
@@ -38,6 +39,7 @@
     z-index: 9;
     box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
     transition: all 1s ease-in-out;
+    pointer-events: none;
 
     // ._island_intro.active &{
     //     left: -200vh;

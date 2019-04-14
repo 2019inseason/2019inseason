@@ -7973,7 +7973,8 @@ footer {
   box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;
+  pointer-events: none; }
   .start_anim ._island_intro__circle {
     left: -200vh; }
 

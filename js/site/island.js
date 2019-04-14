@@ -16,9 +16,10 @@ $(function () {
         pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,
-            clickable: true
+            // clickable: true
         },
-        mousewheel: true
+        mousewheel: true,
+        
     });
 
     // 讓island移到下一個
