@@ -16,6 +16,7 @@ $(function () {
         pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,
+            clickable: true
         },
         mousewheel: true
     });
@@ -178,21 +179,25 @@ $(function () {
 
             // 產物點選
             $('#cabbage').click(function () {
-                $('#js_cabbage').addClass('active');
-                $('html').addClass('popup');
-                console.log('click');
+                $('._island_crop__shadow').css("display", "block");
+                setTimeout(function () {
+                    $('#js_cabbage').addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
             });
         });
         setTimeout(function () {
             $('html').addClass('start_anim');
         }, 1000);
-        // setTimeout(function () {
-        //     $('._island_intro').css("display", "none");
-        // }, 2000);
+        setTimeout(function () {
+            $('._island_intro').css("display", "none");
+        }, 2000);
     });
 
     //點back to explore回到島嶼瀏覽頁
     $('.js-detail_back').click(function () {
+        $('._island_intro').css("display", "block");
+        $('._island_crop__shadow').css("display", "none");
         setTimeout(function(){
             $('html').removeClass('start_anim');
         }, 1000);

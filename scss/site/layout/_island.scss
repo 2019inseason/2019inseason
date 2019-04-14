@@ -1,4 +1,7 @@
-._island{
+.start_anim{
+    overflow: hidden;
+}
+._island_intro{
     .swiper-container {
         position: unset !important;
     }
@@ -11,6 +14,9 @@
         z-index: 99 !important;
         left: 70vh !important;
         transform: rotate(90deg) !important;
+    }
+    .swiper-pagination-bullets{
+        z-index: 99 !important;
     }
 
 }
@@ -29,7 +35,7 @@
     left: -120vh;
     top: 50%;
     margin-top: -100vh;
-    z-index: 99;
+    z-index: 9;
     box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
     transition: all 1s ease-in-out;
 
@@ -168,7 +174,7 @@
     opacity: 1;
     visibility: visible;
     transition: all 1s ease-in-out;
-    z-index: 1;
+    // z-index: 1;
     img{
         height: 100%;
     }
@@ -371,10 +377,14 @@
     width: 100vw;
     height: 100%;
     background-color: #484848;
-    opacity: 0.4;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .8s ease-in-out;
     display: none;
     .popup &{
-        display: block;
+        // display: block;
+        opacity: 0.4;
+        visibility: visible;
     }
 }
 ._island_crop{
@@ -383,10 +393,15 @@
     width: 48vw;
     height: 100%;
     background-color: #FFEDD5;
-    display: none;
+    // display: none;
+    left: -48vw;
     box-shadow: 4px 0 5px rgba($color: #000000, $alpha: 0.4);
+    visibility: hidden;
+    transition: all .8s ease-in-out;
     &.active{
-        display: block;
+        // display: block;
+        left: 0;
+        visibility: visible;
     }
 }
 ._island_crop__content{

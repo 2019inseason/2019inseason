@@ -7935,19 +7935,25 @@ footer {
     -o-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out; }
 
-._island .swiper-container {
+.start_anim {
+  overflow: hidden; }
+
+._island_intro .swiper-container {
   position: unset !important; }
 
-._island .swiper-slide {
+._island_intro .swiper-slide {
   opacity: 0.7; }
 
-._island .swiper-pagination {
+._island_intro .swiper-pagination {
   bottom: 50% !important;
   z-index: 99 !important;
   left: 70vh !important;
   -webkit-transform: rotate(90deg) !important;
   -ms-transform: rotate(90deg) !important;
   transform: rotate(90deg) !important; }
+
+._island_intro .swiper-pagination-bullets {
+  z-index: 99 !important; }
 
 ._island_intro {
   height: 100vh;
@@ -7962,7 +7968,7 @@ footer {
   left: -120vh;
   top: 50%;
   margin-top: -100vh;
-  z-index: 99;
+  z-index: 9;
   -webkit-box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
   -webkit-transition: all 1s ease-in-out;
@@ -8104,8 +8110,7 @@ footer {
   visibility: visible;
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  z-index: 1; }
+  transition: all 1s ease-in-out; }
   ._island_intro__bgImg img {
     height: 100%; }
   .start_anim ._island_intro__bgImg {
@@ -8289,10 +8294,15 @@ footer {
   width: 100vw;
   height: 100%;
   background-color: #484848;
-  opacity: 0.4;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
   display: none; }
   .popup ._island_crop__shadow {
-    display: block; }
+    opacity: 0.4;
+    visibility: visible; }
 
 ._island_crop {
   z-index: 1000;
@@ -8300,11 +8310,16 @@ footer {
   width: 48vw;
   height: 100%;
   background-color: #FFEDD5;
-  display: none;
+  left: -48vw;
   -webkit-box-shadow: 4px 0 5px rgba(0, 0, 0, 0.4);
-  box-shadow: 4px 0 5px rgba(0, 0, 0, 0.4); }
+  box-shadow: 4px 0 5px rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  -webkit-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out; }
   ._island_crop.active {
-    display: block; }
+    left: 0;
+    visibility: visible; }
 
 ._island_crop__content {
   width: 42%; }
