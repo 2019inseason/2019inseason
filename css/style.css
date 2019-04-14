@@ -7839,36 +7839,36 @@ footer {
     left: 4.5%;
     bottom: 12%;
     z-index: 1;
-    background-image: url(../img/home/n_island1-op.svg);
+    background-image: url(../img/home/island1-op.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
     ._home_island__img--island1.active {
-      background-image: url(../img/home/n_island1.svg); }
+      background-image: url(../img/home/island1.svg); }
   ._home_island__img--island2 {
     position: absolute;
     left: 6%;
     top: -6.5%;
     width: 536px;
     height: 300px;
-    background-image: url(../img/home/n_island2-op.svg);
+    background-image: url(../img/home/island2-op.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
     ._home_island__img--island2.active {
-      background-image: url(../img/home/n_island2.svg); }
+      background-image: url(../img/home/island2.svg); }
   ._home_island__img--island3 {
     position: absolute;
     right: 11.5%;
     width: 464px;
     height: 300px;
     top: -8%;
-    background-image: url(../img/home/n_island3-op.svg);
+    background-image: url(../img/home/island3-op.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
     ._home_island__img--island3.active {
-      background-image: url(../img/home/n_island3.svg); }
+      background-image: url(../img/home/island3.svg); }
   ._home_island__img--island4 {
     position: absolute;
     width: 497px;
@@ -7876,12 +7876,12 @@ footer {
     right: 8%;
     bottom: 14%;
     z-index: 2;
-    background-image: url(../img/home/n_island4-op.svg);
+    background-image: url(../img/home/island4-op.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat; }
     ._home_island__img--island4.active {
-      background-image: url(../img/home/n_island4.svg); }
+      background-image: url(../img/home/island4.svg); }
   ._home_island__img--middle {
     position: absolute;
     max-width: 175px;
@@ -7965,10 +7965,10 @@ footer {
   z-index: 99;
   -webkit-box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
-  -webkit-transition: background-color 1s ease-in-out;
-  -o-transition: background-color 1s ease-in-out;
-  transition: background-color 1s ease-in-out; }
-  ._island_intro.active ._island_intro__circle {
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  .start_anim ._island_intro__circle {
     left: -200vh; }
 
 ._island_intro__seasonSection {
@@ -8084,7 +8084,15 @@ footer {
   color: #fff;
   font-size: 17px;
   text-align: center;
-  z-index: 999; }
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  .start_anim ._island_intro__text {
+    opacity: 0;
+    visibility: hidden; }
 
 ._island_intro__bgImg {
   width: 100vw;
@@ -8096,10 +8104,11 @@ footer {
   visibility: visible;
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;
+  z-index: 1; }
   ._island_intro__bgImg img {
     height: 100%; }
-  ._island_intro__bgImg.active {
+  .start_anim ._island_intro__bgImg {
     opacity: 0;
     visibility: hidden;
     z-index: -1; }
@@ -8113,13 +8122,14 @@ footer {
   margin: auto;
   z-index: 99;
   cursor: pointer;
+  opacity: 1;
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s; }
   ._island_intro__btn:hover ._island_intro__view {
     background-color: rgba(255, 255, 255, 0.9) !important;
     color: #000000; }
-  ._island_intro.active ._island_intro__btn {
+  .start_anim ._island_intro__btn {
     opacity: 0; }
 
 ._island_intro__view {
@@ -8225,9 +8235,12 @@ footer {
   transition: all 1.5s ease-in-out;
   opacity: 0;
   visibility: hidden; }
-  ._island_detail__bg.active {
+  .start_anim ._island_detail__bg {
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out; }
 
 ._island_detail__anim svg {
   width: auto !important;
@@ -8236,9 +8249,39 @@ footer {
   -ms-transform-origin: 50% 50% !important;
   transform-origin: 50% 50% !important;
   overflow: unset;
-  -webkit-transition: translate 0.3s ease-in-out;
-  -o-transition: translate 0.3s ease-in-out;
-  transition: translate 0.3s ease-in-out; }
+  -webkit-transition: translate 0.5s ease-in;
+  -o-transition: translate 0.5s ease-in;
+  transition: translate 0.5s ease-in; }
+
+._island_detail__back {
+  position: absolute;
+  display: block;
+  width: 28vw;
+  height: 28vw;
+  background-color: #FFF6EB;
+  bottom: -14vw;
+  border-radius: 50%;
+  left: -14vw;
+  -webkit-box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.16);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  ._island_detail__back svg {
+    position: absolute;
+    left: 57%;
+    top: 15%; }
+  ._island_detail__back span {
+    position: absolute;
+    left: 57%;
+    top: 30%;
+    font-size: 22px;
+    font-weight: bold; }
+  ._island_detail__back:hover {
+    width: 30vw;
+    height: 30vw;
+    bottom: -15vw;
+    left: -15vw; }
 
 ._island_crop__shadow {
   z-index: 100;

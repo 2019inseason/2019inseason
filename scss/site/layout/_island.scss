@@ -31,14 +31,15 @@
     margin-top: -100vh;
     z-index: 99;
     box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
-    transition: background-color 1s ease-in-out;
+    transition: all 1s ease-in-out;
 
-    ._island_intro.active &{
+    // ._island_intro.active &{
+    //     left: -200vh;
+    // }
+
+    .start_anim &{
         left: -200vh;
     }
-    // &.hide{
-    //     display: none;
-    // }
 }
 ._island_intro__seasonSection{
     transition: all 1s ease-in-out;
@@ -147,6 +148,13 @@
     font-size: 17px;
     text-align: center;
     z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease-in-out;
+    .start_anim &{
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 
@@ -160,11 +168,17 @@
     opacity: 1;
     visibility: visible;
     transition: all 1s ease-in-out;
+    z-index: 1;
     img{
         height: 100%;
     }
     
-    &.active{
+    // &.active{
+    //     opacity: 0;
+    //     visibility: hidden;
+    //     z-index: -1;
+    // }
+    .start_anim &{
         opacity: 0;
         visibility: hidden;
         z-index: -1;
@@ -180,6 +194,7 @@
     z-index: 99;
     cursor: pointer;
     // transition: transform .3s;
+    opacity: 1;
     transition: opacity 1s;
     &:hover{
         // transform: scale(1.1);
@@ -188,7 +203,10 @@
             color: #000000;
         }
     }
-    ._island_intro.active &{
+    // ._island_intro.active &{
+    //     opacity: 0;
+    // }
+    .start_anim &{
         opacity: 0;
     }
 }
@@ -295,9 +313,14 @@
     transition: all 1.5s ease-in-out;
     opacity: 0;
     visibility: hidden;
-    &.active{
+    // &.active{
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
+    .start_anim &{
         opacity: 1;
         visibility: visible;
+        transition: all 2s ease-in-out;
     }
 }
 ._island_detail__anim{
@@ -307,9 +330,40 @@
         height: 100vh !important;
         transform-origin: 50% 50% !important;
         overflow: unset;
-        transition: translate 0.3s ease-in-out;
+        transition: translate 0.5s ease-in;
+        // transition-delay: translate .2s;
     }
     
+}
+._island_detail__back{
+    position: absolute;
+    display: block;
+    width: 28vw;
+    height: 28vw;
+    background-color: #FFF6EB;
+    bottom: -14vw;
+    border-radius: 50%;
+    left: -14vw;
+    box-shadow: 5px 4px 10px rgba($color: #000000, $alpha: 0.16);
+    transition: all 0.5s ease-in-out;
+    svg{
+        position: absolute;
+        left: 57%;
+        top: 15%;
+    }
+    span{
+        position: absolute;
+        left: 57%;
+        top: 30%;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &:hover{
+        width: 30vw;
+        height: 30vw;
+        bottom: -15vw;
+        left: -15vw;
+    }
 }
 ._island_crop__shadow{
     z-index: 100;

@@ -3,7 +3,7 @@ $(function () {
     var y = -90;
     var bgColor = ['#006781', '#4B8D32', '#D6CD25', '#006857', '#ED7235', '#FF947B', '#AF485C', '#F7B42F', '#AE7516', '#C99A6B', '#2E8E89', '#325984']
     var index = 0;
-    var animArray = ['apr.json'];
+    var animArray = ['jan.json','feb.json','mar.json','apr.json','may.json','jun.json','july.json','aug.json','sep.json','oct.json'];
     var animIndex = 0;
 
     $('._island_intro__seasonSection--1').addClass('active');
@@ -91,13 +91,13 @@ $(function () {
     //點了島嶼瀏覽的view
     $('._island_intro__btn').click(function () {
         var anim;
-        console.log(animIndex);
+        console.log('animIndex: '+animIndex);
         var animData = {
             container: document.getElementById('bodymovin'),
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: '/2019inseason/img/json/' + animArray[0]
+            path: '/2019inseason/img/json/' + animArray[animIndex]
         };
 
         // 先執行bodymovin才不會卡卡
@@ -119,7 +119,6 @@ $(function () {
 
             var container = document.querySelector("#bodymovin");
             var mover = document.querySelector("#bodymovin svg");
-            var moveX = 0;
             var container_wd = $('#anim-container').innerWidth();
             var mover_wd = $('#bodymovin svg').innerWidth();
             var result = 0;
@@ -129,7 +128,7 @@ $(function () {
                 // console.log(e.offsetX + ", " + e.offsetY);
                 // console.log(-(e.pageX / container_wd) * (mover_wd - container_wd));
                 
-                mouseX = (e.pageX - (container_wd / 2)) / 100;
+                mouseX = (e.pageX - (container_wd / 2)) / (container_wd - mover_wd);
                 // console.log(mouseX);
 
                 // result = (e.pageX / container_wd) * (container_wd - mover_wd);
@@ -161,25 +160,19 @@ $(function () {
                 //     console.log(moveX);
                 // }
             });
+
+            //滑鼠左右移動
             setInterval(function(){
-                var speed= mouseX * 0.1;
-                // console.log(mouseX);
-                // var speed = 0.1;
-                result += ((container_wd-mover_wd)-result)*speed
-                console.log(Math.round(result));
-                mover.style.transform = "translate3d(" + Math.round(result) + 'px'+",0px , 0px)";
-            },100);
+                var speed= mouseX * 0.03;
 
-        
-            // container.addEventListener("mouseenter", function () {
-        
-            //     setTimeout(function () {
-            //         mover.classList.add("no-more-slidey");
-            //         container.removeEventListener("mouseenter");
-            //     }, 250);
-        
-            // });
-
+                result += ((container_wd-mover_wd)-result)*speed;
+                if(result<0){
+                    result = 0;
+                }else if(result>mover_wd-container_wd){
+                    result = mover_wd-container_wd;
+                }
+                mover.style.transform = "translate3d(" + -Math.round(result) + 'px'+",0px , 0px)";
+            },80);
 
 
 
@@ -191,12 +184,21 @@ $(function () {
             });
         });
         setTimeout(function () {
-            $('._island_intro').addClass('active');
-            $('._island_intro__bgImg').addClass('active');
-            $('._island_detail__bg').addClass('active');
+            $('html').addClass('start_anim');
         }, 1000);
+        // setTimeout(function () {
+        //     $('._island_intro').css("display", "none");
+        // }, 2000);
+    });
+
+    //點back to explore回到島嶼瀏覽頁
+    $('.js-detail_back').click(function () {
+        setTimeout(function(){
+            $('html').removeClass('start_anim');
+        }, 1000);
+        
         setTimeout(function () {
-            $('._island_intro').css("display", "none");
+            bodymovin.destroy();
         }, 2000);
     });
 
