@@ -8315,13 +8315,13 @@ footer {
   left: -48vw;
   -webkit-box-shadow: 4px 0 5px rgba(0, 0, 0, 0.4);
   box-shadow: 4px 0 5px rgba(0, 0, 0, 0.4);
-  visibility: hidden;
   -webkit-transition: all .8s ease-in-out;
   -o-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out; }
+  transition: all .8s ease-in-out;
+  display: none; }
   ._island_crop.active {
-    left: 0;
-    visibility: visible; }
+    display: block;
+    left: 0; }
 
 ._island_crop__content {
   width: 42%; }

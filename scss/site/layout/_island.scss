@@ -399,12 +399,13 @@
     // display: none;
     left: -48vw;
     box-shadow: 4px 0 5px rgba($color: #000000, $alpha: 0.4);
-    visibility: hidden;
+    // visibility: hidden;
     transition: all .8s ease-in-out;
+    display: none;
     &.active{
-        // display: block;
+        display: block;
         left: 0;
-        visibility: visible;
+        // visibility: visible;
     }
 }
 ._island_crop__content{

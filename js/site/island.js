@@ -92,6 +92,7 @@ $(function () {
 
     //點了島嶼瀏覽的view
     $('._island_intro__btn').click(function () {
+        $('.wrapper').removeClass('animsition');
         var anim;
         console.log('animIndex: '+animIndex);
         var animData = {
@@ -189,7 +190,7 @@ $(function () {
 
             // 產物點選
             $('#cabbage').click(function () {
-                $('._island_crop__shadow').css("display", "block");
+                $('._island_crop__shadow,._island_crop').css("display", "block");
                 setTimeout(function () {
                     $('#js_cabbage').addClass('active');
                     $('html').addClass('popup');
@@ -208,13 +209,14 @@ $(function () {
     //點back to explore回到島嶼瀏覽頁
     $('.js-detail_back').click(function () {
         $('._island_intro').css("display", "block");
-        $('._island_crop__shadow').css("display", "none");
+        $('._island_crop__shadow,._island_crop').css("display", "none");
         setTimeout(function(){
             $('html').removeClass('start_anim');
         }, 1000);
         
         setTimeout(function () {
             bodymovin.destroy();
+            $('.wrapper').addClass('animsition');
         }, 2000);
     });
 
