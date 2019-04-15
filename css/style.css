@@ -8933,13 +8933,23 @@ footer {
     font-family: 'Kozuka Mincho Pr6N R';
     letter-spacing: 9px; }
   ._dish_ingredient__title--ingredient {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
     .js_ingredient ._dish_ingredient__title--ingredient {
-      opacity: 1; }
+      opacity: 1;
+      visibility: visible; }
   ._dish_ingredient__title--recipe {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
     .js_recipe ._dish_ingredient__title--recipe {
-      opacity: 1; }
+      opacity: 1;
+      visibility: visible; }
 
 ._dish__back {
   position: absolute;
@@ -8970,12 +8980,45 @@ footer {
 ._dish__tabBtn {
   display: inline-block;
   padding: 0 0 7px 0;
+  position: relative;
   font-family: 'Kozuka Mincho Pr6N R';
   cursor: pointer; }
-  .js_ingredient ._dish__tabBtn--ingredient {
-    border-bottom: 1px solid #ffffff; }
-  .js_recipe ._dish__tabBtn--recipe {
-    border-bottom: 1px solid #ffffff; }
+  ._dish__tabBtn::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -5px;
+    background: #ffffff;
+    width: 0;
+    height: .5px;
+    -webkit-transition: width 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out; }
+  .js_ingredient ._dish__tabBtn--ingredient::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -5px;
+    background: #ffffff;
+    width: 100%;
+    height: .5px;
+    -webkit-transition: width 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out; }
+  .js_recipe ._dish__tabBtn--recipe::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -5px;
+    background: #ffffff;
+    width: 100%;
+    height: .5px;
+    -webkit-transition: width 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out; }
   ._dish__tabBtn span {
     letter-spacing: 1px; }
 
@@ -9002,13 +9045,23 @@ footer {
     ._dish_ingredient__content p:last-child {
       margin-bottom: 0; }
   ._dish_ingredient__content--ingredient {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
     .js_ingredient ._dish_ingredient__content--ingredient {
-      opacity: 1; }
+      opacity: 1;
+      visibility: visible; }
   ._dish_ingredient__content--recipe {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
     .js_recipe ._dish_ingredient__content--recipe {
-      opacity: 1; }
+      opacity: 1;
+      visibility: visible; }
 
 ._gallery {
   background-size: cover;

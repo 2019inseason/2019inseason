@@ -1,94 +1,105 @@
 <!DOCTYPE html>
 <html lang="tw">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Providing MIL-SPEC cable harnesses and integrated solutions to make the connections you can rely on.">
+    <meta name="description"
+        content="Providing MIL-SPEC cable harnesses and integrated solutions to make the connections you can rely on.">
     <title>INSEASON</title>
-    
+
+    <link rel="stylesheet" href="../css/animsition.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style1.css">
     <link rel="shortcut icon" href="img/favicon.png">
     <script src="../js/lib/jquery-3.2.1/jquery.min.js"></script>
     <script src="../js/lib/jquery-3.2.1/jquery-migrate.js"></script>
     <script src="../js/lib/swiper/swiper.js"></script>
+    <script src="../js/lib/animsition-master/animsition.min.js"></script>
+
     <script src="../js/site/recipe.js"></script>
     <script src="../js/site/global.js"></script>
 
 </head>
+
 <body>
-    <div class="_recipeAll container-fluid">
+    <div class="_recipeAll container-fluid animsition">
         <!-- nav -->
         <nav id="nav" class="_nav _nav--white">
-            <!-- <div class="container"> -->
-                <div class="row align-items-center">
-                    <div class="col-2 text-center">
+            <div class="row align-items-center">
+                <div class="col-2 text-center">
+                    <div id="nav-bar" class="_nav__menuBlock">
                         <span class="_nav__menu align-end mr-2">Menu</span>
-                        <svg id="nav-bar" class="_nav__menu_icon align-middle" xmlns="http://www.w3.org/2000/svg" width="22"
+                        <svg class="_nav__menu_icon align-middle" xmlns="http://www.w3.org/2000/svg" width="22"
                             height="9" viewBox="0 0 22 9">
-                            <g data-name="Group 138" transform="translate(-188.5 -78)">
-                                <line data-name="Line 1" x2="22" transform="translate(188.5 78.5)" fill="none" stroke="rgba(21,21,21,0.9)"
+                            <g transform="translate(-188.5 -78)">
+                                <line x2="22" transform="translate(188.5 78.5)" fill="none" stroke="rgba(21,21,21,0.9)"
                                     stroke-width="1" />
-                                <line data-name="Line 2" x2="22" transform="translate(188.5 86.5)" fill="none" stroke="rgba(21,21,21,0.9)"
+                                <line x2="22" transform="translate(188.5 86.5)" fill="none" stroke="rgba(21,21,21,0.9)"
                                     stroke-width="1" />
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="_nav_menu">
-                        <ul class="_nav_menu__block">
-                            <li>
-                                <a class="_nav_menu__title _nav_menu__title--home" href="../index.html">inseason</a>
-                            </li>
-                            <li>
-                                <a class="_nav_menu__title _nav_menu__title--about" href="../about.html">about</a>
-                            </li>
-                            <li>
-                                <a class="_nav_menu__title _nav_menu__title--explore" href="../island.html">explore</a>
-                            </li>
-                            <li>
-                                <a class="_nav_menu__title _nav_menu__title--gallery" href="">gallery</a>
-                            </li>
-                            <li>
-                                <a class="_nav_menu__title _nav_menu__title--recipe" href="../recipe.html">recipe</a>
-                            </li>
-                        </ul>
-                        <span class="_nav_menu__close"></span>
-                    </div>
-                    <img class="col-8 _nav__logo" src="../img/icon/logo-white.svg" alt="logo">
-                    <div class="col-2 text-center">
-                        <svg class="_nav__sns align-middle mr-3" xmlns="http://www.w3.org/2000/svg"
-                            width="16.691" height="16.691" viewBox="0 0 16.691 16.691">
-                            <g data-name="FB black" transform="translate(-1089 -73.24)">
-                                <path data-name="Path 16" d="M1105.732,72.135h-14.848a.922.922,0,0,0-.922.922V87.906a.921.921,0,0,0,.922.92h7.994V82.363H1096.7V79.844h2.176V77.986a3.035,3.035,0,0,1,3.24-3.33,17.7,17.7,0,0,1,1.944.1v2.253h-1.334c-1.046,0-1.248.5-1.248,1.226v1.609h2.494l-.325,2.519h-2.169v6.462h4.253a.92.92,0,0,0,.92-.921V73.057A.921.921,0,0,0,1105.732,72.135Z"
-                                    transform="translate(-0.962 1.105)" fill="rgba(21,21,21,0.9)" />
-                            </g>
-                        </svg>
-                        <svg class="_nav__sns align-middle mr-3" xmlns="http://www.w3.org/2000/svg"
-                            width="17.17" height="17.17" viewBox="0 0 17.17 17.17">
-                            <g data-name="IG black" transform="translate(-1122.927 -73)">
-                                <path data-name="Path 15" d="M1132.474,73.443c2.292,0,2.564.008,3.469.05,2.327.106,3.414,1.21,3.52,3.519.041.9.049,1.177.049,3.469s-.009,2.564-.049,3.469c-.107,2.307-1.191,3.413-3.52,3.519-.905.042-1.176.05-3.469.05s-2.564-.008-3.469-.05c-2.333-.106-3.414-1.215-3.52-3.52-.041-.9-.05-1.176-.05-3.469s.01-2.563.05-3.469c.107-2.308,1.191-3.413,3.52-3.519C1129.91,73.451,1130.181,73.443,1132.474,73.443Zm0-1.548c-2.332,0-2.624.01-3.54.052-3.117.143-4.85,1.873-4.993,4.993-.042.917-.052,1.209-.052,3.54s.01,2.624.051,3.54c.143,3.118,1.873,4.851,4.994,4.994.916.041,1.208.051,3.54.051s2.624-.01,3.539-.051c3.115-.143,4.852-1.873,4.993-4.994.043-.916.053-1.208.053-3.54s-.01-2.623-.052-3.539c-.14-3.115-1.872-4.85-4.993-4.994C1135.1,71.9,1134.805,71.895,1132.474,71.895Zm0,4.177a4.409,4.409,0,1,0,4.408,4.408A4.409,4.409,0,0,0,1132.474,76.072Zm0,7.27a2.861,2.861,0,1,1,2.861-2.862A2.861,2.861,0,0,1,1132.474,83.342Zm4.583-8.474a1.03,1.03,0,1,0,1.029,1.03A1.03,1.03,0,0,0,1137.057,74.868Z"
-                                    transform="translate(-0.962 1.105)" fill="rgba(21,21,21,0.9)" />
-                            </g>
-                        </svg>
-                        <svg class="_nav__sns align-middle" xmlns="http://www.w3.org/2000/svg"
-                            width="14.372" height="14.486" viewBox="0 0 14.372 14.486">
-                            <g data-name="SEARCH black" transform="translate(-1158.868 -74.343)">
-                                <path data-name="Path 17" d="M1174.2,86.3l-3.746-3.745a5.878,5.878,0,1,0-1.441,1.4l3.766,3.765Zm-12.649-7.192a4.151,4.151,0,1,1,4.151,4.151A4.156,4.156,0,0,1,1161.553,79.111Z"
-                                    transform="translate(-0.962 1.105)" fill="rgba(21,21,21,0.9)" />
                             </g>
                         </svg>
                     </div>
                 </div>
-            <!-- </div> -->
+                <div class="_nav_menu">
+                    <ul class="_nav_menu__block">
+                        <li>
+                            <a class="_nav_menu__title _nav_menu__title--home animsition-link" href="../index.html">inseason</a>
+                        </li>
+                        <li>
+                            <a class="_nav_menu__title _nav_menu__title--about animsition-link" href="../about.html">about</a>
+                        </li>
+                        <li>
+                            <a class="_nav_menu__title _nav_menu__title--explore animsition-link" href="../island.html">explore</a>
+                        </li>
+                        <li>
+                            <a class="_nav_menu__title _nav_menu__title--gallery animsition-link" href="../gallery.html">gallery</a>
+                        </li>
+                        <li>
+                            <a class="_nav_menu__title _nav_menu__title--recipe animsition-link" href="../recipe.html">recipe</a>
+                        </li>
+                    </ul>
+                    <span class="_nav_menu__close"></span>
+                </div>
+                <img class="col-8 _nav__logo" src="../img/icon/logo-white.svg" alt="logo">
+                <div class="col-2 text-center">
+                    <svg class="_nav__sns align-middle mr-3" xmlns="http://www.w3.org/2000/svg" width="16.691"
+                        height="16.691" viewBox="0 0 16.691 16.691">
+                        <g data-name="FB black" transform="translate(-1089 -73.24)">
+                            <path data-name="Path 16"
+                                d="M1105.732,72.135h-14.848a.922.922,0,0,0-.922.922V87.906a.921.921,0,0,0,.922.92h7.994V82.363H1096.7V79.844h2.176V77.986a3.035,3.035,0,0,1,3.24-3.33,17.7,17.7,0,0,1,1.944.1v2.253h-1.334c-1.046,0-1.248.5-1.248,1.226v1.609h2.494l-.325,2.519h-2.169v6.462h4.253a.92.92,0,0,0,.92-.921V73.057A.921.921,0,0,0,1105.732,72.135Z"
+                                transform="translate(-0.962 1.105)" fill="rgba(21,21,21,0.9)" />
+                        </g>
+                    </svg>
+                    <svg class="_nav__sns align-middle mr-3" xmlns="http://www.w3.org/2000/svg" width="17.17"
+                        height="17.17" viewBox="0 0 17.17 17.17">
+                        <g data-name="IG black" transform="translate(-1122.927 -73)">
+                            <path data-name="Path 15"
+                                d="M1132.474,73.443c2.292,0,2.564.008,3.469.05,2.327.106,3.414,1.21,3.52,3.519.041.9.049,1.177.049,3.469s-.009,2.564-.049,3.469c-.107,2.307-1.191,3.413-3.52,3.519-.905.042-1.176.05-3.469.05s-2.564-.008-3.469-.05c-2.333-.106-3.414-1.215-3.52-3.52-.041-.9-.05-1.176-.05-3.469s.01-2.563.05-3.469c.107-2.308,1.191-3.413,3.52-3.519C1129.91,73.451,1130.181,73.443,1132.474,73.443Zm0-1.548c-2.332,0-2.624.01-3.54.052-3.117.143-4.85,1.873-4.993,4.993-.042.917-.052,1.209-.052,3.54s.01,2.624.051,3.54c.143,3.118,1.873,4.851,4.994,4.994.916.041,1.208.051,3.54.051s2.624-.01,3.539-.051c3.115-.143,4.852-1.873,4.993-4.994.043-.916.053-1.208.053-3.54s-.01-2.623-.052-3.539c-.14-3.115-1.872-4.85-4.993-4.994C1135.1,71.9,1134.805,71.895,1132.474,71.895Zm0,4.177a4.409,4.409,0,1,0,4.408,4.408A4.409,4.409,0,0,0,1132.474,76.072Zm0,7.27a2.861,2.861,0,1,1,2.861-2.862A2.861,2.861,0,0,1,1132.474,83.342Zm4.583-8.474a1.03,1.03,0,1,0,1.029,1.03A1.03,1.03,0,0,0,1137.057,74.868Z"
+                                transform="translate(-0.962 1.105)" fill="rgba(21,21,21,0.9)" />
+                        </g>
+                    </svg>
+                    <svg class="_nav__sns align-middle" xmlns="http://www.w3.org/2000/svg" width="14.372"
+                        height="14.486" viewBox="0 0 14.372 14.486">
+                        <g data-name="SEARCH black" transform="translate(-1158.868 -74.343)">
+                            <path data-name="Path 17"
+                                d="M1174.2,86.3l-3.746-3.745a5.878,5.878,0,1,0-1.441,1.4l3.766,3.765Zm-12.649-7.192a4.151,4.151,0,1,1,4.151,4.151A4.156,4.156,0,0,1,1161.553,79.111Z"
+                                transform="translate(-0.962 1.105)" fill="rgba(21,21,21,0.9)" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
         </nav>
         <div class="swiper-container swiper-container--recipeAll">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide--1">
                     <div class="_recipeAll__main">
                         <h1 class="_recipeAll__name">千層蔬菜紅蝦捲</h1>
-                        <h2 class="_recipeAll__name--en">Cabbage spinach rolls with grounded <br/>shrimp and shrimp bisque</h2>
+                        <h2 class="_recipeAll__name--en">Cabbage spinach rolls with grounded <br />shrimp and shrimp
+                            bisque</h2>
                         <span class="_recipeAll__month mb-5">January</span>
-                        <a class="_recipeAll__btn" href="dish1.html">
+                        <a class="_recipeAll__btn animsition-link" href="dish1.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -99,7 +110,7 @@
                         <span class="_recipeAll__month">February</span>
                         <h1 class="_recipeAll__name">油封章魚配香料橙汁</h1>
                         <h2 class="_recipeAll__name--en mb-5">Octopus confit with spiced orange vinaigrette</h2>
-                        <a class="_recipeAll__btn" href="dish2.html">
+                        <a class="_recipeAll__btn animsition-link" href="dish2.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -108,9 +119,10 @@
                 <div class="swiper-slide swiper-slide--3">
                     <div class="_recipeAll__main">
                         <h1 class="_recipeAll__name">煎草蝦南瓜湯及酥炸牛蒡</h1>
-                        <h2 class="_recipeAll__name--en">Pumpkin soup with pan-seared prawn <br/>and crispy burdock</h2>
+                        <h2 class="_recipeAll__name--en">Pumpkin soup with pan-seared prawn <br />and crispy burdock
+                        </h2>
                         <span class="_recipeAll__month _recipeAll__month--inline">March</span>
-                        <a class="_recipeAll__btn ml-4" href="dish3.html">
+                        <a class="_recipeAll__btn animsition-link ml-4" href="dish3.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -120,8 +132,9 @@
                     <div class="_recipeAll__main _recipeAll__main--left">
                         <span class="_recipeAll__month mb-2">April</span>
                         <h1 class="_recipeAll__name">蛤蠣蘆筍蒸蛋</h1>
-                        <h2 class="_recipeAll__name--en mb-5">Clam consommé steamed egg <br/>custard with asparagus</h2>
-                        <a class="_recipeAll__btn" href="dish4.html">
+                        <h2 class="_recipeAll__name--en mb-5">Clam consommé steamed egg <br />custard with asparagus
+                        </h2>
+                        <a class="_recipeAll__btn animsition-link" href="dish4.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -131,8 +144,9 @@
                     <div class="_recipeAll__main">
                         <span class="_recipeAll__month mb-2">May</span>
                         <h1 class="_recipeAll__name">醃漬梨子羊肉捲配炭烤蓮藕</h1>
-                        <h2 class="_recipeAll__name--en mb-5">Lamb with marinated pear and charcoal <br/>lotus roots</h2>
-                        <a class="_recipeAll__btn" href="dish5.html">
+                        <h2 class="_recipeAll__name--en mb-5">Lamb with marinated pear and charcoal <br />lotus roots
+                        </h2>
+                        <a class="_recipeAll__btn animsition-link" href="dish5.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -143,7 +157,7 @@
                         <span class="_recipeAll__month mb-2">June</span>
                         <h1 class="_recipeAll__name">乾煎白鯧</h1>
                         <h2 class="_recipeAll__name--en mb-5">Pan-seared white pomfret</h2>
-                        <a class="_recipeAll__btn" href="dish6.html">
+                        <a class="_recipeAll__btn animsition-link" href="dish6.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -154,7 +168,7 @@
                         <h1 class="_recipeAll__name">苦瓜炒牛肉</h1>
                         <h2 class="_recipeAll__name--en mb-2">Sauté beef with bitter gourd</h2>
                         <span class="_recipeAll__month _recipeAll__month--inline">July</span>
-                        <a class="_recipeAll__btn ml-4" href="dish7.html">
+                        <a class="_recipeAll__btn animsition-link ml-4" href="dish7.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -164,8 +178,8 @@
                     <div class="_recipeAll__main _recipeAll__main--left">
                         <span class="_recipeAll__month mb-2">Augest</span>
                         <h1 class="_recipeAll__name">蓮藕海鮮夾</h1>
-                        <h2 class="_recipeAll__name--en mb-5">Lotus roots sandwich with <br/>seafood fillings</h2>
-                        <a class="_recipeAll__btn" href="dish8.html">
+                        <h2 class="_recipeAll__name--en mb-5">Lotus roots sandwich with <br />seafood fillings</h2>
+                        <a class="_recipeAll__btn animsition-link" href="dish8.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -176,7 +190,7 @@
                         <span class="_recipeAll__month mb-1">September</span>
                         <h1 class="_recipeAll__name">優格烤雞配烤蔬菜</h1>
                         <h2 class="_recipeAll__name--en mb-5">Yogurt marinated chicken and grilled vegetables</h2>
-                        <a class="_recipeAll__btn" href="dish9.html">
+                        <a class="_recipeAll__btn animsition-link" href="dish9.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -187,7 +201,7 @@
                         <span class="_recipeAll__month mb-1">October</span>
                         <h1 class="_recipeAll__name">味噌烤鮭魚配醃漬白蘿蔔</h1>
                         <h2 class="_recipeAll__name--en mb-5">Miso salmon fillet with lemon infused daikon</h2>
-                        <a class="_recipeAll__btn" href="dish10.html">
+                        <a class="_recipeAll__btn animsition-link" href="dish10.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -198,7 +212,7 @@
                         <h1 class="_recipeAll__name">芋頭燉豬肉</h1>
                         <h2 class="_recipeAll__name--en mb-2">Braised pork ribs and taro stew</h2>
                         <span class="_recipeAll__month mb-5">November</span>
-                        <a class="_recipeAll__btn" href="dish11.html">
+                        <a class="_recipeAll__btn animsition-link" href="dish11.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -209,7 +223,7 @@
                         <span class="_recipeAll__month mb-1">December</span>
                         <h1 class="_recipeAll__name">酥炸黑牡蠣搭配花椰菜奶油醬</h1>
                         <h2 class="_recipeAll__name--en mb-5">Deep-fried oysters with broccoli béchamel sauce</h2>
-                        <a class="_recipeAll__btn" href="dish12.html">
+                        <a class="_recipeAll__btn animsition-link" href="dish12.html">
                             <span>RECIPE</span>
                             <img src="../img/icon/add.svg" alt="add">
                         </a>
@@ -220,11 +234,12 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-        
+
         <!-- Footer -->
         <footer>
             <span class="white">Copyright © 2019 INSEASON</span>
         </footer>
     </div>
 </body>
+
 </html>

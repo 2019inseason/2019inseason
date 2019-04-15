@@ -1,48 +1,61 @@
-._dish{
+._dish {
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: #ffffff;
-    &--1{
+
+    &--1 {
         background-image: url(../img/recipe-detail/bg1-1@2x.png);
     }
-    &--2{
+
+    &--2 {
         background-image: url(../img/recipe-detail/bg2-1@2x.png);
     }
-    &--3{
+
+    &--3 {
         background-image: url(../img/recipe-detail/bg3-1@2x.png);
     }
-    &--4{
+
+    &--4 {
         background-image: url(../img/recipe-detail/bg4-1@2x.png);
     }
-    &--5{
+
+    &--5 {
         background-image: url(../img/recipe-detail/bg5-1@2x.png);
     }
-    &--6{
+
+    &--6 {
         background-image: url(../img/recipe-detail/bg6-1@2x.png);
     }
-    &--7{
+
+    &--7 {
         background-image: url(../img/recipe-detail/bg7-1@2x.png);
     }
-    &--8{
+
+    &--8 {
         background-image: url(../img/recipe-detail/bg8-1@2x.png);
     }
-    &--9{
+
+    &--9 {
         background-image: url(../img/recipe-detail/bg9-1@2x.png);
     }
-    &--10{
+
+    &--10 {
         background-image: url(../img/recipe-detail/bg10-1@2x.png);
     }
-    &--11{
+
+    &--11 {
         background-image: url(../img/recipe-detail/bg11-1@2x.png);
     }
-    &--12{
+
+    &--12 {
         background-image: url(../img/recipe-detail/bg12-1@2x.png);
     }
 }
-._dish_ingredient__title{
+
+._dish_ingredient__title {
     position: absolute;
     left: 12%;
     top: 0;
@@ -50,51 +63,68 @@
     margin: auto;
     width: 30%;
     height: 30%;
-    h1{
+
+    h1 {
         font-size: 5em;
         font-weight: bold;
         line-height: 100px;
     }
-    h2{
+
+    h2 {
         font-size: 24px;
         font-weight: 300;
         font-family: 'Kozuka Mincho Pr6N R';
         letter-spacing: 9px;
     }
-    &--ingredient{
+
+    &--ingredient {
         opacity: 0;
-        .js_ingredient &{
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+
+        .js_ingredient & {
             opacity: 1;
+            visibility: visible;
         }
     }
-    &--recipe{
+
+    &--recipe {
         opacity: 0;
-        .js_recipe &{
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+
+        .js_recipe & {
             opacity: 1;
+            visibility: visible;
         }
     }
 }
-._dish__back{
+
+._dish__back {
     position: absolute;
     left: 12%;
     bottom: 12%;
     margin: auto;
     width: 30%;
     color: #ffffff;
-    &:hover{
+
+    &:hover {
         color: #ffffff;
     }
-    img{
+
+    img {
         width: 20px;
     }
-    span{
+
+    span {
         vertical-align: middle;
         font-size: 18px;
         letter-spacing: 1px;
         margin-left: 5px;
     }
 }
-._dish__tab{
+
+._dish__tab {
     position: absolute;
     left: 0;
     right: 0;
@@ -103,27 +133,65 @@
     width: 30%;
     text-align: center;
 }
-._dish__tabBtn{
+
+._dish__tabBtn {
     display: inline-block;
     padding: 0 0 7px 0;
+    position: relative;
     font-family: 'Kozuka Mincho Pr6N R';
     cursor: pointer;
-    &--ingredient{
-        .js_ingredient &{
-            border-bottom: 1px solid #ffffff;
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -5px;
+        background: #ffffff;
+        width: 0;
+        height: .5px;
+        transition: width 0.2s ease-in-out;
+    }
+
+    &--ingredient {
+        .js_ingredient & {
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                left: 0;
+                bottom: -5px;
+                background: #ffffff;
+                width: 100%;
+                height: .5px;
+                transition: width 0.2s ease-in-out;
+            }
         }
     }
-    &--recipe{
-        .js_recipe &{
-            border-bottom: 1px solid #ffffff;
+
+    &--recipe {
+        .js_recipe & {
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                left: 0;
+                bottom: -5px;
+                background: #ffffff;
+                width: 100%;
+                height: .5px;
+                transition: width 0.2s ease-in-out;
+            }
         }
     }
-    span{
+
+    span {
         letter-spacing: 1px;
     }
-    
+
 }
-._dish_ingredient__content{
+
+._dish_ingredient__content {
     // position: absolute;
     // right: 6%;
     // top: 50%;
@@ -137,33 +205,45 @@
     right: 7%;
     font-family: 'Kozuka Mincho Pr6N R';
 
-    h3{
+    h3 {
         font-size: 19px;
         display: block;
         letter-spacing: 2px;
     }
-    p{
+
+    p {
         font-size: 13px;
         display: block;
         letter-spacing: 2px;
         text-align: justify;
         // font-weight: 100;
-        margin-bottom: 9%;  
-        &:last-child{
+        margin-bottom: 9%;
+
+        &:last-child {
             margin-bottom: 0;
-        }  
-    }
-    &--ingredient{
-        // padding-right: 5%;
-        opacity: 0;
-        .js_ingredient &{
-            opacity: 1;
         }
     }
-    &--recipe{
+
+    &--ingredient {
+        // padding-right: 5%;
         opacity: 0;
-        .js_recipe &{
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+
+        .js_ingredient & {
             opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &--recipe {
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+
+        .js_recipe & {
+            opacity: 1;
+            visibility: visible;
         }
     }
 }
