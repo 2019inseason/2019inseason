@@ -8272,7 +8272,8 @@ footer {
   box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.16);
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  cursor: pointer; }
   ._island_detail__back svg {
     position: absolute;
     left: 57%;
@@ -8448,11 +8449,17 @@ footer {
     letter-spacing: 2px;
     margin-right: 4px; }
 
+#test1 {
+  opacity: 0;
+  visibility: hidden; }
+
 #cabbage {
   cursor: pointer;
   position: relative;
-  -webkit-filter: opacity(0.5);
-  filter: opacity(0.5); }
+  z-index: 99; }
+  #cabbage:hover #test1 {
+    opacity: 1;
+    visibility: visible; }
 
 ._recipe .swiper-container {
   height: 100vh; }
