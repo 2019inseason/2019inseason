@@ -1,6 +1,14 @@
 .start_anim{
     overflow: hidden;
 }
+._island{
+    nav{
+        pointer-events: none;
+    }
+    ._nav__menuBlock,._nav_menu{
+        pointer-events: all;
+    }
+}
 ._island_intro{
     .swiper-container {
         position: unset !important;
@@ -471,6 +479,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
+    opacity: 0;
+    visibility: hidden;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
 
 }
 ._island_crop__main{
@@ -545,19 +559,55 @@
         margin-right: 4px;
     }
 }
-#test1{
-    opacity: 0;
-    visibility: hidden;
-}
+// #test1{
+//     opacity: 0;
+//     visibility: hidden;
+// }
 #cabbage{
     cursor: pointer;
     position: relative;
-    z-index: 99;
-    &:hover{
-        #test1{
-            opacity: 1;
-            visibility: visible;
-        }
-    }
+    // z-index: 99;
+    // &:hover{
+    //     #test1{
+    //         opacity: 1;
+    //         visibility: visible;
+    //     }
+    // }
+}
+#broccoli{
+    cursor: pointer;
+    position: relative;
+}
+#botsai{
+    cursor: pointer;
+    position: relative;
+}
+#uto{
+    cursor: pointer;
+    position: relative;
+}
+#tonghau{
+    cursor: pointer;
+    position: relative;
+}
+#baitsai{
+    cursor: pointer;
+    position: relative;
+}
+#pea{
+    cursor: pointer;
+    position: relative;
+}
+#orange{
+    cursor: pointer;
+    position: relative;
+}
+#strawberry{
+    cursor: pointer;
+    position: relative;
+}
+#ponkan{
+    cursor: pointer;
+    position: relative;
 }
 

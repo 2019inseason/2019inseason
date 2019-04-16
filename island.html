@@ -19,8 +19,10 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <script src="js/lib/jquery-3.2.1/jquery.min.js"></script>
     <script src="js/lib/jquery-3.2.1/jquery-migrate.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.3/lottie.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+    <script src="js/lib/bodymovin/lottie.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.3/lottie.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script> -->
+    <script src="js/lib/swiper/swiper.min.js"></script>
     <script src="js/lib/animsition-master/animsition.min.js"></script>
 
     <script src="js/site/island.js"></script>
@@ -29,7 +31,7 @@
 </head>
 
 <body>
-    <div class="wrapper container-fluid animsition">
+    <div class="_island wrapper container-fluid animsition">
         <!-- nav -->
         <nav id="nav" class="_nav _nav--white">
             <div class="row align-items-center">
@@ -303,12 +305,873 @@
         </div>
         <!-- Crop視窗 -->
         <div class="_island_crop__shadow"></div>
-        <div id="js_cabbage" class="_island_crop">
+        <div class="_island_crop">
             <div class="js-crop_close _island_crop__close">
                 <span class="_island_crop__close-icon"></span>
                 <span class="_island_crop__close-text">CLOSE</span>
             </div>
-            <div class="_island_crop__window">
+
+            <!-- 高麗菜 -->
+            <div id="js_cabbage" class="_island_crop__window">
+                <div class="_island_crop__main">
+                    <img src="img/crop/cabbage.svg" alt="">
+                    <div class="_island_crop__title">
+                        <h1>高麗菜</h1>
+                        <h2>CABBAGE</h2>
+                        <span>別名 - 甘藍菜/玻璃菜/結球甘藍</span>
+                    </div>
+                </div>
+                <div class="_island_crop__content">
+                    <div class="_island_crop__text mb-5">
+                        <em>HOW THEY GROW</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon1.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產期</span>
+                                <span class="_island_crop__infoTitle">SEASON</span>
+                                <p>11-2月，屬半耐寒性</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon2.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產地</span>
+                                <span class="_island_crop__infoTitle">PLACE OF ORIGIN</span>
+                                <p>台灣平地常見蔬菜，彰化、雲林、嘉義為主產地區； 夏季則在宜蘭、台中、南投等海拔約1500公尺的高冷地栽培。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon3.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">濕度</span>
+                                <span class="_island_crop__infoTitle">HUMIDITY</span>
+                                <p>種植於保水力強的濕潤土壤，排水需良好。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon4.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">光照與溫度</span>
+                                <span class="_island_crop__infoTitle">TEMPERATURE</span>
+                                <p>15-20℃ 長日照植物</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_island_crop__text">
+                        <em>HOW TO EAT</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon5.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">身補</span>
+                                <span class="_island_crop__infoTitle">HEALTH</span>
+                                <p>
+                                    – 含維生素U，促進腸胃蠕動，改善便秘。 <br />
+                                    – 味甘、性平，可益腎補髓，含維生素K，良好凝血作用。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon6.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">料理</span>
+                                <span class="_island_crop__infoTitle">COOKING METHOD</span>
+                                <p>
+                                    – 炒、煮湯、生菜沙拉、泡菜或製成菜乾。<br />
+                                    – 生食時營養含量最高，若要烹煮，需避免過於熟爛。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon7.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">挑選</span>
+                                <span class="_island_crop__infoTitle">HOW TO PICK</span>
+                                <p>
+                                    宜選擇葉片新鮮不枯萎，結構緊實，無撞傷者。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 花椰菜 -->
+            <div id="js_broccoli" class="_island_crop__window">
+                <div class="_island_crop__main">
+                    <img src="img/crop/broccoli.svg" alt="">
+                    <div class="_island_crop__title">
+                        <h1>花椰菜</h1>
+                        <h2>CAULIFLOWER</h2>
+                        <span>別名 - 花菜/白花菜</span>
+                    </div>
+                </div>
+                <div class="_island_crop__content">
+                    <div class="_island_crop__text mb-5">
+                        <em>HOW THEY GROW</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon1.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產期</span>
+                                <span class="_island_crop__infoTitle">SEASON</span>
+                                <p>8-3月，屬半耐寒性</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon2.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產地</span>
+                                <span class="_island_crop__infoTitle">PLACE OF ORIGIN</span>
+                                <p>秋季集中於後龍、埔鹽；冬春季集中於西螺、<br />
+                                    永靖、溪湖、二崙、大城、新港、民雄等。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon3.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">濕度</span>
+                                <span class="_island_crop__infoTitle">HUMIDITY</span>
+                                <p>空氣濕度：80-90%<br />
+                                    土壤濕度：70-80%</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon4.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">光照與溫度</span>
+                                <span class="_island_crop__infoTitle">TEMPERATURE</span>
+                                <p>20-25℃ 長日照植物</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_island_crop__text">
+                        <em>HOW TO EAT</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon5.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">身補</span>
+                                <span class="_island_crop__infoTitle">HEALTH</span>
+                                <p>
+                                    – 能預防癌細胞生長，例如腸癌、 乳癌、子宮癌等。 <br />
+                                    – 可增強肝臟解毒能力，並提高免疫力，可減少感冒。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon6.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">料理</span>
+                                <span class="_island_crop__infoTitle">COOKING METHOD</span>
+                                <p>
+                                    – 炒、煮、清蒸與其它生菜組合，做成生菜沙拉。<br />
+                                    – 建議蒸、炒，若要水煮避免超過五分鐘，花團開始變軟，
+                                    而莖依然脆口時，是抗癌物質最能有效利用的時候。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon7.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">挑選</span>
+                                <span class="_island_crop__infoTitle">HOW TO PICK</span>
+                                <p>
+                                    花球表面若有萎黃或花莖枯萎者皆不新鮮。
+                                    花球顏色愈潔白，成熟度愈佳，煮食風味愈好。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 菠菜 -->
+            <div id="js_botsai" class="_island_crop__window">
+                <div class="_island_crop__main">
+                    <img src="img/crop/botsai.svg" alt="">
+                    <div class="_island_crop__title">
+                        <h1>菠菜</h1>
+                        <h2>SPINACH</h2>
+                        <span>別名 - 菠薐/鸚鵡菜/紅根菜/飛龍菜</span>
+                    </div>
+                </div>
+                <div class="_island_crop__content">
+                    <div class="_island_crop__text mb-5">
+                        <em>HOW THEY GROW</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon1.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產期</span>
+                                <span class="_island_crop__infoTitle">SEASON</span>
+                                <p>11-3月，耐寒性強</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon2.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產地</span>
+                                <span class="_island_crop__infoTitle">PLACE OF ORIGIN</span>
+                                <p>冬季產區遍及全台灣；夏季產區剩下高山地區，
+                                    例如宜蘭南山、南投仁愛及台中梨山等處。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon3.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">濕度</span>
+                                <span class="_island_crop__infoTitle">HUMIDITY</span>
+                                <p>種植在空氣濕度高，與潮濕肥沃的中性、微鹼性土壤中為宜。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon4.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">光照與溫度</span>
+                                <span class="_island_crop__infoTitle">TEMPERATURE</span>
+                                <p>15-20℃ 長日照植物</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_island_crop__text">
+                        <em>HOW TO EAT</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon5.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">身補</span>
+                                <span class="_island_crop__infoTitle">HEALTH</span>
+                                <p>
+                                    – 含豐富的維生素A和胡蘿蔔素，對改善視力有一定的作用。<br />
+                                    – 菠菜味甘性涼，入腸經、胃經，具有潤腸通便、除煩止渴的作用。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon6.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">料理</span>
+                                <span class="_island_crop__infoTitle">COOKING METHOD</span>
+                                <p>
+                                    – 可清炒、川燙或涼拌食用。<br />
+                                    – 容易殘留農藥，可以先用沸水煮1～2分鐘，去除表面的水溶性農藥。<br />
+                                    – 食用前用沸水先煮約 2 分鐘，起鍋後瀝乾水分，便有助於去除大量的草酸。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon7.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">挑選</span>
+                                <span class="_island_crop__infoTitle">HOW TO PICK</span>
+                                <p>
+                                    宜選擇紫紅色根部、直挺飽滿無凹陷莖部的菠菜，並檢視葉片是否呈現鮮嫩的深綠色澤，無發黑、發黃或腐爛、水傷的跡象。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 芋頭 -->
+            <div id="js_uto" class="_island_crop__window">
+                <div class="_island_crop__main">
+                    <img src="img/crop/uto.svg" alt="">
+                    <div class="_island_crop__title">
+                        <h1>芋頭</h1>
+                        <h2>TARO</h2>
+                        <span>別名 - 芋頭/芋仔/牛菜</span>
+                    </div>
+                </div>
+                <div class="_island_crop__content">
+                    <div class="_island_crop__text mb-5">
+                        <em>HOW THEY GROW</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon1.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產期</span>
+                                <span class="_island_crop__infoTitle">SEASON</span>
+                                <p>8-1月，性喜高溫</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon2.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產地</span>
+                                <span class="_island_crop__infoTitle">PLACE OF ORIGIN</span>
+                                <p>屏東、台中、苗栗、高雄</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon3.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">濕度</span>
+                                <span class="_island_crop__infoTitle">HUMIDITY</span>
+                                <p>耐濕性強，尤其生長旺盛時期，水分不可缺少。 葉及葉柄組織內有氣腔，故適宜潮濕地栽培。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon4.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">光照與溫度</span>
+                                <span class="_island_crop__infoTitle">TEMPERATURE</span>
+                                <p>25-30℃ 長日照植物</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_island_crop__text">
+                        <em>HOW TO EAT</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon5.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">身補</span>
+                                <span class="_island_crop__infoTitle">HEALTH</span>
+                                <p>
+                                    – 具強健骨骼的作用，預防骨質疏鬆。<br />
+                                    – 含膳食纖維能在腸道中促進益生菌生長，性平，具有益胃、通便等功效。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon6.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">料理</span>
+                                <span class="_island_crop__infoTitle">COOKING METHOD</span>
+                                <p>
+                                    – 蒸、煮、炒、炸、製成鹹食或甜食，可製成芋粉、芋粿、芋圓、芋頭乾和芋仔冰等食品。<br />
+                                    – 外皮含草酸鹼黏液，會使皮膚發癢，處理時須戴手套，或等煮熟後再剝皮。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon7.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">挑選</span>
+                                <span class="_island_crop__infoTitle">HOW TO PICK</span>
+                                <p>
+                                    宜選擇外型適中、表皮乾燥、環紋明顯、有重量感、無病蟲害或腐爛損傷者。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--茼蒿-->
+            <div id="js_tonghau" class="_island_crop__window">
+                <div class="_island_crop__main">
+                    <img src="img/crop/tonghau.svg" alt="">
+                    <div class="_island_crop__title">
+                        <h1>茼蒿</h1>
+                        <h2>
+                            GARLAND<br />
+                            CHRYSANTHEMUM</h2>
+                        <span>別名 - 春菊/打某菜/茼蒿菜/艾菜/皇帝菜</span>
+                    </div>
+                </div>
+                <div class="_island_crop__content">
+                    <div class="_island_crop__text mb-5">
+                        <em>HOW THEY GROW</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon1.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產期</span>
+                                <span class="_island_crop__infoTitle">SEASON</span>
+                                <p>10-4月，性喜冷涼氣候</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon2.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產地</span>
+                                <span class="_island_crop__infoTitle">PLACE OF ORIGIN</span>
+                                <p>雲林、高雄</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon3.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">濕度</span>
+                                <span class="_island_crop__infoTitle">HUMIDITY</span>
+                                <p>種植於濕潤保肥力強之砂質壤土或粘質壤土，
+                                    濕度需控制在95%以下。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon4.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">光照與溫度</span>
+                                <span class="_island_crop__infoTitle">TEMPERATURE</span>
+                                <p>10-22℃ 長日照植物</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_island_crop__text">
+                        <em>HOW TO EAT</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon5.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">身補</span>
+                                <span class="_island_crop__infoTitle">HEALTH</span>
+                                <p>
+                                    – 有助於抵抗呼吸系統的感染，特殊的香氣有助於潤肺消痰。<br />
+                                    – 含有多種礦物質，能調節體內水液代謝，可消除水腫、通利水便。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon6.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">料理</span>
+                                <span class="_island_crop__infoTitle">COOKING METHOD</span>
+                                <p>
+                                    – 可清炒、川燙或煮湯，例如鹹圓仔湯或冬季火鍋配菜。<br />
+                                    – 買回家後輕輕用水洗，擦乾水氣後放入保鮮袋或塑膠袋中冷藏。<br />
+                                    – 注意不要把葉子壓在底下，避免葉片受傷。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon7.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">挑選</span>
+                                <span class="_island_crop__infoTitle">HOW TO PICK</span>
+                                <p>
+                                    宜選擇葉片厚實、莖部粗細適中、根部飽滿，葉面需完整，
+                                    避免挑到葉緣發黑或變色、變黃的。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--大白菜-->
+            <div id="js_baitsai" class="_island_crop__window">
+                <div class="_island_crop__main">
+                    <img src="img/crop/baitsai.svg" alt="">
+                    <div class="_island_crop__title">
+                        <h1>大白菜</h1>
+                        <h2>
+                            CHINESE CABBAGE</h2>
+                        <span>別名 - 山東白菜/結球白菜/包心白菜/卷心白菜</span>
+                    </div>
+                </div>
+                <div class="_island_crop__content">
+                    <div class="_island_crop__text mb-5">
+                        <em>HOW THEY GROW</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon1.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產期</span>
+                                <span class="_island_crop__infoTitle">SEASON</span>
+                                <p>11-4月，屬半耐寒性，性喜冷涼氣候</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon2.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產地</span>
+                                <span class="_island_crop__infoTitle">PLACE OF ORIGIN</span>
+                                <p>冬季產地在彰化、雲林、嘉義、台南一帶
+                                    夏季產地則以高冷地區為主。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon3.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">濕度</span>
+                                <span class="_island_crop__infoTitle">HUMIDITY</span>
+                                <p>需水量大，生長期間需保持土壤一定濕度，
+                                    但若含水量過高容易腐爛毀壞。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon4.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">光照與溫度</span>
+                                <span class="_island_crop__infoTitle">TEMPERATURE</span>
+                                <p>10-22℃ 長日照植物</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_island_crop__text">
+                        <em>HOW TO EAT</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon5.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">身補</span>
+                                <span class="_island_crop__infoTitle">HEALTH</span>
+                                <p>
+                                    – 幫助消化及促進腸胃蠕動。<br />
+                                    – 可清熱退火、降低血膽固醇、益於心血管疾病的預防。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon6.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">料理</span>
+                                <span class="_island_crop__infoTitle">COOKING METHOD</span>
+                                <p>
+                                    – 炒、煮、滷、作火鍋配菜，或做成菜乾、泡菜。<br />
+                                    – 從中間的梗切半，前段切小片，後段葉子較多切大片，熟成時間才會一致。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon7.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">挑選</span>
+                                <span class="_island_crop__infoTitle">HOW TO PICK</span>
+                                <p>
+                                    宜選擇菜球結實緊密、基部堅硬、葉片鮮翠，
+                                    與心部成明顯對比，無斑點及壓撞傷者。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--豌⾖-->
+            <div id="js_pea" class="_island_crop__window">
+                <div class="_island_crop__main">
+                    <img src="img/crop/pea.svg" alt="">
+                    <div class="_island_crop__title">
+                        <h1>豌豆</h1>
+                        <h2>PEA</h2>
+                        <span>別名 - 荷蘭豆(圓身：蜜豆/扁身：青豆）</span>
+                    </div>
+                </div>
+                <div class="_island_crop__content">
+                    <div class="_island_crop__text mb-5">
+                        <em>HOW THEY GROW</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon1.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產期</span>
+                                <span class="_island_crop__infoTitle">SEASON</span>
+                                <p>11-4月，性喜冷涼乾燥，耐寒不耐熱</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon2.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產地</span>
+                                <span class="_island_crop__infoTitle">PLACE OF ORIGIN</span>
+                                <p>彰化、雲林、南投</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon3.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">濕度</span>
+                                <span class="_island_crop__infoTitle">HUMIDITY</span>
+                                <p>稍能耐旱，但不耐濕<br />
+                                    開花最適宜的空氣濕度為60～90%。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon4.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">光照與溫度</span>
+                                <span class="_island_crop__infoTitle">TEMPERATURE</span>
+                                <p>9-23℃ 長日照植物</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_island_crop__text">
+                        <em>HOW TO EAT</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon5.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">身補</span>
+                                <span class="_island_crop__infoTitle">HEALTH</span>
+                                <p>
+                                    – 含維生素A，能調節皮膚新陳代謝，具有祛除面部黑斑的功效。<br />
+                                    – 含有優質蛋白質，可以提高抗病和康復能力，增強免疫功能。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon6.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">料理</span>
+                                <span class="_island_crop__infoTitle">COOKING METHOD</span>
+                                <p>
+                                    – 分為軟莢及硬莢兩類，一般吃的是軟莢種，豆仁豆莢都可食用若只吃豌豆仁，則是硬莢品種，莢殼粗硬不能用。<br />
+                                    – 豌豆研製成粉狀，可以加工做成粉絲及其他食品，例如傳統甜點「豌豆黃」。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon7.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">挑選</span>
+                                <span class="_island_crop__infoTitle">HOW TO PICK</span>
+                                <p>
+                                    宜選擇豆莢扁平青脆細嫩，無病蟲害、斑點，完整無損傷；
+                                    豌豆仁則要色澤鮮綠，顆粒飽滿，外表完整無破損。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--柳丁-->
+            <div id="js_orange" class="_island_crop__window">
+                <div class="_island_crop__main">
+                    <img src="img/crop/orange.svg" alt="">
+                    <div class="_island_crop__title">
+                        <h1>柳丁</h1>
+                        <h2>ORANGE</h2>
+                        <span>別名 - 柳橙/甜橙/印仔柑</span>
+                    </div>
+                </div>
+                <div class="_island_crop__content">
+                    <div class="_island_crop__text mb-5">
+                        <em>HOW THEY GROW</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon1.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產期</span>
+                                <span class="_island_crop__infoTitle">SEASON</span>
+                                <p>11-1月，耐高溫</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon2.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產地</span>
+                                <span class="_island_crop__infoTitle">PLACE OF ORIGIN</span>
+                                <p>嘉義、臺南、雲林</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon3.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">濕度</span>
+                                <span class="_island_crop__infoTitle">HUMIDITY</span>
+                                <p>花芽分化時期，土壤需要適度乾燥；抽梢、開花及幼果發育期，應充足供水，若過於乾旱，易造成嚴重落葉、落花及落果。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon4.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">光照與溫度</span>
+                                <span class="_island_crop__infoTitle">TEMPERATURE</span>
+                                <p>24-34℃ 長日照植物</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_island_crop__text">
+                        <em>HOW TO EAT</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon5.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">身補</span>
+                                <span class="_island_crop__infoTitle">HEALTH</span>
+                                <p>
+                                    – 歸胃經、肺經及肝經，飯後吃柳丁可解油膩，柳丁水分多，也有止渴作用。<br />
+                                    – 柳丁上的白絡富含膳食纖維，有保水的特性，使糞便容易成形，對於輕度腹瀉有緩和作用。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon6.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">料理</span>
+                                <span class="_island_crop__infoTitle">COOKING METHOD</span>
+                                <p>
+                                    – 用水洗會縮短保存期限，食用前徹底清洗後再削切即可。<br />
+                                    – 若要連皮入菜，最好先用水沖5分鐘，把農藥洗掉。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon7.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">挑選</span>
+                                <span class="_island_crop__infoTitle">HOW TO PICK</span>
+                                <p>
+                                    宜選擇飽滿有彈性，皮薄，香氣濃郁者。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--草莓-->
+            <div id="js_strawberry" class="_island_crop__window">
+                <div class="_island_crop__main">
+                    <img src="img/crop/strawberry.svg" alt="">
+                    <div class="_island_crop__title">
+                        <h1>草莓</h1>
+                        <h2>STRAWBERRY</h2>
+                        <span>別名 - 紅莓/地莓</span>
+                    </div>
+                </div>
+                <div class="_island_crop__content">
+                    <div class="_island_crop__text mb-5">
+                        <em>HOW THEY GROW</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon1.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產期</span>
+                                <span class="_island_crop__infoTitle">SEASON</span>
+                                <p>12-3月，性喜冷涼氣候</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon2.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產地</span>
+                                <span class="_island_crop__infoTitle">PLACE OF ORIGIN</span>
+                                <p>以苗栗縣大湖最多，其他有關西、內湖、國姓等零星栽培。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon3.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">濕度</span>
+                                <span class="_island_crop__infoTitle">HUMIDITY</span>
+                                <p>濕度於開花前控制在80%以下；
+                                    開花至果實膨大期，控制在60%為宜。</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon4.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">光照與溫度</span>
+                                <span class="_island_crop__infoTitle">TEMPERATURE</span>
+                                <p>18-22℃ 短日照植物</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_island_crop__text">
+                        <em>HOW TO EAT</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon5.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">身補</span>
+                                <span class="_island_crop__infoTitle">HEALTH</span>
+                                <p>
+                                    – 預防壞血病、對防治動脈硬化，冠心病也有好的療效。<br />
+                                    – 含胡蘿蔔素，是合成維生素A的重要物質，具有明目養肝作用。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon6.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">料理</span>
+                                <span class="_island_crop__infoTitle">COOKING METHOD</span>
+                                <p>
+                                    – 清洗時放進漏籃之內用清水慢慢沖洗，瀝乾後可用軟毛巾吸乾水分，入口前再將蒂頭拔除。<br />
+                                    – 保存時可用紙巾鋪在盤子，放上草莓再用保鮮膜或密封袋封起來,亦可用樂扣盒裝起來，要吃之前再清洗。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon7.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">挑選</span>
+                                <span class="_island_crop__infoTitle">HOW TO PICK</span>
+                                <p>
+                                    宜選擇顏色鮮豔的草莓，如果肩部是白色就約8分熟；
+                                    注意外表是否有損傷，草莓上的絨毛越長代表越少接觸過，越新鮮。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--椪柑-->
+            <div id="js_ponkan" class="_island_crop__window">
+                <div class="_island_crop__main">
+                    <img src="img/crop/ponkan.svg" alt="">
+                    <div class="_island_crop__title">
+                        <h1>椪柑</h1>
+                        <h2>PONKAN</h2>
+                        <span>別名 - 橘子/壺柑/盧柑</span>
+                    </div>
+                </div>
+                <div class="_island_crop__content">
+                    <div class="_island_crop__text mb-5">
+                        <em>HOW THEY GROW</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon1.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產期</span>
+                                <span class="_island_crop__infoTitle">SEASON</span>
+                                <p>9-2月，性喜濕潤</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon2.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">產地</span>
+                                <span class="_island_crop__infoTitle">PLACE OF ORIGIN</span>
+                                <p>苗栗、台中、雲林、嘉義、台南</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon3.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">濕度</span>
+                                <span class="_island_crop__infoTitle">HUMIDITY</span>
+                                <p>空氣濕度：80%<br />
+                                    土壤濕度：60-80%</p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon4.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">光照與溫度</span>
+                                <span class="_island_crop__infoTitle">TEMPERATURE</span>
+                                <p>18-22℃ 長日照植物</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_island_crop__text">
+                        <em>HOW TO EAT</em>
+                        <div class="_island_crop__info mt-4">
+                            <img src="img/icon/crop_icon5.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">身補</span>
+                                <span class="_island_crop__infoTitle">HEALTH</span>
+                                <p>
+                                    – 把椪柑的果皮曬乾後，稱為陳皮，具有去痰、止咳的作用。<br />
+                                    – 味甘酸性溫，具開胃理氣、止咳潤肺和解酒醒神之功效。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon6.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">料理</span>
+                                <span class="_island_crop__infoTitle">COOKING METHOD</span>
+                                <p>
+                                    – 飯前或空腹時不宜吃橘子。橘子中的有機酸會刺激胃，對胃不利。<br />
+                                    – 需放在常溫、乾燥、通風、陰涼的地方進行保存，可保存一周左右。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="_island_crop__info">
+                            <img src="img/icon/crop_icon7.svg" alt="">
+                            <div>
+                                <span class="_island_crop__infoTitle _island_crop__infoTitle--tw">挑選</span>
+                                <span class="_island_crop__infoTitle">HOW TO PICK</span>
+                                <p>
+                                    宜選擇果粒大，拿起來結實有重量感，顏色均為橙黃者為佳。Ｆ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="_island_crop__window">
                 <div class="_island_crop__main">
                     <img src="img/crop/02/crop1.svg" alt="">
                     <div class="_island_crop__title">
@@ -391,7 +1254,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- Footer -->

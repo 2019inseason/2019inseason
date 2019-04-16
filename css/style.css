@@ -7938,6 +7938,12 @@ footer {
 .start_anim {
   overflow: hidden; }
 
+._island nav {
+  pointer-events: none; }
+
+._island ._nav__menuBlock, ._island ._nav_menu {
+  pointer-events: all; }
+
 ._island_intro .swiper-container {
   position: unset !important; }
 
@@ -8380,7 +8386,12 @@ footer {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 80%; }
+  width: 80%;
+  opacity: 0;
+  visibility: hidden; }
+  ._island_crop__window.active {
+    opacity: 1;
+    visibility: visible; }
 
 ._island_crop__main {
   -ms-flex-item-align: center;
@@ -8449,17 +8460,45 @@ footer {
     letter-spacing: 2px;
     margin-right: 4px; }
 
-#test1 {
-  opacity: 0;
-  visibility: hidden; }
-
 #cabbage {
   cursor: pointer;
-  position: relative;
-  z-index: 99; }
-  #cabbage:hover #test1 {
-    opacity: 1;
-    visibility: visible; }
+  position: relative; }
+
+#broccoli {
+  cursor: pointer;
+  position: relative; }
+
+#botsai {
+  cursor: pointer;
+  position: relative; }
+
+#uto {
+  cursor: pointer;
+  position: relative; }
+
+#tonghau {
+  cursor: pointer;
+  position: relative; }
+
+#baitsai {
+  cursor: pointer;
+  position: relative; }
+
+#pea {
+  cursor: pointer;
+  position: relative; }
+
+#orange {
+  cursor: pointer;
+  position: relative; }
+
+#strawberry {
+  cursor: pointer;
+  position: relative; }
+
+#ponkan {
+  cursor: pointer;
+  position: relative; }
 
 ._recipe .swiper-container {
   height: 100vh; }
