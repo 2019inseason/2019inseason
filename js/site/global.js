@@ -25,7 +25,7 @@ $(function(){
         loading: true,
         loadingParentElement: 'body', //animsition wrapper element
         loadingClass: 'animsition-loading',
-        loadingInner: '', // e.g '<img src="loading.svg" />'
+        loadingInner: '<img src="../img/loading.svg" />', // e.g '<img src="loading.svg" />'
         timeout: false,
         timeoutCountdown: 5000,
         onLoadEvent: true,

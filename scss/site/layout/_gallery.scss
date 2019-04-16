@@ -2,6 +2,7 @@
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    overflow: hidden;
     &.char{
         background-image: url(../img/gallery/char_bg.svg);
         height: 190vh;
@@ -9,7 +10,7 @@
     }
     &.crop{
         background-image: url(../img/gallery/crop_bg.svg);
-        height: 300vh;
+        height: 320vh;
         // transition: background-image 0.5s ease-in-out;
     }
     .container{

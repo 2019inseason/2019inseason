@@ -7948,7 +7948,7 @@ footer {
   position: unset !important; }
 
 ._island_intro .swiper-slide {
-  opacity: 0.7; }
+  opacity: 0.9; }
 
 ._island_intro .swiper-pagination {
   bottom: 50% !important;
@@ -8150,7 +8150,7 @@ footer {
   border-radius: 30px;
   padding: 10px 26px;
   color: #fff;
-  font-size: 14px;
+  font-size: 17px;
   -webkit-box-shadow: 3.4px 3.4px 3px rgba(0, 0, 0, 0.4);
   box-shadow: 3.4px 3.4px 3px rgba(0, 0, 0, 0.4);
   -webkit-transition: all .3s ease-in-out;
@@ -8282,13 +8282,13 @@ footer {
   cursor: pointer; }
   ._island_detail__back svg {
     position: absolute;
-    left: 57%;
+    left: 59%;
     top: 15%; }
   ._island_detail__back span {
     position: absolute;
-    left: 57%;
-    top: 30%;
-    font-size: 22px;
+    left: 59%;
+    top: 28%;
+    font-size: 32px;
     font-weight: bold; }
   ._island_detail__back:hover {
     width: 30vw;
@@ -8403,7 +8403,8 @@ footer {
     max-width: 335px; }
 
 ._island_crop__title {
-  margin-top: 25px; }
+  margin-top: 35px;
+  font-weight: bold; }
   ._island_crop__title h1 {
     font-family: 'Kozuka Mincho Pr6N';
     font-size: 32px;
@@ -8609,7 +8610,7 @@ footer {
     margin: 14% auto 0 auto;
     padding: 15px 18px;
     background-color: #D6CD25;
-    font-size: 14px;
+    font-size: 17px;
     border-radius: 50px;
     -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3); }
@@ -8629,17 +8630,20 @@ footer {
   letter-spacing: 3px; }
 
 ._about_section1__subtitle {
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 10px; }
+  font-size: 43px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-family: 'Kozuka Mincho Pr6N'; }
 
 ._about_section2__main {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 65%;
+  height: 40%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8649,13 +8653,12 @@ footer {
   position: relative; }
   ._about_section2__img img {
     display: block;
-    width: 130%;
-    padding: 0px 40% 0 0; }
+    width: 110%; }
   ._about_section2__img span {
     position: absolute;
-    right: 10%;
-    font-size: 7.5em;
-    top: 58%;
+    right: -10%;
+    font-size: 9.5em;
+    top: 57%;
     font-style: italic; }
 
 ._about_section2__text {
@@ -8669,24 +8672,25 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 70%; }
+  width: 68%; }
   ._about_section2__text p {
-    line-height: 37px;
-    letter-spacing: 2px;
-    font-size: 18px;
-    padding: 0 20px; }
+    line-height: 45px;
+    letter-spacing: 3px;
+    font-size: 19px;
+    padding: 0 20px;
+    font-family: 'Kozuka Mincho Pr6N'; }
 
 ._about_section2__title {
   font-size: 3em;
   font-weight: bold;
   position: relative; }
   ._about_section2__title::before {
-    left: 16%; }
+    left: 25%; }
   ._about_section2__title::after {
-    right: 16%; }
+    right: 25%; }
   ._about_section2__title::before, ._about_section2__title::after {
     content: "";
-    width: 25px;
+    width: 40px;
     height: 1px;
     background-color: #000000;
     position: absolute;
@@ -8730,37 +8734,39 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%; }
+  width: 60%;
+  margin-bottom: 5%; }
   ._about_section3__text p {
-    line-height: 37px;
-    letter-spacing: 1px;
-    font-size: 18px;
-    padding: 0 20px; }
+    line-height: 40px;
+    letter-spacing: 3px;
+    font-size: 19px;
+    padding: 0 20px;
+    font-family: 'Kozuka Mincho Pr6N'; }
 
 ._about_section3__img {
-  max-width: 100%;
   position: relative; }
   ._about_section3__img img {
     display: block;
-    width: 100%;
-    height: 100%;
-    padding: 0px 30px; }
+    width: 100%; }
   ._about_section3__img span {
     position: absolute;
-    right: 8%;
-    font-size: 80px;
-    top: 60%;
+    right: -24%;
+    font-size: 9.5em;
+    top: 40%;
+    letter-spacing: 4px;
     font-style: italic; }
 
 ._about_section3__title {
+  font-size: 3em;
+  font-weight: bold;
   position: relative; }
   ._about_section3__title::before {
-    left: 18%; }
+    left: 17%; }
   ._about_section3__title::after {
-    right: 18%; }
+    right: 17%; }
   ._about_section3__title::before, ._about_section3__title::after {
     content: "";
-    width: 19px;
+    width: 40px;
     height: 1px;
     background-color: #000000;
     position: absolute;
@@ -8772,27 +8778,31 @@ footer {
     font-size: 7.5em;
     font-style: italic;
     letter-spacing: 5px;
-    margin-top: -20px; }
+    margin-top: -70px; }
   ._about_section4__main .row {
-    padding-top: 27%; }
+    padding-top: 25%; }
 
 ._about_section4__text {
   text-align: left;
-  margin-left: 30px; }
+  margin-left: 30px;
+  display: inline-block; }
   ._about_section4__text p {
     line-height: 37px;
-    letter-spacing: 1px;
-    font-size: 15px; }
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-family: 'Kozuka Mincho Pr6N'; }
 
 ._about_section4__title {
   position: relative;
-  font-size: 1.5em;
-  font-weight: bold; }
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block; }
   ._about_section4__title::after {
-    right: 45%; }
+    right: -50%; }
   ._about_section4__title::after {
     content: "";
-    width: 19px;
+    width: 35px;
     height: 1px;
     background-color: #000000;
     position: absolute;
@@ -8805,11 +8815,11 @@ footer {
 
 ._about_section4__imgBlock {
   height: 250px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 17%; }
 
 ._about_section4__img {
-  max-width: 80%;
-  height: 80%;
+  height: 100%;
   margin: 0 auto;
   bottom: 0;
   position: absolute;
@@ -8817,7 +8827,14 @@ footer {
   right: 0; }
 
 ._about_section4__infoTitle {
+  font-size: 18px;
+  letter-spacing: 1px;
   font-style: italic; }
+
+._about_section4__infoSub {
+  font-size: 16px;
+  letter-spacing: 4px;
+  font-family: 'Kozuka Mincho Pr6N'; }
 
 ._about__btn--back {
   color: #000000;
@@ -8869,7 +8886,7 @@ footer {
   left: 6%; }
 
 ._recipeAll .swiper-button-next, ._recipeAll .swiper-button-prev {
-  width: 12%;
+  width: 5%;
   height: 80px;
   background-size: contain; }
 
@@ -8888,7 +8905,7 @@ footer {
     text-align: left; }
 
 ._recipeAll__name {
-  font-family: 'Kozuka Mincho Pr6N R';
+  font-family: 'Kozuka Mincho Pr6N';
   margin-bottom: 7px;
   font-size: 22px;
   font-weight: 100;
@@ -8957,11 +8974,10 @@ footer {
 ._dish_ingredient__title {
   position: absolute;
   left: 12%;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 30%;
-  height: 30%; }
+  top: 50%;
+  -webkit-transform: translate(-12%, -50%);
+  -ms-transform: translate(-12%, -50%);
+  transform: translate(-12%, -50%); }
   ._dish_ingredient__title h1 {
     font-size: 5em;
     font-weight: bold;
@@ -8969,8 +8985,9 @@ footer {
   ._dish_ingredient__title h2 {
     font-size: 24px;
     font-weight: 300;
-    font-family: 'Kozuka Mincho Pr6N R';
-    letter-spacing: 9px; }
+    font-family: 'Kozuka Mincho Pr6N';
+    letter-spacing: 9px;
+    font-weight: bold; }
   ._dish_ingredient__title--ingredient {
     opacity: 0;
     visibility: hidden;
@@ -9020,7 +9037,7 @@ footer {
   display: inline-block;
   padding: 0 0 7px 0;
   position: relative;
-  font-family: 'Kozuka Mincho Pr6N R';
+  font-family: 'Kozuka Mincho Pr6N';
   cursor: pointer; }
   ._dish__tabBtn::before {
     content: '';
@@ -9030,7 +9047,7 @@ footer {
     bottom: -5px;
     background: #ffffff;
     width: 0;
-    height: .5px;
+    height: 1px;
     -webkit-transition: width 0.2s ease-in-out;
     -o-transition: width 0.2s ease-in-out;
     transition: width 0.2s ease-in-out; }
@@ -9042,7 +9059,7 @@ footer {
     bottom: -5px;
     background: #ffffff;
     width: 100%;
-    height: .5px;
+    height: 1px;
     -webkit-transition: width 0.2s ease-in-out;
     -o-transition: width 0.2s ease-in-out;
     transition: width 0.2s ease-in-out; }
@@ -9054,7 +9071,7 @@ footer {
     bottom: -5px;
     background: #ffffff;
     width: 100%;
-    height: .5px;
+    height: 1px;
     -webkit-transition: width 0.2s ease-in-out;
     -o-transition: width 0.2s ease-in-out;
     transition: width 0.2s ease-in-out; }
@@ -9068,19 +9085,20 @@ footer {
   -ms-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   font-weight: 300;
-  width: 20%;
-  right: 7%;
+  width: 17%;
+  right: 12%;
   font-family: 'Kozuka Mincho Pr6N R'; }
   ._dish_ingredient__content h3 {
     font-size: 19px;
     display: block;
     letter-spacing: 2px; }
   ._dish_ingredient__content p {
-    font-size: 13px;
+    font-size: 14px;
     display: block;
     letter-spacing: 2px;
     text-align: justify;
-    margin-bottom: 9%; }
+    margin-bottom: 9%;
+    line-height: 26px; }
     ._dish_ingredient__content p:last-child {
       margin-bottom: 0; }
   ._dish_ingredient__content--ingredient {
@@ -9088,7 +9106,8 @@ footer {
     visibility: hidden;
     -webkit-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out; }
+    transition: all .5s ease-in-out;
+    font-family: 'Kozuka Mincho Pr6N'; }
     .js_ingredient ._dish_ingredient__content--ingredient {
       opacity: 1;
       visibility: visible; }
@@ -9097,7 +9116,8 @@ footer {
     visibility: hidden;
     -webkit-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out; }
+    transition: all .5s ease-in-out;
+    font-family: 'Kozuka Mincho Pr6N'; }
     .js_recipe ._dish_ingredient__content--recipe {
       opacity: 1;
       visibility: visible; }
@@ -9105,13 +9125,14 @@ footer {
 ._gallery {
   background-size: cover;
   background-position: top;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden; }
   ._gallery.char {
     background-image: url(../img/gallery/char_bg.svg);
     height: 190vh; }
   ._gallery.crop {
     background-image: url(../img/gallery/crop_bg.svg);
-    height: 300vh; }
+    height: 320vh; }
   ._gallery .container {
     max-width: 1400px; }
 
