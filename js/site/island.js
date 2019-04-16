@@ -102,7 +102,7 @@ $(function () {
             renderer: 'svg',
             loop: true,
             autoplay: true,
-            path: '/2019inseason/img/json/' + animArray[animIndex]
+            path: 'img/json/' + animArray[animIndex]
         };
 
         // 先執行bodymovin才不會卡卡
@@ -197,16 +197,48 @@ $(function () {
                 return img;
             }
 
-            $('#cabbage').append(makeImg(18.9+'%',-21.7,-62.7,'cabbage'));
-            $('#botsai').append(makeImg(18.9+'%',-29.9,-57.7,'botsai'));
-            $('#broccoli').append(makeImg(18.9+'%',-25.3,-73.5,'broccoli'));
-            $('#uto').append(makeImg(18.9+'%',-1.5,-1.7,'uto'));
-            $('#tonghau').append(makeImg(18.9+'%',-17.8,-72.9,'tonghau'));
-            $('#baitsai').append(makeImg(18.9+'%',-13.3,-53.4,'baitsai'));
-            $('#pea').append(makeImg(18.9+'%',-29,-55.9,'pea'));
-            $('#orange').append(makeImg(18.9+'%',-1.5,-1.7,'orange'));
-            $('#strawberry').append(makeImg(18.9+'%',-27.4,-64,'strawberry'));
-            $('#ponkan').append(makeImg(18.9+'%',-1.5,-1.7,'ponkan'));
+            switch(hoverIndex){
+                case 1:
+                    $('#cabbage').append(makeImg(82,-1.7,-1.8,'cabbage'));
+                    $('#botsai').append(makeImg(92,-1.6,-1.6,'botsai'));
+                    $('#broccoli').append(makeImg(60,-1.2,-1.2,'broccoli'));
+                    $('#uto').append(makeImg(204,-1.4,-1.7,'uto'));
+                    $('#tonghau').append(makeImg(61,-1.8,-1.5,'tonghau'));
+                    $('#baitsai').append(makeImg(100,-1.5,-1,'baitsai'));
+                    $('#pea').append(makeImg(96,-14.7,-1.8,'pea'));
+                    $('#orange').append(makeImg(101,-1.3,-1.5,'orange'));
+                    $('#strawberry').append(makeImg(79,-1.7,-1.5,'strawberry'));
+                    $('#ponkan').append(makeImg(124,-2.2,-1.7,'ponkan'));
+                break;
+                case 3:
+                    $('#cabbage').append(makeImg(63,-2,-1.8,'cabbage'));
+                    $('#botsai').append(makeImg(74,-1.7,-1.5,'botsai'));
+                    $('#broccoli').append(makeImg(68.7,-2,-1.5,'broccoli'));
+                    $('#tonghau').append(makeImg(91,16.8,-1.5,'tonghau'));
+                    $('#baitsai').append(makeImg(80,-1.5,-1.5,'baitsai'));
+                    $('#pea').append(makeImg(78,19.2,-1.8,'pea'));
+                    $('#strawberry').append(makeImg(66,-2,-1.8,'strawberry'));
+                    $('#nuipan').append(makeImg(73,4.5,-1.5,'nuipan'));
+                    $('#pumpkin').append(makeImg(66,-2,-1.8,'pumpkin'));
+                    $('#lusion').append(makeImg(70,2.8,-1.8,'lusion'));
+                    $('#melon').append(makeImg(77.7,-2.8,-2,'melon'));
+                break
+                case 4:
+                    $('#tonghau').append(makeImg(77,-1.2,-1.2,'tonghau'));
+                    $('#baitsai').append(makeImg(88,-1.6,-1.5,'baitsai'));
+                    $('#pea').append(makeImg(114,-2.2,5.5,'pea'));
+                    $('#nuipan').append(makeImg(115,23,-1.8,'nuipan'));
+                    $('#pumpkin').append(makeImg(73.5,-1.8,-1.8,'pumpkin'));
+                    $('#lusion').append(makeImg(70,2.8,-1.8,'lusion'));
+                    $('#melon').append(makeImg(96,-1.8,-1.6,'melon'));
+                    $('#kongshintsai').append(makeImg(79,-1.2,-1.8,'kongshintsai'));
+                    $('#longshutsai').append(makeImg(77.7,-2.8,-2,'longshutsai'));
+                    $('#kukua').append(makeImg(119,-1.2,-1.8,'kukua'));
+                    $('#watermelon').append(makeImg(84,-2.8,-2,'watermelon'));
+                    $('#tauzi').append(makeImg(104,-2,-1.5,'tauzi'));
+                break
+            }
+            
 
 
 
