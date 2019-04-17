@@ -130,7 +130,7 @@ $(function () {
             var mouseX=0
             container.addEventListener("mousemove", function (e) {
                 
-                mouseX = (e.pageX - (container_wd / 2)) / (container_wd - mover_wd)/ 5;
+                mouseX = (e.pageX - (container_wd / 2)) / (container_wd - mover_wd)/ 3;
                 
 
                 // result = (e.pageX / container_wd) * (container_wd - mover_wd);
