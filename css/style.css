@@ -8507,6 +8507,10 @@ footer {
   cursor: pointer;
   position: relative; }
 
+#nuipan {
+  cursor: pointer;
+  position: relative; }
+
 ._recipe .swiper-container {
   height: 100vh; }
 
