@@ -8474,7 +8474,7 @@ footer {
     opacity: 0;
     visibility: hidden; }
   #cabbage:hover image, #broccoli:hover image, #botsai:hover image, #uto:hover image, #tonghau:hover image, #baitsai:hover image, #pea:hover image, #orange:hover image, #strawberry:hover image, #ponkan:hover image, #nuipan:hover image, #pumpkin:hover image, #lusion:hover image, #melon:hover image, #kongshintsai:hover image, #longshutsai:hover image, #kukua:hover image, #watermelon:hover image, #tauzi:hover image, #pear:hover image, #liangwu:hover image, #lizi:hover image, #grape:hover image, #passionfruit:hover image, #liango:hover image, #papaya:hover image, #shizi:hover image, #whitelobo:hover image {
-    opacity: 1;
+    opacity: 0.8;
     visibility: visible; }
 
 ._recipe .swiper-container {

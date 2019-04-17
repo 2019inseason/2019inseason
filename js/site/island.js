@@ -183,7 +183,7 @@ $(function () {
                 img.setAttributeNS(null,'height',h);
                 img.setAttributeNS(null,'x',x);
                 img.setAttributeNS(null,'y',y);
-                img.setAttributeNS(null,'opacity','0.8');
+                // img.setAttributeNS(null,'opacity','0.8');
                 img.setAttributeNS('http://www.w3.org/1999/xlink','href','img/island-hover/'+ hoverIndex +'/'+ item +'.svg');
                 return img;
             }
@@ -257,7 +257,7 @@ $(function () {
                     $('#lusion').append(makeImg(66,2.8,-1.8,'lusion'));
                     $('#melon').append(makeImg(89.5,-1.8,-1.6,'melon'));
                     $('#kongshintsai').append(makeImg(65,-1.4,-1.8,'kongshintsai'));
-                    $('#longshutsai').append(makeImg(71,-1.6,-1.6,'longshutsai'));
+                    $('#longshutsai').append(makeImg(70,-2.5,-2.2,'longshutsai'));
                     $('#kukua').append(makeImg(128,-1.4,-1.4,'kukua'));
                     $('#watermelon').append(makeImg(98.2,-2,-1.6,'watermelon'));
                     $('#tauzi').append(makeImg(139,-2,-1.8,'tauzi'));

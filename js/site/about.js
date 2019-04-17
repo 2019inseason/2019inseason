@@ -3,7 +3,7 @@ $(function(){
     // var height = window.outerHeight;
     // var count = 0;
     // var y = $(window).scrollTop();
-
+    AOS.init();
     $('#scroll_down').click(function(){
         $('html,body').animate({scrollTop:$('#about_2').offset().top}, 500);
     });
