@@ -8467,13 +8467,15 @@ footer {
     letter-spacing: 2px;
     margin-right: 4px; }
 
-#cabbage {
+#cabbage, #broccoli, #botsai, #uto, #tonghau, #baitsai, #pea, #orange, #strawberry, #ponkan, #nuipan, #pumpkin, #lusion, #melon, #kongshintsai, #longshutsai, #kukua, #watermelon, #tauzi, #pear, #liangwu, #lizi, #grape, #passionfruit, #liango, #papaya, #shizi, #whitelobo {
   cursor: pointer;
   position: relative; }
-
-#broccoli, #botsai, #uto, #tonghau, #baitsai, #pea, #orange, #strawberry, #ponkan, #nuipan, #pumpkin, #lusion, #melon, #kongshintsai, #longshutsai, #kukua, #watermelon, #tauzi, #pear, #liangwu, #lizi, #grape, #passionfruit, #liango, #papaya, #shizi, #whitelobo {
-  cursor: pointer;
-  position: relative; }
+  #cabbage image, #broccoli image, #botsai image, #uto image, #tonghau image, #baitsai image, #pea image, #orange image, #strawberry image, #ponkan image, #nuipan image, #pumpkin image, #lusion image, #melon image, #kongshintsai image, #longshutsai image, #kukua image, #watermelon image, #tauzi image, #pear image, #liangwu image, #lizi image, #grape image, #passionfruit image, #liango image, #papaya image, #shizi image, #whitelobo image {
+    opacity: 0;
+    visibility: hidden; }
+  #cabbage:hover image, #broccoli:hover image, #botsai:hover image, #uto:hover image, #tonghau:hover image, #baitsai:hover image, #pea:hover image, #orange:hover image, #strawberry:hover image, #ponkan:hover image, #nuipan:hover image, #pumpkin:hover image, #lusion:hover image, #melon:hover image, #kongshintsai:hover image, #longshutsai:hover image, #kukua:hover image, #watermelon:hover image, #tauzi:hover image, #pear:hover image, #liangwu:hover image, #lizi:hover image, #grape:hover image, #passionfruit:hover image, #liango:hover image, #papaya:hover image, #shizi:hover image, #whitelobo:hover image {
+    opacity: 1;
+    visibility: visible; }
 
 ._recipe .swiper-container {
   height: 100vh; }

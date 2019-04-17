@@ -560,24 +560,20 @@
         margin-right: 4px;
     }
 }
-// #test1{
-//     opacity: 0;
-//     visibility: hidden;
-// }
-#cabbage{
+
+#cabbage, #broccoli, #botsai, #uto, #tonghau, #baitsai, #pea, #orange, #strawberry, #ponkan, #nuipan, #pumpkin, #lusion, #melon, #kongshintsai, #longshutsai, #kukua, #watermelon, #tauzi, #pear, #liangwu, #lizi, #grape, #passionfruit, #liango, #papaya, #shizi, #whitelobo{
     cursor: pointer;
     position: relative;
-    // z-index: 99;
-    // &:hover{
-    //     #test1{
-    //         opacity: 1;
-    //         visibility: visible;
-    //     }
-    // }
-}
-#broccoli, #botsai, #uto, #tonghau, #baitsai, #pea, #orange, #strawberry, #ponkan, #nuipan, #pumpkin, #lusion, #melon, #kongshintsai, #longshutsai, #kukua, #watermelon, #tauzi, #pear, #liangwu, #lizi, #grape, #passionfruit, #liango, #papaya, #shizi, #whitelobo{
-    cursor: pointer;
-    position: relative;
+    image{
+        opacity: 0;
+        visibility: hidden;
+    }
+    &:hover{
+        image{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 
