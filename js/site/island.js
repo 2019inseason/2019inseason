@@ -130,7 +130,7 @@ $(function () {
             var mouseX=0
             container.addEventListener("mousemove", function (e) {
                 
-                // mouseX = (e.pageX - (container_wd / 2)) / (container_wd - mover_wd);
+                // mouseX = (e.pageX - (container_wd / 2)) / (container_wd - mover_wd)/ 5;
                 
 
                 // result = (e.pageX / container_wd) * (container_wd - mover_wd);
@@ -165,7 +165,7 @@ $(function () {
 
             //滑鼠左右移動
             // setInterval(function(){
-            //     var speed= mouseX * 0.03;
+            //     var speed= mouseX * 0.01;
 
             //     result += ((container_wd-mover_wd)-result)*speed;
             //     if(result<0){
@@ -174,7 +174,7 @@ $(function () {
             //         result = mover_wd-container_wd;
             //     }
             //     mover.style.transform = "translate3d(" + -Math.round(result) + 'px'+",0px , 0px)";
-            // },80);
+            // },10);
 
             function makeSVG(tag, attrs) {
                 var el= document.createElementNS('http://www.w3.org/2000/svg', tag);
@@ -193,6 +193,7 @@ $(function () {
                 img.setAttributeNS(null,'height',h);
                 img.setAttributeNS(null,'x',x);
                 img.setAttributeNS(null,'y',y);
+                // img.setAttributeNS(null,'opacity','0.8');
                 img.setAttributeNS('http://www.w3.org/1999/xlink','href','img/island-hover/'+ hoverIndex +'/'+ item +'.svg');
                 return img;
             }
@@ -205,10 +206,21 @@ $(function () {
                     $('#uto').append(makeImg(204,-1.4,-1.7,'uto'));
                     $('#tonghau').append(makeImg(61,-1.8,-1.5,'tonghau'));
                     $('#baitsai').append(makeImg(100,-1.5,-1,'baitsai'));
-                    $('#pea').append(makeImg(96,-14.7,-1.8,'pea'));
-                    $('#orange').append(makeImg(101,-1.3,-1.5,'orange'));
+                    $('#pea').append(makeImg(96,14.8,-1.6,'pea'));
+                    $('#orange').append(makeImg(123,-1.8,-1.5,'orange'));
                     $('#strawberry').append(makeImg(79,-1.7,-1.5,'strawberry'));
-                    $('#ponkan').append(makeImg(124,-2.2,-1.7,'ponkan'));
+                    $('#ponkan').append(makeImg(102,-1.6,-1.8,'ponkan'));
+                break;
+                case 2:
+                    $('#cabbage').append(makeImg(205,-4,-3.8,'cabbage'));
+                    $('#botsai').append(makeImg(85,-1.6,-1.6,'botsai'));
+                    $('#broccoli').append(makeImg(277,-5.2,-3.8,'broccoli'));
+                    $('#tonghau').append(makeImg(54,-1.8,-1.5,'tonghau'));
+                    $('#baitsai').append(makeImg(80,-2.2,-2,'baitsai'));
+                    $('#pea').append(makeImg(96,14.8,-1.6,'pea'));
+                    $('#strawberry').append(makeImg(79,-1.2,-1.3,'strawberry'));
+                    $('#ponkan').append(makeImg(124,-2.2,-2,'ponkan'));
+                    $('#nuipan').append(makeImg(73,4.5,-1.5,'nuipan'));
                 break;
                 case 3:
                     $('#cabbage').append(makeImg(63,-2,-1.8,'cabbage'));
