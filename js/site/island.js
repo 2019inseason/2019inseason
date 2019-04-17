@@ -130,7 +130,7 @@ $(function () {
             var mouseX=0
             container.addEventListener("mousemove", function (e) {
                 
-                // mouseX = (e.pageX - (container_wd / 2)) / (container_wd - mover_wd)/ 3;
+                // mouseX = (e.pageX - (container_wd / 2)) / (container_wd - mover_wd)/ 5;
                 
 
                 // result = (e.pageX / container_wd) * (container_wd - mover_wd);
@@ -231,7 +231,7 @@ $(function () {
                     $('#pea').append(makeImg(78,19.2,-1.8,'pea'));
                     $('#strawberry').append(makeImg(66,-2,-1.8,'strawberry'));
                     $('#nuipan').append(makeImg(73,4.5,-1.5,'nuipan'));
-                    $('#pumpkin').append(makeImg(66,-2,-1.8,'pumpkin'));
+                    $('#pumpkin').append(makeImg(78,-2,-1.8,'pumpkin'));
                     $('#lusion').append(makeImg(70,2.8,-1.8,'lusion'));
                     $('#melon').append(makeImg(77.7,-2.8,-2,'melon'));
                 break
@@ -241,18 +241,16 @@ $(function () {
                     $('#pea').append(makeImg(114,-2.2,5.5,'pea'));
                     $('#nuipan').append(makeImg(115,23,-1.8,'nuipan'));
                     $('#pumpkin').append(makeImg(73.5,-1.8,-1.8,'pumpkin'));
-                    $('#lusion').append(makeImg(70,2.8,-1.8,'lusion'));
+                    $('#lusion').append(makeImg(73,0.5,-1.8,'lusion'));
                     $('#melon').append(makeImg(96,-1.8,-1.6,'melon'));
                     $('#kongshintsai').append(makeImg(79,-1.2,-1.8,'kongshintsai'));
-                    $('#longshutsai').append(makeImg(77.7,-2.8,-2,'longshutsai'));
+                    $('#longshutsai').append(makeImg(80,-2.4,-2.4,'longshutsai'));
                     $('#kukua').append(makeImg(119,-1.2,-1.8,'kukua'));
                     $('#watermelon').append(makeImg(84,-2.8,-2,'watermelon'));
                     $('#tauzi').append(makeImg(104,-2,-1.5,'tauzi'));
                 break
             }
             
-
-
 
 
             // 高麗菜點選
@@ -343,9 +341,142 @@ $(function () {
                     $('html').addClass('popup');
                 }, 1000);
             });
-            
-            
-            
+            // 南瓜點選
+            $('#pumpkin').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_pumpkin,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 蘆筍點選
+            $('#lusion').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_lusion,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 香瓜點選
+            $('#melon').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_melon,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 空心菜點選
+            $('#kongshintsai').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_kongshintsai,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 龍鬚菜點選
+            $('#longshutsai').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_longshutsai,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 苦瓜點選
+            $('#kukua').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_kukua,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 西瓜點選
+            $('#watermelon').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_watermelon,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 桃⼦點選
+            $('#tauzi').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_tauzi,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 梨⼦點選
+            $('#pear').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_pear,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 蓮霧點選
+            $('#liangwu').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_liangwu,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 李⼦點選
+            $('#lizi').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_lizi,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 葡萄點選
+            $('#grape').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_grape,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 百香果點選
+            $('#passionfruit').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_passionfruit,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 蓮藕點選
+            $('#liango').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_liango,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // ⽊瓜點選
+            $('#papaya').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_papaya,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 柿⼦點選
+            $('#shizi').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_shizi,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 白蘿蔔點選
+            $('#whitelobo').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_whitelobo,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
         });
         setTimeout(function () {
             $('html').addClass('start_anim');
