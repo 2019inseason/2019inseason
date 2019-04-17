@@ -7919,9 +7919,9 @@ footer {
   position: absolute;
   top: 48%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -40%);
+  -ms-transform: translate(-50%, -40%);
+  transform: translate(-50%, -40%);
   z-index: 100;
   font-size: 4em;
   font-weight: bold;
@@ -7933,7 +7933,10 @@ footer {
     opacity: 1;
     -webkit-transition: opacity 0.5s ease-out;
     -o-transition: opacity 0.5s ease-out;
-    transition: opacity 0.5s ease-out; }
+    transition: opacity 0.5s ease-out;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
 .start_anim {
   overflow: hidden; }
@@ -9012,17 +9015,60 @@ footer {
   left: 12%;
   bottom: 12%;
   margin: auto;
-  width: 30%;
-  color: #ffffff; }
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 200px; }
   ._dish__back:hover {
     color: #ffffff; }
+    ._dish__back:hover img {
+      -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+      transform: translateX(-10px);
+      padding-right: 0; }
+    ._dish__back:hover ._dish__back__arrow {
+      width: 40px; }
+      ._dish__back:hover ._dish__back__arrow::before {
+        right: 24px; }
   ._dish__back img {
-    width: 20px; }
+    width: 30px;
+    padding-right: 10px;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
   ._dish__back span {
     vertical-align: middle;
     font-size: 18px;
-    letter-spacing: 1px;
-    margin-left: 5px; }
+    letter-spacing: 1px; }
+
+._dish__back__arrow {
+  position: relative;
+  background: #fff;
+  border: 1px solid #fff;
+  width: 25px;
+  padding-right: 10px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  ._dish__back__arrow::before {
+    content: "＜";
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    right: 9px;
+    top: -20.5px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    font-family: "Microsoft Jhenghei";
+    font-size: 25px; }
 
 ._dish__tab {
   position: absolute;
