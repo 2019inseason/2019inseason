@@ -130,7 +130,7 @@ $(function () {
             var mouseX=0
             container.addEventListener("mousemove", function (e) {
                 
-                // mouseX = (e.pageX - (container_wd / 2)) / (container_wd - mover_wd)/ 5;
+                mouseX = (e.pageX - (container_wd / 2)) / (container_wd - mover_wd)/ 5;
                 
 
                 // result = (e.pageX / container_wd) * (container_wd - mover_wd);
@@ -164,17 +164,17 @@ $(function () {
             });
 
             //滑鼠左右移動
-            // setInterval(function(){
-            //     var speed= mouseX * 0.01;
+            setInterval(function(){
+                var speed= mouseX * 0.01;
 
-            //     result += ((container_wd-mover_wd)-result)*speed;
-            //     if(result<0){
-            //         result = 0;
-            //     }else if(result>mover_wd-container_wd){
-            //         result = mover_wd-container_wd;
-            //     }
-            //     mover.style.transform = "translate3d(" + -Math.round(result) + 'px'+",0px , 0px)";
-            // },10);
+                result += ((container_wd-mover_wd)-result)*speed;
+                if(result<0){
+                    result = 0;
+                }else if(result>mover_wd-container_wd){
+                    result = mover_wd-container_wd;
+                }
+                mover.style.transform = "translate3d(" + -Math.round(result) + 'px'+",0px , 0px)";
+            },10);
 
             function makeSVG(tag, attrs) {
                 var el= document.createElementNS('http://www.w3.org/2000/svg', tag);
