@@ -115,14 +115,17 @@
     width: 165px;
 
     &:hover {
-        color: #ffffff;
+        color: #ffffff; 
+        opacity: 0.6;
         img{
             transform: translateX(-10px);
             padding-right: 0;
+            opacity: 0.6;
         }
         ._dish__back__arrow{
             width: 40px;
             transform: translateX(-15px);
+            opacity: 0.6;
             &::before{
                 right: 24px;
             }

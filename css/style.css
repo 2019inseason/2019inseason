@@ -9035,17 +9035,20 @@ footer {
   align-items: center;
   width: 165px; }
   ._dish__back:hover {
-    color: #ffffff; }
+    color: #ffffff;
+    opacity: 0.6; }
     ._dish__back:hover img {
       -webkit-transform: translateX(-10px);
       -ms-transform: translateX(-10px);
       transform: translateX(-10px);
-      padding-right: 0; }
+      padding-right: 0;
+      opacity: 0.6; }
     ._dish__back:hover ._dish__back__arrow {
       width: 40px;
       -webkit-transform: translateX(-15px);
       -ms-transform: translateX(-15px);
-      transform: translateX(-15px); }
+      transform: translateX(-15px);
+      opacity: 0.6; }
       ._dish__back:hover ._dish__back__arrow::before {
         right: 24px; }
   ._dish__back img {

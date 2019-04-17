@@ -217,16 +217,16 @@ $(function () {
                     $('#broccoli').append(makeImg(277,-5.2,-3.8,'broccoli'));
                     $('#tonghau').append(makeImg(54,-1.8,-1.5,'tonghau'));
                     $('#baitsai').append(makeImg(80,-2.2,-2,'baitsai'));
-                    $('#pea').append(makeImg(96,14.8,-1.6,'pea'));
+                    $('#pea').append(makeImg(113,-2,-2,'pea'));
                     $('#strawberry').append(makeImg(79,-1.2,-1.3,'strawberry'));
                     $('#ponkan').append(makeImg(124,-2.2,-2,'ponkan'));
-                    $('#nuipan').append(makeImg(73,4.5,-1.5,'nuipan'));
+                    $('#nuipan').append(makeImg(305,13.3,-2.2,'nuipan'));
                 break;
                 case 3:
                     $('#cabbage').append(makeImg(63,-2,-1.8,'cabbage'));
                     $('#botsai').append(makeImg(74,-1.7,-1.5,'botsai'));
                     $('#broccoli').append(makeImg(68.7,-2,-1.5,'broccoli'));
-                    $('#tonghau').append(makeImg(91,16.8,-1.5,'tonghau'));
+                    $('#tonghau').append(makeImg(90,-0.8,-1,'tonghau'));
                     $('#baitsai').append(makeImg(80,-1.5,-1.5,'baitsai'));
                     $('#pea').append(makeImg(78,19.2,-1.8,'pea'));
                     $('#strawberry').append(makeImg(66,-2,-1.8,'strawberry'));
@@ -332,6 +332,14 @@ $(function () {
                 $("._island_crop__shadow,._island_crop").css("display", "block");
                 setTimeout(function () {
                     $("#js_ponkan,._island_crop").addClass('active');
+                    $('html').addClass('popup');
+                }, 1000);
+            });
+            // 牛蒡點選
+            $('#nuipan').click(function () {
+                $("._island_crop__shadow,._island_crop").css("display", "block");
+                setTimeout(function () {
+                    $("#js_nuipan,._island_crop").addClass('active');
                     $('html').addClass('popup');
                 }, 1000);
             });
