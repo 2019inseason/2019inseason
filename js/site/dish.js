@@ -7,5 +7,4 @@ $(function(){
         $('._dish').addClass('js_recipe');
         $('._dish').removeClass('js_ingredient');
     });
-
 });
