@@ -17,7 +17,7 @@ $(function () {
         pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,
-            clickable: true
+            // clickable: true
         },
         mousewheel: true,
         
@@ -124,7 +124,8 @@ $(function () {
             });
 
             //滑鼠左右移動
-            setInterval(function(){
+            function mouseMove_function(){
+                console.log('mouse move');
                 var speed= mouseX * 0.02;
 
                 result += ((container_wd-mover_wd)-result)*speed;
@@ -134,7 +135,10 @@ $(function () {
                     result = mover_wd-container_wd;
                 }
                 mover.style.transform = "translate3d(" + -Math.round(result) + 'px'+",0px , 0px)";
-            },10);
+            }
+
+            var mouseMove_inerval = setInterval(mouseMove_function,10);
+            
 
 
             // 做hover的圖
@@ -143,7 +147,6 @@ $(function () {
                 img.setAttributeNS(null,'height',h);
                 img.setAttributeNS(null,'x',x);
                 img.setAttributeNS(null,'y',y);
-                // img.setAttributeNS(null,'opacity','0.8');
                 img.setAttributeNS('http://www.w3.org/1999/xlink','href','img/island-hover/'+ hoverIndex +'/'+ item +'.svg');
                 return img;
             }
@@ -319,6 +322,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_cabbage,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 花椰菜點選
@@ -327,6 +331,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_broccoli,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 菠菜點選
@@ -335,6 +340,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_botsai,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 芋頭點選
@@ -343,6 +349,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_uto,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 茼蒿點選
@@ -351,6 +358,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_tonghau,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 大白菜點選
@@ -359,6 +367,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_baitsai,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 豌⾖點選
@@ -367,6 +376,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_pea,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 柳丁點選
@@ -375,6 +385,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_orange,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 草莓點選
@@ -383,6 +394,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_strawberry,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 椪柑點選
@@ -391,6 +403,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_ponkan,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 牛蒡點選
@@ -399,6 +412,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_nuipan,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 南瓜點選
@@ -407,6 +421,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_pumpkin,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 蘆筍點選
@@ -415,6 +430,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_lusion,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 香瓜點選
@@ -423,6 +439,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_melon,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 空心菜點選
@@ -431,6 +448,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_kongshintsai,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 龍鬚菜點選
@@ -439,6 +457,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_longshutsai,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 苦瓜點選
@@ -447,6 +466,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_kukua,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 西瓜點選
@@ -455,6 +475,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_watermelon,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 桃⼦點選
@@ -463,6 +484,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_tauzi,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 梨⼦點選
@@ -471,6 +493,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_pear,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 蓮霧點選
@@ -479,6 +502,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_liangwu,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 李⼦點選
@@ -487,6 +511,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_lizi,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 葡萄點選
@@ -495,6 +520,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_grape,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 百香果點選
@@ -503,6 +529,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_passionfruit,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 蓮藕點選
@@ -511,6 +538,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_liango,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // ⽊瓜點選
@@ -519,6 +547,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_papaya,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 柿⼦點選
@@ -527,6 +556,7 @@ $(function () {
                 setTimeout(function () {
                     $("#js_shizi,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
             });
             // 白蘿蔔點選
@@ -535,7 +565,18 @@ $(function () {
                 setTimeout(function () {
                     $("#js_whitelobo,._island_crop").addClass('active');
                     $('html').addClass('popup');
+                    clearInterval(mouseMove_inerval);
                 }, 500);
+            });
+
+            $('.js-crop_close').click(function () {
+                mouseMove_inerval = setInterval(mouseMove_function,10);
+                $('html').removeClass('popup');
+                $(this).parent("._island_crop").removeClass('active');
+                
+                setTimeout(function(){
+                    $('._island_crop__window').removeClass('active');
+                },1000);
             });
         });
 
@@ -561,11 +602,5 @@ $(function () {
         },2000);
     });
 
-    $('.js-crop_close').click(function () {
-        $('html').removeClass('popup');
-        $(this).parent("._island_crop").removeClass('active');
-        setTimeout(function(){
-            $('._island_crop__window').removeClass('active');
-        },2000);
-    });
+    
 });

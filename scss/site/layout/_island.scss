@@ -569,6 +569,7 @@
 #cabbage, #broccoli, #botsai, #uto, #tonghau, #baitsai, #pea, #orange, #strawberry, #ponkan, #nuipan, #pumpkin, #lusion, #melon, #kongshintsai, #longshutsai, #kukua, #watermelon, #tauzi, #pear, #liangwu, #lizi, #grape, #passionfruit, #liango, #papaya, #shizi, #whitelobo{
     cursor: pointer;
     position: relative;
+    z-index: 99;
     image{
         opacity: 0;
         visibility: hidden;

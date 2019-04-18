@@ -8474,7 +8474,8 @@ footer {
 
 #cabbage, #broccoli, #botsai, #uto, #tonghau, #baitsai, #pea, #orange, #strawberry, #ponkan, #nuipan, #pumpkin, #lusion, #melon, #kongshintsai, #longshutsai, #kukua, #watermelon, #tauzi, #pear, #liangwu, #lizi, #grape, #passionfruit, #liango, #papaya, #shizi, #whitelobo {
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  z-index: 99; }
   #cabbage image, #broccoli image, #botsai image, #uto image, #tonghau image, #baitsai image, #pea image, #orange image, #strawberry image, #ponkan image, #nuipan image, #pumpkin image, #lusion image, #melon image, #kongshintsai image, #longshutsai image, #kukua image, #watermelon image, #tauzi image, #pear image, #liangwu image, #lizi image, #grape image, #passionfruit image, #liango image, #papaya image, #shizi image, #whitelobo image {
     opacity: 0;
     visibility: hidden; }
