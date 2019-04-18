@@ -39,6 +39,10 @@
         font-size: 17px;
         border-radius: 50px;
         box-shadow: 2px 3px 5px rgba($color: #000000, $alpha: 0.3);
+        &:hover{
+            opacity: 0.6;
+            transition: 0.4s;
+        }
     }
     img{
         position: absolute;
@@ -132,6 +136,7 @@
     text-align: center;
     span{
         display: block;
+        // cursor: pointer
     }
     svg{
         height: 35px;
@@ -287,4 +292,8 @@
     border: 1px solid #707070;
     border-radius: 50px;
     cursor: pointer;
+    &:hover{
+        transition: 0.4s;
+        opacity: 0.6
+    }
 }

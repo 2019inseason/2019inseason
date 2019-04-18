@@ -27,6 +27,10 @@
     .swiper-pagination-bullets{
         z-index: 99 !important;
     }
+    .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+    }
 
 }
 // intro
@@ -46,7 +50,7 @@
     margin-top: -100vh;
     z-index: 9;
     box-shadow: 5px 3.4px 6px rgba(0, 0, 0, 0.4);
-    transition: all 1s ease-in-out;
+    transition: all .8s ease-in-out;
     pointer-events: none;
 
     // ._island_intro.active &{
@@ -166,7 +170,7 @@
     z-index: 999;
     opacity: 1;
     visibility: visible;
-    transition: all 1s ease-in-out;
+    transition: all .8s ease-in-out;
     .start_anim &{
         opacity: 0;
         visibility: hidden;
@@ -183,7 +187,7 @@
     overflow: hidden;
     opacity: 1;
     visibility: visible;
-    transition: all 1s ease-in-out;
+    transition: all .8s ease-in-out;
     // z-index: 1;
     img{
         height: 100%;
@@ -326,7 +330,7 @@
     width: 100vw;
     height: 100%;
     overflow: hidden;
-    transition: all 1.5s ease-in-out;
+    transition: all 1s ease-in-out;
     opacity: 0;
     visibility: hidden;
     // &.active{
@@ -336,7 +340,7 @@
     .start_anim &{
         opacity: 1;
         visibility: visible;
-        transition: all 2s ease-in-out;
+        transition: all 1s ease-in-out;
     }
 }
 ._island_detail__anim{
@@ -390,7 +394,7 @@
     background-color: #484848;
     opacity: 0;
     visibility: hidden;
-    transition: all .8s ease-in-out;
+    transition: all .5s ease-in-out;
     display: none;
     .popup &{
         // display: block;
@@ -408,7 +412,7 @@
     left: -48vw;
     box-shadow: 4px 0 5px rgba($color: #000000, $alpha: 0.4);
     // visibility: hidden;
-    transition: all .8s ease-in-out;
+    transition: all .5s ease-in-out;
     display: none;
     &.active{
         display: block;
@@ -443,6 +447,7 @@
     left: 0;
     right: 0;
     margin: auto;
+    cursor: pointer;
     &::before,
     &::after {
         content: '';

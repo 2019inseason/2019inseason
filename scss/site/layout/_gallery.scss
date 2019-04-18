@@ -100,9 +100,14 @@
     height: 390px;
     left: 0;
     right: 0;
+    transition: .5s ease-in-out;
     .hover &{
         opacity: 0;
         // visibility: hidden;
+        transition: .5s ease-in-out;
+    }
+    span{
+        transition: .5s ease-in-out;
     }
 }
 ._gallery_char__block--hover{
@@ -113,9 +118,11 @@
     opacity: 0;
     left: 0;
     right: 0;
+    transition: .5s ease-in-out;
     // visibility: hidden;
     .hover &{
         opacity: 1;
+        transition: .5s ease-in-out;
         // visibility: visible;
     }
 }
@@ -169,7 +176,7 @@
     font-size: 15px;
     font-family: 'Kozuka Mincho Pr6N';
     position: absolute;
-    bottom: -23px;
+    bottom: -8px;
     left: 0;
     right: 0;
     span{

@@ -10,6 +10,12 @@ $(function(){
     $('#scroll_top').click(function(){
         $('html,body').animate({scrollTop:$('#about_1').offset().top}, 500);
     });
+    $('#scrollTo_2').click(function(){
+        $('html,body').animate({scrollTop:$('#about_3').offset().top}, 500);
+    });
+    $('#scrollTo_3').click(function(){
+        $('html,body').animate({scrollTop:$('#about_4').offset().top}, 500);
+    });
     
     // $(window).mousewheel(function(e){
     //     console.log(e.deltaY);
