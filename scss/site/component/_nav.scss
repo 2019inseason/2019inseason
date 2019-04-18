@@ -111,6 +111,8 @@
     right: calc(100% / 24);
     cursor: pointer;
     &:hover{
+        transform:rotate(180deg);
+	    transition: 0.4s;
         &::before,
         &::after{
             background-color: #AE7A39;

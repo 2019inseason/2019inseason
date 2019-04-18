@@ -1,3 +1,13 @@
+/* ._recipe__btn:hover{
+	border: none;
+	transition: 0.4s;
+	opacity: 0.5;
+}
+
+.swiper-button-next:hover{
+	transition: 0.4s;
+	opacity: 0.4;
+}
 ._recipe__btn:hover{
 	border: none;
 	transition: 0.4s;
@@ -7,24 +17,11 @@
 .swiper-button-next:hover{
 	transition: 0.4s;
 	opacity: 0.4;
-	/*width: 180px;*/
-}
-._recipe__btn:hover{
-	border: none;
-	transition: 0.4s;
-	opacity: 0.5;
-}
-
-.swiper-button-next:hover{
-	transition: 0.4s;
-	opacity: 0.4;
-	/*width: 180px;*/
 }
 
 .swiper-button-prev:hover{
 	transition: 0.4s;
 	opacity: 0.4;
-	/*width: 180px;*/
 }
 
 ._recipeAll__btn:hover{
@@ -49,13 +46,11 @@ transform:rotate(180deg);
 .swiper-button-next:hover{
 	transition: 0.4s;
 	opacity: 0.4;
-	/*width: 180px;*/
 }
 
 .swiper-button-prev:hover{
 	transition: 0.4s;
 	opacity: 0.4;
-	/*width: 180px;*/
 }
 
 ._recipeAll__btn:hover{
@@ -82,7 +77,6 @@ transform:rotate(180deg);
 .swiper-button-prev:hover{
 	transition: 0.4s;
 	opacity: 0.4;
-	/*width: 180px;*/
 }
 
 ._recipeAll__btn:hover{
@@ -99,4 +93,4 @@ transform:rotate(180deg);
 transform:rotate(180deg);
 	transition: 0.4s;
 }
-
+ */

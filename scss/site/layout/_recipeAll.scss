@@ -57,6 +57,11 @@
         width: 5%;
         height: 80px;
         background-size: contain;
+        z-index: 10;
+        &:hover{
+            transition: 0.4s;
+	        opacity: 0.4;
+        }
     }
 }
 ._recipeAll__main{
@@ -111,5 +116,10 @@
         vertical-align: middle;
         font-weight: bold;
         letter-spacing: 1px;
+    }
+    &:hover{
+        border: none;
+        transition: 0.4s;
+        opacity: 0.5;
     }
 }

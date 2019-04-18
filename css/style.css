@@ -7754,8 +7754,15 @@ footer {
   top: 70px;
   right: calc(100% / 24);
   cursor: pointer; }
-  ._nav_menu__close:hover::before, ._nav_menu__close:hover::after {
-    background-color: #AE7A39; }
+  ._nav_menu__close:hover {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
+    ._nav_menu__close:hover::before, ._nav_menu__close:hover::after {
+      background-color: #AE7A39; }
   ._nav_menu__close::before, ._nav_menu__close::after {
     content: '';
     width: 16px;
@@ -7842,7 +7849,10 @@ footer {
     background-image: url(../img/home/island1-op.svg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out; }
     ._home_island__img--island1.active {
       background-image: url(../img/home/island1.svg); }
   ._home_island__img--island2 {
@@ -7854,7 +7864,10 @@ footer {
     background-image: url(../img/home/island2-op.svg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out; }
     ._home_island__img--island2.active {
       background-image: url(../img/home/island2.svg); }
   ._home_island__img--island3 {
@@ -7866,7 +7879,10 @@ footer {
     background-image: url(../img/home/island3-op.svg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out; }
     ._home_island__img--island3.active {
       background-image: url(../img/home/island3.svg); }
   ._home_island__img--island4 {
@@ -7879,7 +7895,10 @@ footer {
     background-image: url(../img/home/island4-op.svg);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    transition: .3s ease-out; }
     ._home_island__img--island4.active {
       background-image: url(../img/home/island4.svg); }
   ._home_island__img--middle {
@@ -8556,6 +8575,12 @@ footer {
     font-weight: 600;
     letter-spacing: 2px;
     margin-left: 5px; }
+  ._recipe__btn:hover {
+    border: none;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    opacity: 0.5; }
 
 ._about_section {
   width: 100%;
@@ -8880,7 +8905,13 @@ footer {
 ._recipeAll .swiper-button-next, ._recipeAll .swiper-button-prev {
   width: 5%;
   height: 80px;
-  background-size: contain; }
+  background-size: contain;
+  z-index: 10; }
+  ._recipeAll .swiper-button-next:hover, ._recipeAll .swiper-button-prev:hover {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    opacity: 0.4; }
 
 ._recipeAll__main {
   position: absolute;
@@ -8930,6 +8961,12 @@ footer {
     vertical-align: middle;
     font-weight: bold;
     letter-spacing: 1px; }
+  ._recipeAll__btn:hover {
+    border: none;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    opacity: 0.5; }
 
 ._dish {
   width: 100%;
