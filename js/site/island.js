@@ -578,6 +578,9 @@ $(function () {
                     $('._island_crop__window').removeClass('active');
                 },1000);
             });
+            $('.js-detail_back').click(function () {
+                clearInterval(mouseMove_inerval);
+            });
         });
 
         setTimeout(function () {
@@ -601,6 +604,4 @@ $(function () {
             $('.wrapper').addClass('animsition');
         },2000);
     });
-
-    
 });
