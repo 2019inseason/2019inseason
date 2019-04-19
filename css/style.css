@@ -7666,6 +7666,92 @@ footer {
     opacity: 1;
     visibility: visible; }
 
+#nav-bar {
+  opacity: 1;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  position: relative;
+  display: block;
+  height: 30px;
+  float: right;
+  cursor: pointer;
+  z-index: 100;
+  right: 0;
+  left: 0;
+  top: 0; }
+  #nav-bar:hover .line_line1 {
+    width: 24px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
+  #nav-bar:hover .line_line2 {
+    width: 30px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
+  #nav-bar:hover .line_line1_b {
+    width: 24px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
+  #nav-bar:hover .line_line2_b {
+    width: 30px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
+
+.text {
+  position: relative;
+  display: block;
+  float: left;
+  height: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white; }
+
+.icon_menu-icon {
+  position: relative;
+  display: block;
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 25px;
+  top: 6px;
+  margin-left: 15px; }
+
+.line_line1 {
+  background-color: white;
+  width: 30px;
+  position: absolute;
+  right: 0;
+  height: 2px;
+  top: 6px; }
+
+.line_line2 {
+  background-color: white;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  height: 2px;
+  top: 14px; }
+
+.line_line1_b {
+  background-color: black;
+  width: 30px;
+  position: absolute;
+  right: 0;
+  height: 2px;
+  top: 6px; }
+
+.line_line2_b {
+  background-color: black;
+  width: 24px;
+  position: absolute;
+  right: 0;
+  height: 2px;
+  top: 14px; }
+
 ._nav {
   position: fixed;
   z-index: 100;
@@ -9207,13 +9293,19 @@ footer {
   background-repeat: no-repeat;
   overflow: hidden; }
   ._gallery.char {
-    background-image: url(../img/gallery/char_bg.svg);
+    background-image: url(../img/gallery/bg.svg);
     height: 190vh; }
   ._gallery.crop {
-    background-image: url(../img/gallery/crop_bg.svg);
+    background-image: url(../img/gallery/bg.svg);
     height: 320vh; }
   ._gallery .container {
     max-width: 1400px; }
+
+._gallery__bg--color {
+  background: #ddd658;
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out; }
 
 ._gallery__content {
   padding: 155px 0 170px; }

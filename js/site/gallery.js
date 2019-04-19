@@ -4,6 +4,7 @@ $(function(){
         $('.js-btn--char').addClass('active');
         $('._gallery').removeClass('crop');
         $('._gallery').addClass('char');
+        $('._gallery__bg--color').css('background-color','#ddd658');
         console.log('char click');
     });
     $('.js-btn--crop').click(function(){
@@ -11,6 +12,7 @@ $(function(){
         $('.js-btn--crop').addClass('active');
         $('._gallery').removeClass('char');
         $('._gallery').addClass('crop');
+        $('._gallery__bg--color').css('background-color','#a5b63d');
         console.log('crop click');
     });
     $('._gallery_char__col').hover(function(){
