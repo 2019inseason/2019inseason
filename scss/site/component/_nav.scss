@@ -212,48 +212,67 @@
 
 ._nav_menu__close {
     z-index: 99;
-    width: 55px;
-    height: 25px;
+    width: 80px;
+    height: 60px;
     display: block;
     position: absolute;
     top: 70px;
     right: calc(100% / 24);
     cursor: pointer;
-
     &:hover {
-        transform: rotate(180deg);
-        transition: 0.4s;
-
-        &::before,
-        &::after {
-            background-color: #AE7A39;
+        ._nav_menu__close--icon{
+            transform: rotate(180deg);
+            transition: 0.4s;
+            &::before,
+            &::after {
+                background-color: #AE7A39;
+            }
         }
 
     }
 
-    &::before,
-    &::after {
-        content: '';
-        width: 16px;
-        height: 2px;
+    &--icon{
+        width: 25px;
+        height: 25px;
         display: block;
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
         margin: auto;
-        background-color: #000000;
-        // transition: all .3s;
+        left: 0;
+        right: 0;
+        
+        &::before,
+        &::after {
+            content: '';
+            width: 16px;
+            height: 2px;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            background-color: #000000;
+            // transition: all .3s;
+        }
+    
+        &::before {
+            transform: rotate(45deg);
+        }
+    
+        &::after {
+            transform: rotate(-45deg);
+        }
     }
-
-    &::before {
-        transform: rotate(45deg);
+    &--text{
+        display: block;
+        position: absolute;
+        top: 30px;
+        margin: auto;
+        left: 0;
+        right: 0;
     }
-
-    &::after {
-        transform: rotate(-45deg);
-    }
+    
 }
 
 ._nav__logo {

@@ -7833,42 +7833,57 @@ footer {
 
 ._nav_menu__close {
   z-index: 99;
-  width: 55px;
-  height: 25px;
+  width: 80px;
+  height: 60px;
   display: block;
   position: absolute;
   top: 70px;
   right: calc(100% / 24);
   cursor: pointer; }
-  ._nav_menu__close:hover {
+  ._nav_menu__close:hover ._nav_menu__close--icon {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s; }
-    ._nav_menu__close:hover::before, ._nav_menu__close:hover::after {
+    ._nav_menu__close:hover ._nav_menu__close--icon::before, ._nav_menu__close:hover ._nav_menu__close--icon::after {
       background-color: #AE7A39; }
-  ._nav_menu__close::before, ._nav_menu__close::after {
-    content: '';
-    width: 16px;
-    height: 2px;
+  ._nav_menu__close--icon {
+    width: 25px;
+    height: 25px;
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     margin: auto;
-    background-color: #000000; }
-  ._nav_menu__close::before {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  ._nav_menu__close::after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
+    left: 0;
+    right: 0; }
+    ._nav_menu__close--icon::before, ._nav_menu__close--icon::after {
+      content: '';
+      width: 16px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background-color: #000000; }
+    ._nav_menu__close--icon::before {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    ._nav_menu__close--icon::after {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  ._nav_menu__close--text {
+    display: block;
+    position: absolute;
+    top: 30px;
+    margin: auto;
+    left: 0;
+    right: 0; }
 
 ._nav__logo {
   width: auto;
@@ -8456,8 +8471,15 @@ footer {
   top: 70px;
   right: calc(100% / 24);
   cursor: pointer; }
-  ._island_crop__close:hover ._island_crop__close-icon::before, ._island_crop__close:hover ._island_crop__close-icon::after {
-    background-color: #AE7A39; }
+  ._island_crop__close:hover ._island_crop__close-icon {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
+    ._island_crop__close:hover ._island_crop__close-icon::before, ._island_crop__close:hover ._island_crop__close-icon::after {
+      background-color: #AE7A39; }
 
 ._island_crop__close-icon {
   position: absolute;

@@ -434,8 +434,10 @@
     cursor: pointer;
     &:hover{
         ._island_crop__close-icon{
+            transform: rotate(180deg);
+            transition: 0.4s;
             &::before,
-            &::after{
+            &::after {
                 background-color: #AE7A39;
             }
         }
