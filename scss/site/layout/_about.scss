@@ -1,35 +1,41 @@
-._about_section{
+._about_section {
     width: 100%;
     height: 100vh;
     position: relative;
-    &--1{
+
+    &--1 {
         background-image: url(../img/about/bg1.svg);
         // background-image: url(../img/about/bg1@2x.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
-    &--2{
+
+    &--2 {
         background-image: url(../img/about/bg2.svg);
         background-size: cover;
         background-repeat: no-repeat;
     }
-    &--3{
+
+    &--3 {
         background-color: #FFF6EB;
     }
-    &--4{
+
+    &--4 {
         background-image: url(../img/about/bg4.svg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 }
-._about_section1__main{
+
+._about_section1__main {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: auto;
     text-align: center;
-    span{
+
+    span {
         cursor: pointer;
         display: block;
         width: 25%;
@@ -39,12 +45,14 @@
         font-size: 17px;
         border-radius: 50px;
         box-shadow: 2px 3px 5px rgba($color: #000000, $alpha: 0.3);
-        &:hover{
+
+        &:hover {
             opacity: 0.6;
             transition: 0.4s;
         }
     }
-    img{
+
+    img {
         position: absolute;
         left: 0;
         right: 0;
@@ -55,18 +63,21 @@
         pointer-events: none;
     }
 }
-._about_section1__title{
+
+._about_section1__title {
     font-size: 5em;
     font-weight: bold;
     letter-spacing: 3px;
 }
-._about_section1__subtitle{
+
+._about_section1__subtitle {
     font-size: 43px;
     font-weight: bold;
     letter-spacing: 10px;
     font-family: 'Kozuka Mincho Pr6N';
 }
-._about_section2__main{
+
+._about_section2__main {
     position: absolute;
     width: 65%;
     height: 40%;
@@ -78,15 +89,18 @@
     text-align: center;
     display: flex;
 }
-._about_section2__img{
+
+._about_section2__img {
     // max-width: 100%;
     position: relative;
-    img{
+
+    img {
         display: block;
         width: 110%;
         // padding: 0px 40% 0 0;
     }
-    span{    
+
+    span {
         position: absolute;
         right: -10%;
         font-size: 9.5em;
@@ -94,12 +108,14 @@
         font-style: italic;
     }
 }
-._about_section2__text{
+
+._about_section2__text {
     display: flex;
     flex-flow: column;
     justify-content: center;
     width: 68%;
-    p{
+
+    p {
         line-height: 45px;
         letter-spacing: 3px;
         font-size: 19px;
@@ -107,17 +123,22 @@
         font-family: 'Kozuka Mincho Pr6N';
     }
 }
-._about_section2__title{
+
+._about_section2__title {
     font-size: 3em;
     font-weight: bold;
     position: relative;
-    &::before{
+
+    &::before {
         left: 25%;
     }
-    &::after{
+
+    &::after {
         right: 25%;
     }
-    &::before, &::after{
+
+    &::before,
+    &::after {
         content: "";
         width: 40px;
         height: 1px;
@@ -126,7 +147,8 @@
         top: 50%;
     }
 }
-._about__scroll{
+
+._about__scroll {
     position: absolute;
     left: 0;
     right: 0;
@@ -134,15 +156,26 @@
     display: block;
     bottom: 10%;
     text-align: center;
-    span{
+
+    &:hover{
+        .arrow6{
+            height: 24px;
+            &::before{
+                bottom: -17px;
+            }
+        }
+    }
+    span {
         display: block;
         // cursor: pointer
     }
-    svg{
+
+    svg {
         height: 35px;
     }
 }
-._about_section3__main{
+
+._about_section3__main {
     position: absolute;
     width: 65%;
     height: 40%;
@@ -154,14 +187,16 @@
     text-align: center;
     display: flex;
 }
-._about_section3__text{
+
+._about_section3__text {
     display: flex;
     flex-flow: column;
     justify-content: center;
     width: 60%;
     margin-bottom: 5%;
+
     // width: 100%;
-    p{
+    p {
         // line-height: 37px;
         // letter-spacing: 1px;
         // font-size: 18px;
@@ -173,10 +208,12 @@
         font-family: 'Kozuka Mincho Pr6N';
     }
 }
-._about_section3__img{
+
+._about_section3__img {
     // max-width: 100%;
     position: relative;
-    img{
+
+    img {
         display: block;
         // width: 100%;
         // height: 100%;
@@ -184,7 +221,8 @@
         width: 100%;
         // padding: 0px 40% 0 0;
     }
-    span{
+
+    span {
         position: absolute;
         right: -24%;
         font-size: 9.5em;
@@ -193,78 +231,95 @@
         font-style: italic;
     }
 }
-._about_section3__title{
+
+._about_section3__title {
     font-size: 3em;
     font-weight: bold;
     position: relative;
-    &::before{
+
+    &::before {
         left: 17%;
     }
-    &::after{
+
+    &::after {
         right: 17%;
     }
-    &::before, &::after{
+
+    &::before,
+    &::after {
         content: "";
         width: 40px;
         height: 1px;
         background-color: #000000;
         position: absolute;
         top: 50%;
-    }   
+    }
 }
-._about_section4__main{
+
+._about_section4__main {
     text-align: center;
-    span{
+
+    span {
         font-size: 7.5em;
         font-style: italic;
         letter-spacing: 5px;
         margin-top: -70px;
     }
-    .row{
+
+    .row {
         padding-top: 25%;
     }
 }
-._about_section4__text{
+
+._about_section4__text {
     text-align: left;
     margin-left: 30px;
     display: inline-block;
-    p{
+
+    p {
         line-height: 37px;
         letter-spacing: 2px;
         font-size: 18px;
         font-family: 'Kozuka Mincho Pr6N';
     }
 }
-._about_section4__title{
+
+._about_section4__title {
     position: relative;
     font-size: 2em;
     font-weight: bold;
     letter-spacing: 2px;
     display: inline-block;
-    &::after{
+
+    &::after {
         right: -50%;
     }
-    &::after{
+
+    &::after {
         content: "";
         width: 35px;
         height: 1px;
         background-color: #000000;
         position: absolute;
         top: 50%;
-    }   
+    }
 }
-._about_section4__info{
+
+._about_section4__info {
     text-align: center;
-    span{
+
+    span {
         display: block;
     }
 }
-._about_section4__imgBlock{
+
+._about_section4__imgBlock {
     height: 250px;
     position: relative;
     margin-bottom: 17%;
 }
-._about_section4__img{
+
+._about_section4__img {
     // max-width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -273,18 +328,21 @@
     left: 0;
     right: 0;
 }
-._about_section4__infoTitle{
+
+._about_section4__infoTitle {
     font-size: 18px;
     letter-spacing: 1px;
     font-style: italic;
 }
-._about_section4__infoSub{
+
+._about_section4__infoSub {
     font-size: 16px;
     letter-spacing: 4px;
     font-family: 'Kozuka Mincho Pr6N';
 
 }
-._about__btn--back{
+
+._about__btn--back {
     color: #000000;
     font-weight: bold;
     font-size: 14px;
@@ -292,8 +350,44 @@
     border: 1px solid #707070;
     border-radius: 50px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         transition: 0.4s;
         opacity: 0.6
+    }
+}
+
+.container6 {
+    width: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    transition: .5s;
+    margin: 0 auto;
+    position: relative;
+}
+
+.arrow6 {
+    position: relative;
+    background: #fff;
+    border: 1px solid #212529;
+    height: 24px;
+    padding-top: 10px;
+    transition: .5s;
+    text-align: center;
+
+    &::before {
+        content: "▼";
+        font-weight: 900;
+        font-size: 15px;
+        color: #212529;
+        position: absolute;
+        /*   right: px; */
+        left: -6px;
+        /*top: 12px;*/
+        transition: .5s;
+        bottom: -8px;
+        /*z-index: 1;*/
     }
 }

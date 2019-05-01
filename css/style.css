@@ -8824,6 +8824,10 @@ footer {
   display: block;
   bottom: 10%;
   text-align: center; }
+  ._about__scroll:hover .arrow6 {
+    height: 24px; }
+    ._about__scroll:hover .arrow6::before {
+      bottom: -17px; }
   ._about__scroll span {
     display: block; }
   ._about__scroll svg {
@@ -8969,6 +8973,49 @@ footer {
     -o-transition: 0.4s;
     transition: 0.4s;
     opacity: 0.6; }
+
+.container6 {
+  width: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  margin: 0 auto;
+  position: relative; }
+
+.arrow6 {
+  position: relative;
+  background: #fff;
+  border: 1px solid #212529;
+  height: 24px;
+  padding-top: 10px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  text-align: center; }
+  .arrow6::before {
+    content: "▼";
+    font-weight: 900;
+    font-size: 15px;
+    color: #212529;
+    position: absolute;
+    /*   right: px; */
+    left: -6px;
+    /*top: 12px;*/
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    bottom: -8px;
+    /*z-index: 1;*/ }
 
 ._recipeAll .swiper-container {
   height: 100vh; }
