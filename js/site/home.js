@@ -38,5 +38,12 @@ $(function(){
         $("._home_island__img--island1,._home_island__img--island2,._home_island__img--island3,._home_island__img--island4").addClass('active');
     });
 
-    
+    var animData = {
+        container: document.getElementById('bodymovin'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'img/json/cloud.json'
+    };
+    bodymovin.loadAnimation(animData);
 });

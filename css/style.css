@@ -7938,7 +7938,6 @@ footer {
     right: 0;
     max-width: 1230px;
     margin: auto;
-    z-index: 5;
     pointer-events: none; }
   ._home_island__img--island1 {
     position: absolute;
@@ -8519,15 +8518,22 @@ footer {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 80%;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  transition-delay: .5s; }
   ._island_crop__window.active {
+    top: 50%;
     opacity: 1;
     visibility: visible; }
 

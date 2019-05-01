@@ -3,14 +3,14 @@ $(function(){
         opacity: '1',
         top : '50%',
         transition: '.55s ease-in-out',
-        transitionDelay: '.4s'
+        transitionDelay: '.2s'
     };
 
     var fadeOutUp = {
         opacity: '0',
-        top : '55%',
+        top : '51%',
         transition: '.55s ease-in-out',
-        transitionDelay: '.4s'
+        transitionDelay: '.2s'
     };
 
     $('.swiper-slide-prev').children().css(fadeOutUp);
