@@ -8,7 +8,7 @@ $(function(){
 
     var fadeOutUp = {
         opacity: '0',
-        top : '51%',
+        top : '53%',
         transition: '.55s ease-in-out',
         transitionDelay: '.2s'
     };

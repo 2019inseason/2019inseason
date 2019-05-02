@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #FFF6EB;
+    overflow: hidden;
 }
 ._home_island{
     height: 100vh;
@@ -35,7 +36,8 @@
         top: 0;
         left: 0;
         right: 0;
-        max-width: 1230px;
+        // max-width: 1230px;
+        width: 100%;
         margin: auto;
         // z-index: 5;
         pointer-events: none;

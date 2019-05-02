@@ -422,6 +422,16 @@
 }
 ._island_crop__content{
     width: 42%;
+    margin-top: 30px;
+    transition: all .4s ease-in-out;
+    transition-delay: .5s;
+    opacity: 0;
+    visibility: hidden;
+    .active &{
+        margin-top: 0px;
+        opacity: 1;
+        visibility: visible;
+    }
 }
 ._island_crop__close{
     z-index: 99;
@@ -488,10 +498,7 @@
     width: 80%;
     opacity: 0;
     visibility: hidden;
-    transition: all .4s ease-in-out;
-    transition-delay: .5s;
     &.active{
-        top: 50%;
         opacity: 1;
         visibility: visible;
     }

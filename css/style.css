@@ -7741,7 +7741,7 @@ footer {
   width: 30px;
   position: absolute;
   right: 0;
-  height: 2px;
+  height: 1px;
   top: 6px; }
 
 .line_line2_b {
@@ -7768,7 +7768,6 @@ footer {
     letter-spacing: 1px; }
 
 ._nav__menuBlock {
-  width: 35%;
   margin: auto;
   cursor: pointer; }
 
@@ -7902,7 +7901,8 @@ footer {
 ._home {
   width: 100vw;
   height: 100vh;
-  background-color: #FFF6EB; }
+  background-color: #FFF6EB;
+  overflow: hidden; }
 
 ._home_island {
   height: 100vh; }
@@ -7936,7 +7936,7 @@ footer {
     top: 0;
     left: 0;
     right: 0;
-    max-width: 1230px;
+    width: 100%;
     margin: auto;
     pointer-events: none; }
   ._home_island__img--island1 {
@@ -8459,7 +8459,20 @@ footer {
     left: 0; }
 
 ._island_crop__content {
-  width: 42%; }
+  width: 42%;
+  margin-top: 30px;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  transition-delay: .5s;
+  opacity: 0;
+  visibility: hidden; }
+  .active ._island_crop__content {
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible; }
 
 ._island_crop__close {
   z-index: 99;
@@ -8525,15 +8538,8 @@ footer {
   transform: translate(-50%, -50%);
   width: 80%;
   opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  -webkit-transition-delay: .5s;
-  -o-transition-delay: .5s;
-  transition-delay: .5s; }
+  visibility: hidden; }
   ._island_crop__window.active {
-    top: 50%;
     opacity: 1;
     visibility: visible; }
 
@@ -9015,7 +9021,7 @@ footer {
     color: #212529;
     position: absolute;
     /*   right: px; */
-    left: -6px;
+    left: -6.7px;
     /*top: 12px;*/
     -webkit-transition: .5s;
     -o-transition: .5s;
@@ -9540,7 +9546,8 @@ footer {
   visibility: hidden;
   -webkit-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out; }
+  transition: opacity 0.5s ease-in-out;
+  display: none; }
   .crop ._gallery_crop__content {
     opacity: 1;
     visibility: visible;
