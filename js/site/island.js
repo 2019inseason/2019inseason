@@ -3,7 +3,7 @@ $(function () {
     var y = -90;
     var bgColor = ['#006781', '#4B8D32', '#D6CD25', '#006857', '#ED7235', '#FF947B', '#AF485C', '#F7B42F', '#AE7516', '#C99A6B', '#2E8E89', '#325984']
     var index = 0;
-    var animArray = ['jan480.json','feb.json','mar480.json','apr480.json','may480.json','jun.json','july480.json','aug.json','sep.json','oct.json','nov.json','dec.json'];
+    var animArray = ['jan480.json','feb.json','mar480.json','apr480.json','may480.json','jun.json','july480.json','aug.json','sep.json','oct480.json','nov480.json','dec.json'];
     var animIndex = 0;
     var hoverIndex = 1;
 

@@ -27,4 +27,32 @@ $(function(){
             prevEl: '.swiper-button-prev',
         },
     });
+
+    var fadeInDown = {
+        opacity: '1',
+        top : '50%',
+        transition: '.55s ease-in-out',
+        transitionDelay: '.2s'
+    };
+
+    var fadeOutUp = {
+        opacity: '0',
+        top : '53%',
+        transition: '.55s ease-in-out',
+        transitionDelay: '.2s'
+    };
+
+    swiper_recipeAll.on('slideNextTransitionStart', function () {
+        console.log('next');
+        $('.swiper-slide-prev').children().css(fadeOutUp);
+        $('.swiper-slide-next').children().css(fadeOutUp);
+        $('.swiper-slide-active').children().css(fadeInDown);
+    });
+    
+    swiper_recipeAll.on('slidePrevTransitionStart', function () {
+        console.log('prev');
+        $('.swiper-slide-prev').children().css(fadeOutUp);
+        $('.swiper-slide-next').children().css(fadeOutUp);
+        $('.swiper-slide-active').children().css(fadeInDown);
+    });
 });
