@@ -600,14 +600,15 @@ $(function () {
                 console.log('close');
                 $('html').removeClass('popup');
                 $(this).parent("._island_crop").removeClass('active');
-                setTimeout(function(){
+                // setTimeout(function(){
                     clearInterval(mouseMove_inerval);
                     mouseMove_inerval = setInterval(mouseMove_function,10);
-                },500);
+                // },500);
                 setTimeout(function(){
                     $('._island_crop__window').removeClass('active');
                 },1000);
             });
+            
             $('.js-detail_back').click(function () {
                 clearInterval(mouseMove_inerval);
             });
@@ -631,6 +632,8 @@ $(function () {
         
         setTimeout(function () {
             bodymovin.destroy();
+            // clearInterval(mouseMove_inerval);
+            // clearTimeout();
             $('.wrapper').addClass('animsition');
         },1500);
     });
