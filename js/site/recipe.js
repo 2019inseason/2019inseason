@@ -31,15 +31,15 @@ $(function(){
     var fadeInDown = {
         opacity: '1',
         top : '50%',
-        transition: '.55s ease-in-out',
-        transitionDelay: '.2s'
+        transition: 'all .55s ease-in-out',
+        transitionDelay: '.3s'
     };
 
     var fadeOutUp = {
         opacity: '0',
         top : '53%',
-        transition: '.55s ease-in-out',
-        transitionDelay: '.2s'
+        transition: 'all .55s ease-in-out',
+        transitionDelay: '.3s'
     };
 
     swiper_recipeAll.on('slideNextTransitionStart', function () {

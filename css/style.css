@@ -9073,11 +9073,11 @@ footer {
   width: 5%;
   height: 80px;
   background-size: contain;
-  z-index: 10; }
+  opacity: 1; }
   ._recipeAll .swiper-button-next:hover, ._recipeAll .swiper-button-prev:hover {
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     opacity: 0.4; }
 
 ._recipeAll__main {
