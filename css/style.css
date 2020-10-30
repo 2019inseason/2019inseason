@@ -8060,6 +8060,33 @@ footer {
     -o-transition: .5s ease-out;
     transition: .5s ease-out; }
 
+@media screen and (max-width: 1700px) {
+  ._home_island__img--island1 {
+    width: 465px;
+    height: 215px;
+    left: 13.5%;
+    bottom: 15%; }
+  ._home_island__img--island2 {
+    left: 15%;
+    top: -5px;
+    width: 418px;
+    height: 300px; }
+  ._home_island__img--island3 {
+    right: 15.5%;
+    width: 411px;
+    height: 300px;
+    top: -2%; }
+  ._home_island__img--island4 {
+    width: 430px;
+    height: 255px;
+    right: 14%;
+    bottom: 15%; }
+  ._home_island__img--middle {
+    max-width: 135px; }
+  ._home_island__text {
+    width: 20%;
+    bottom: 8%; } }
+
 .start_anim {
   overflow: hidden; }
 
@@ -8622,6 +8649,14 @@ footer {
     opacity: 0.8;
     visibility: visible; }
 
+@media screen and (max-width: 1700px) {
+  ._island_crop__main img {
+    max-width: 260px; }
+  ._island_crop__info div {
+    margin-bottom: 1rem; }
+  ._island_crop__text {
+    margin-bottom: 0 !important; } }
+
 ._recipe .swiper-container {
   height: 100vh; }
 
@@ -9029,6 +9064,32 @@ footer {
     bottom: -8px;
     /*z-index: 1;*/ }
 
+@media screen and (max-width: 1700px) {
+  ._about_section4__main .row {
+    padding-top: 18%; }
+  ._about__btn {
+    padding-top: 0 !important; }
+  ._about_section2__text {
+    width: 85%; }
+  ._about_section2__title::before {
+    left: 15%; }
+  ._about_section2__title::after {
+    right: 15%; }
+  ._about_section4 {
+    padding-bottom: 0 !important; }
+  ._about_section4__img {
+    height: 80%; }
+  ._about_section3__img img {
+    width: 85%; }
+  ._about_section1__text p {
+    font-size: 17px; }
+  ._about_section2__text p {
+    font-size: 17px; }
+  ._about_section3__text p {
+    font-size: 17px; }
+  ._about_section4__text p {
+    font-size: 17px; } }
+
 ._recipeAll .swiper-container {
   height: 100vh; }
 
@@ -9368,6 +9429,11 @@ footer {
       opacity: 1;
       visibility: visible; }
 
+@media screen and (max-width: 1700px) {
+  ._dish__back__arrow::before {
+    right: 4px;
+    top: -18.5px; } }
+
 ._gallery {
   background-size: cover;
   background-position: top;
@@ -9585,3 +9651,9 @@ footer {
   font-size: 13px;
   letter-spacing: 1px;
   margin-top: 3px; }
+
+@media screen and (max-width: 1700px) {
+  ._gallery.char {
+    height: 280vh; }
+  ._gallery.crop {
+    height: 445vh; } }

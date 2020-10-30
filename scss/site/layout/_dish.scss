@@ -291,3 +291,12 @@
         }
     }
 }
+
+@media screen and (max-width: 1700px){
+    ._dish__back__arrow{
+        &::before{
+            right: 4px;
+            top: -18.5px;
+        }
+    }
+}

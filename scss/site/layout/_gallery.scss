@@ -231,3 +231,14 @@
     letter-spacing: 1px;
     margin-top: 3px;
 }
+
+@media screen and (max-width: 1700px){
+    ._gallery{
+        &.char{
+            height: 280vh;
+        }
+        &.crop{
+            height: 445vh;
+        }
+    }
+}

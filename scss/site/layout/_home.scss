@@ -158,3 +158,39 @@
         transition: .5s ease-out;
     }
 }
+
+@media screen and (max-width: 1700px){
+    ._home_island__img{
+        &--island1{
+            width: 465px;
+            height: 215px;
+            left: 13.5%;
+            bottom: 15%;
+        }
+        &--island2{
+            left: 15%;
+            top: -5px;
+            width: 418px;
+            height: 300px;
+        }
+        &--island3{
+            right: 15.5%;
+            width: 411px;
+            height: 300px;
+            top: -2%;
+        }
+        &--island4{
+            width: 430px;
+            height: 255px;
+            right: 14%;
+            bottom: 15%;
+        }
+        &--middle{
+            max-width: 135px;
+        }
+    }
+    ._home_island__text{
+        width: 20%;
+        bottom: 8%;
+    }
+}
