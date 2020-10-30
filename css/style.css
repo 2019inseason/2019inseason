@@ -7948,7 +7948,7 @@ footer {
     z-index: 1;
     background-image: url(../img/home/island1-op.svg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     -webkit-transition: .3s ease-out;
     -o-transition: .3s ease-out;
